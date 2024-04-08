@@ -11,8 +11,12 @@
             "id": "8fd1cee6391a0694",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "memo/theme.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -27,6 +31,7 @@
       {
         "id": "1f4f9d51f2834a99",
         "type": "tabs",
+        "dimension": 69.41287878787878,
         "children": [
           {
             "id": "fd6dab467ec5baf9",
@@ -60,7 +65,14 @@
               "type": "bookmarks",
               "state": {}
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "3e8e9ca7026fc63a",
+        "type": "tabs",
+        "dimension": 30.58712121212121,
+        "children": [
           {
             "id": "b14089f98a39938e",
             "type": "leaf",
@@ -69,8 +81,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -90,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "memo/theme.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "memo/theme.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "memo/theme.md"
+              }
             }
           }
         ]
@@ -147,6 +162,6 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "b14089f98a39938e",
+  "active": "8fd1cee6391a0694",
   "lastOpenFiles": []
 }
