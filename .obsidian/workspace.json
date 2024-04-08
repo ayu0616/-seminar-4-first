@@ -60,8 +60,17 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "b14089f98a39938e",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -138,6 +147,6 @@
       "command-palette:コマンドパレットを開く": false
     }
   },
-  "active": "8fd1cee6391a0694",
+  "active": "b14089f98a39938e",
   "lastOpenFiles": []
 }

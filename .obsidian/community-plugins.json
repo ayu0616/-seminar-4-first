@@ -1,4 +1,8 @@
 [
   "better-word-count",
-  "cm-editor-syntax-highlight-obsidian"
+  "cm-editor-syntax-highlight-obsidian",
+  "obsidian-git",
+  "obsidian-linter",
+  "obsidian-outliner",
+  "recent-files-obsidian"
 ]
