@@ -1,8 +1,8 @@
 {
-    "accentColor": "",
-    "interfaceFontFamily": "BIZ UDPGothic",
-    "textFontFamily": "BIZ UDPGothic",
-    "monospaceFontFamily": "Monaco,BIZ UDPGothic",
-    "translucency": false,
-    "baseFontSizeAction": true
+  "accentColor": "",
+  "interfaceFontFamily": "BIZ UDPGothic",
+  "textFontFamily": "BIZ UDPGothic",
+  "monospaceFontFamily": "Monaco,BIZ UDPGothic",
+  "translucency": false,
+  "baseFontSizeAction": true
 }
