@@ -8,7 +8,8 @@
         "line-length": false, // MD013: 1文の最大文字数
         "no-duplicate-heading": false, // MD024: 見出し文字列の重複を許容
         "no-inline-html": false, // MD033: HTML記述を許容
-        "fenced-code-language": false // MD040: コードブロックの言語指定を許容
+        "fenced-code-language": false, // MD040: コードブロックの言語指定を許容
+        "no-hard-tabs": false // MD010: タブ文字を許容
     },
     "ignores": ["node_modules", ".git"] // node_modules配下はチェック対象外
 }
