@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap"); /* BIZ UDPGothic をダウンロード */
+
+body {
+    font-family: "BIZ UDPGothic", sans-serif; /* フォントを設定 */
+    background-color: #f8fafc; /* 背景色を設定 */
+}
+
+.cm-header {
+    color: #5b21b6; /* 見出しの色を設定 */
+}

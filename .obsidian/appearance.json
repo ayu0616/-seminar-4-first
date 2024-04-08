@@ -4,5 +4,8 @@
   "textFontFamily": "BIZ UDPGothic",
   "monospaceFontFamily": "Monaco,BIZ UDPGothic",
   "translucency": false,
-  "baseFontSizeAction": true
+  "baseFontSizeAction": true,
+  "enabledCssSnippets": [
+    "main"
+  ]
 }
