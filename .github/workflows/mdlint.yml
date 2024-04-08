@@ -1,0 +1,23 @@
+name: markdown-lint
+on: [push]
+jobs:
+    lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: DavidAnson/markdownlint-cli2-action@v16
+              continue-on-error: true
+              with:
+                  globs: "**/*.md"
+                  config: ".markdownlint-cli2.jsonc"
+                  fix: true
+            - name: push diff
+              run: |
+                  git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+                  git config --global user.name "${GITHUB_ACTOR}"
+                  git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+                  if (git diff --shortstat | grep '[0-9]'); then \
+                      git add .; \
+                      git commit -m "formatted by markdownlint-cli2"; \
+                      git push origin HEAD:${GITHUB_REF}; \
+                  fi
