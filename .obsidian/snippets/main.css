@@ -13,3 +13,9 @@ body {
 pre {
     font-family: Monaco, BIZ UDPGothic, sans-serif; /* フォントを設定 */
 }
+
+span.cm-link,
+span.cm-url,
+a {
+    color: #0369a1 !important; /* リンクの色を設定 */
+}

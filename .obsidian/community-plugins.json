@@ -1,8 +1,10 @@
 [
   "obsidian-git",
-  "better-word-count",
-  "cm-editor-syntax-highlight-obsidian",
   "obsidian-linter",
   "obsidian-outliner",
-  "recent-files-obsidian"
+  "recent-files-obsidian",
+  "better-word-count",
+  "cm-editor-syntax-highlight-obsidian",
+  "dataview",
+  "obsidian-advanced-uri"
 ]

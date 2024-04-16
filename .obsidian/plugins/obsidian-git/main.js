@@ -44211,6 +44211,15 @@ var ObsidianGit = class extends import_obsidian31.Plugin {
         );
       }
     });
+    this.addCommand({
+        id: "commit-and-push",
+        name: "Commit and Push",
+        callback: () => {
+            this.promiseQueue.addTask(() => this.commit({ fromAutoBackup: false })); // commit all
+            this.promiseQueue.addTask(() => this.pullChangesFromRemote()); // pull
+            this.promiseQueue.addTask(() => this.push()); // push
+        },
+    });
     this.registerEvent(
       this.app.workspace.on("file-menu", (menu, file, source) => {
         this.handleFileMenu(menu, file, source);

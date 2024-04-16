@@ -1,5 +1,6 @@
 {
   "pinned": [
+    "obsidian-git:commit-and-push",
     "obsidian-git:pull",
     "obsidian-git:stage-current-file",
     "obsidian-git:commit-staged",
