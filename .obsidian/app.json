@@ -32,5 +32,6 @@
   ],
   "showUnsupportedFiles": false,
   "showLineNumber": false,
-  "useTab": false
+  "useTab": false,
+  "useMarkdownLinks": true
 }
