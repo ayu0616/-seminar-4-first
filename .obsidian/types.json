@@ -5,6 +5,7 @@
     "tags": "tags",
     "modified": "datetime",
     "created": "datetime",
-    "著者": "multitext"
+    "著者": "multitext",
+    "年": "number"
   }
 }

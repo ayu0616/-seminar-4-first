@@ -10,6 +10,7 @@ URL: https://lr-www.pi.titech.ac.jp/paper/paper/39.pdf
 著者:
   - 村山紀文
   - 奥村学
+年: 2006
 ---
 
 # Noisy-channel modelを用いた略語自動推定
