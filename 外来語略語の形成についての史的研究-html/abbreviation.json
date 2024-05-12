@@ -1,0 +1,5070 @@
+[
+    {
+        "abbreviation": "アイボリー",
+        "word": "アイボリー・ナット"
+    },
+    {
+        "abbreviation": "アスパラ",
+        "word": "アスパラガス"
+    },
+    {
+        "abbreviation": "アネロイド",
+        "word": "アネロイド・バロメーター"
+    },
+    {
+        "abbreviation": "アパートメント",
+        "word": "アパートメント・ハウス"
+    },
+    {
+        "abbreviation": "アルミ",
+        "word": "アルミニウム"
+    },
+    {
+        "abbreviation": "アルミ",
+        "word": "アルミニウム・ブロンズ"
+    },
+    {
+        "abbreviation": "アンクル",
+        "word": "アンクル・エスケープメント"
+    },
+    {
+        "abbreviation": "インバ",
+        "word": "インバネス"
+    },
+    {
+        "abbreviation": "エキス",
+        "word": "エキストラクト"
+    },
+    {
+        "abbreviation": "エス（ヱス）",
+        "word": "エスケープ（ヱスケープ）"
+    },
+    {
+        "abbreviation": "エレキ",
+        "word": "エレキテル"
+    },
+    {
+        "abbreviation": "エボ",
+        "word": "エボナイト"
+    },
+    {
+        "abbreviation": "エレヴェーテッド",
+        "word": "エレヴェーテッド・レールヴェー"
+    },
+    {
+        "abbreviation": "エンゲーチ",
+        "word": "エンゲーチメント"
+    },
+    {
+        "abbreviation": "オーバー",
+        "word": "オーバー・コート"
+    },
+    {
+        "abbreviation": "オート・バイ",
+        "word": "オート・バイシクル"
+    },
+    {
+        "abbreviation": "オート",
+        "word": "オート・モビル"
+    },
+    {
+        "abbreviation": "オリンピック",
+        "word": "オリンピック・ゲーム"
+    },
+    {
+        "abbreviation": "オレンヂ",
+        "word": "オレンヂ・エロー"
+    },
+    {
+        "abbreviation": "ガイド",
+        "word": "ガイド・ブック"
+    },
+    {
+        "abbreviation": "カリ",
+        "word": "カリウム"
+    },
+    {
+        "abbreviation": "キロ",
+        "word": "キログラム"
+    },
+    {
+        "abbreviation": "キネマ",
+        "word": "キネマト・グラフ"
+    },
+    {
+        "abbreviation": "クリニング",
+        "word": "ドライ・クリニング"
+    },
+    {
+        "abbreviation": "クロース",
+        "word": "ブッキング・クロース"
+    },
+    {
+        "abbreviation": "ケット",
+        "word": "ブランケット"
+    },
+    {
+        "abbreviation": "コーチ",
+        "word": "コーチ・ヤード"
+    },
+    {
+        "abbreviation": "コールタ",
+        "word": "コールタール"
+    },
+    {
+        "abbreviation": "コール",
+        "word": "コール・マネー"
+    },
+    {
+        "abbreviation": "コール",
+        "word": "コール・ローン"
+    },
+    {
+        "abbreviation": "ゴシ",
+        "word": "ゴシック"
+    },
+    {
+        "abbreviation": "コスメ",
+        "word": "コスメチック"
+    },
+    {
+        "abbreviation": "コレス",
+        "word": "コレスポンデンス"
+    },
+    {
+        "abbreviation": "コンキュウ",
+        "word": "コンキュウバイン"
+    },
+    {
+        "abbreviation": "コンクリ",
+        "word": "コンクリート"
+    },
+    {
+        "abbreviation": "コンパ",
+        "word": "コンパニー"
+    },
+    {
+        "abbreviation": "サード",
+        "word": "サード・クラス"
+    },
+    {
+        "abbreviation": "サード",
+        "word": "サード・ベース"
+    },
+    {
+        "abbreviation": "サル",
+        "word": "サルヴァルサン"
+    },
+    {
+        "abbreviation": "シス",
+        "word": "シスター"
+    },
+    {
+        "abbreviation": "ショート",
+        "word": "ショート・ストップ"
+    },
+    {
+        "abbreviation": "シリン",
+        "word": "シリンダー"
+    },
+    {
+        "abbreviation": "スクリュー",
+        "word": "スクリュー・プロペラー"
+    },
+    {
+        "abbreviation": "ステーム",
+        "word": "ステーム・パイプ"
+    },
+    {
+        "abbreviation": "ステロ",
+        "word": "ステロ・タイプ"
+    },
+    {
+        "abbreviation": "セコ・チャン",
+        "word": "セコンド・チャンピオン"
+    },
+    {
+        "abbreviation": "セコ・ハン",
+        "word": "セコンド・ハンド"
+    },
+    {
+        "abbreviation": "セメン",
+        "word": "セメンシイナ"
+    },
+    {
+        "abbreviation": "セメン",
+        "word": "セメント"
+    },
+    {
+        "abbreviation": "セル",
+        "word": "セルジ"
+    },
+    {
+        "abbreviation": "セロ",
+        "word": "ビオロン・セロ"
+    },
+    {
+        "abbreviation": "センター",
+        "word": "センター・フィルダー"
+    },
+    {
+        "abbreviation": "ダイヤ",
+        "word": "ダイヤモンド"
+    },
+    {
+        "abbreviation": "ダイヤ",
+        "word": "ダイヤグラム"
+    },
+    {
+        "abbreviation": "タングステン",
+        "word": "タングステン・ランプ"
+    },
+    {
+        "abbreviation": "ダブル",
+        "word": "ダブル・カラー"
+    },
+    {
+        "abbreviation": "タブレット",
+        "word": "ライティング・タブレット"
+    },
+    {
+        "abbreviation": "チャン",
+        "word": "チャンピオン"
+    },
+    {
+        "abbreviation": "チック",
+        "word": "コスメチック"
+    },
+    {
+        "abbreviation": "テキ",
+        "word": "ビフ・テキ"
+    },
+    {
+        "abbreviation": "トロ",
+        "word": "トロッコ"
+    },
+    {
+        "abbreviation": "ニューズ",
+        "word": "ニューズ・ペーパー"
+    },
+    {
+        "abbreviation": "ニューム",
+        "word": "アルミニューム"
+    },
+    {
+        "abbreviation": "ニス",
+        "word": "ワニス"
+    },
+    {
+        "abbreviation": "ネル",
+        "word": "フランネル"
+    },
+    {
+        "abbreviation": "ネーブル",
+        "word": "ネーブル・オレンジ"
+    },
+    {
+        "abbreviation": "ネット",
+        "word": "ネット・プライス"
+    },
+    {
+        "abbreviation": "ノート",
+        "word": "ノート・ブック"
+    },
+    {
+        "abbreviation": "バイ",
+        "word": "ルチプライド・バイ"
+    },
+    {
+        "abbreviation": "ハズ",
+        "word": "ハズバンド"
+    },
+    {
+        "abbreviation": "パス",
+        "word": "パス・ボール"
+    },
+    {
+        "abbreviation": "パツキング",
+        "word": "パツキング・ペーパー"
+    },
+    {
+        "abbreviation": "バック",
+        "word": "バック・グラウンド"
+    },
+    {
+        "abbreviation": "バラス",
+        "word": "バラスト"
+    },
+    {
+        "abbreviation": "ハンカチ",
+        "word": "ハンカチーフ"
+    },
+    {
+        "abbreviation": "パンク",
+        "word": "パンクチュア"
+    },
+    {
+        "abbreviation": "ハンチング",
+        "word": "ハンチング・キャップ"
+    },
+    {
+        "abbreviation": "ピツチ",
+        "word": "ピツチャー"
+    },
+    {
+        "abbreviation": "ビル",
+        "word": "ビルディング"
+    },
+    {
+        "abbreviation": "ピスト",
+        "word": "タイピスト"
+    },
+    {
+        "abbreviation": "ビフ・カツ",
+        "word": "ビーフ・カツレツ"
+    },
+    {
+        "abbreviation": "ビフ・テキ",
+        "word": "ビーフ・ステーキ"
+    },
+    {
+        "abbreviation": "フィールド",
+        "word": "アウト・フィールド"
+    },
+    {
+        "abbreviation": "フラス",
+        "word": "フラスコ"
+    },
+    {
+        "abbreviation": "ブラン",
+        "word": "ブランデー"
+    },
+    {
+        "abbreviation": "ブリュー",
+        "word": "ブリュー・ストッキング"
+    },
+    {
+        "abbreviation": "ブル",
+        "word": "ブルジョア"
+    },
+    {
+        "abbreviation": "ブル",
+        "word": "ブル・ドッグ"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プログラム"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロスティテュート"
+    },
+    {
+        "abbreviation": "フロック",
+        "word": "フロック・コート"
+    },
+    {
+        "abbreviation": "プロ・ブル",
+        "word": "プロレタリア・ブルジョア"
+    },
+    {
+        "abbreviation": "プロ（プロ）",
+        "word": "プロレタリアート（プロレタリア）"
+    },
+    {
+        "abbreviation": "ベース",
+        "word": "ベース・ボール"
+    },
+    {
+        "abbreviation": "ペーパー",
+        "word": "ゲラス・ペーパー"
+    },
+    {
+        "abbreviation": "ペーパー",
+        "word": "サンド・ペーパー"
+    },
+    {
+        "abbreviation": "ペーパー",
+        "word": "ニュース・ペーパー"
+    },
+    {
+        "abbreviation": "ベロ",
+        "word": "ベロリン"
+    },
+    {
+        "abbreviation": "ホーディング",
+        "word": "ホーディング・ハウス"
+    },
+    {
+        "abbreviation": "ホーム",
+        "word": "ホーム・ベース"
+    },
+    {
+        "abbreviation": "ホームラン",
+        "word": "ホームラン・ヒット"
+    },
+    {
+        "abbreviation": "ボール",
+        "word": "アンフェア・ボール"
+    },
+    {
+        "abbreviation": "ポテ",
+        "word": "スイート・ポテト"
+    },
+    {
+        "abbreviation": "ポプラ",
+        "word": "ポプラー"
+    },
+    {
+        "abbreviation": "ポプラ",
+        "word": "ポプラス・アルバ"
+    },
+    {
+        "abbreviation": "ポリ",
+        "word": "ポリス"
+    },
+    {
+        "abbreviation": "ポリス",
+        "word": "ポリス・マン"
+    },
+    {
+        "abbreviation": "ポリ",
+        "word": "ポリス・マン"
+    },
+    {
+        "abbreviation": "マスク",
+        "word": "デット・マスク"
+    },
+    {
+        "abbreviation": "マント",
+        "word": "マントル"
+    },
+    {
+        "abbreviation": "マント",
+        "word": "マントリー"
+    },
+    {
+        "abbreviation": "マントル",
+        "word": "ガス・マントル"
+    },
+    {
+        "abbreviation": "ミス",
+        "word": "ミステーク"
+    },
+    {
+        "abbreviation": "ミッション",
+        "word": "コンミッション"
+    },
+    {
+        "abbreviation": "ミシン",
+        "word": "ソウイング・ミシン"
+    },
+    {
+        "abbreviation": "ミルク",
+        "word": "コンデンス・ミルク"
+    },
+    {
+        "abbreviation": "ミリ",
+        "word": "ミリメートル"
+    },
+    {
+        "abbreviation": "メモ",
+        "word": "メモランダム"
+    },
+    {
+        "abbreviation": "メロン",
+        "word": "マスク・メロン"
+    },
+    {
+        "abbreviation": "モーニング",
+        "word": "モーニング・コート"
+    },
+    {
+        "abbreviation": "モス",
+        "word": "モスリン"
+    },
+    {
+        "abbreviation": "モヒ",
+        "word": "モルヒネ"
+    },
+    {
+        "abbreviation": "ランド",
+        "word": "ランドセル"
+    },
+    {
+        "abbreviation": "ラフ",
+        "word": "ラフ・ペーパー"
+    },
+    {
+        "abbreviation": "ランニング",
+        "word": "ランニング・レース"
+    },
+    {
+        "abbreviation": "ルラ",
+        "word": "インク・ルラー"
+    },
+    {
+        "abbreviation": "レイン",
+        "word": "レイン・コート"
+    },
+    {
+        "abbreviation": "レザー",
+        "word": "レザーレット"
+    },
+    {
+        "abbreviation": "ロガリ",
+        "word": "ロガリズム"
+    },
+    {
+        "abbreviation": "アース",
+        "word": "アース・アンテナ"
+    },
+    {
+        "abbreviation": "アート",
+        "word": "アート・ペーパー"
+    },
+    {
+        "abbreviation": "アイス",
+        "word": "アイス・クリーム"
+    },
+    {
+        "abbreviation": "アジ",
+        "word": "アジテーション"
+    },
+    {
+        "abbreviation": "アジ",
+        "word": "アジテーター"
+    },
+    {
+        "abbreviation": "アジ・ト",
+        "word": "アジテート・ポイント"
+    },
+    {
+        "abbreviation": "アジ・プロ",
+        "word": "アジテーション・プロパガンダ"
+    },
+    {
+        "abbreviation": "アップ",
+        "word": "クローズ・アップ"
+    },
+    {
+        "abbreviation": "アナ",
+        "word": "アナーキズム"
+    },
+    {
+        "abbreviation": "アナ",
+        "word": "アナーキスト"
+    },
+    {
+        "abbreviation": "アナ",
+        "word": "アナオンサー"
+    },
+    {
+        "abbreviation": "アパート",
+        "word": "アパートメント"
+    },
+    {
+        "abbreviation": "アパート",
+        "word": "アパートメント・ハウス"
+    },
+    {
+        "abbreviation": "アフターヌーン",
+        "word": "アフターヌーン・ドレッス"
+    },
+    {
+        "abbreviation": "アングル",
+        "word": "キヤメラ・アングル"
+    },
+    {
+        "abbreviation": "アンダー・スロオ",
+        "word": "アンダー・ハンド・スロオ"
+    },
+    {
+        "abbreviation": " アンデパンダン",
+        "word": " サロン・アンデパンダン"
+    },
+    {
+        "abbreviation": "イスキー",
+        "word": "ウイスキー"
+    },
+    {
+        "abbreviation": "インクライン",
+        "word": "インクライン・ブレーン"
+    },
+    {
+        "abbreviation": "インターカレッジ",
+        "word": "インターカレッジ・エート"
+    },
+    {
+        "abbreviation": "インテリ",
+        "word": "インテリゲンチャ"
+    },
+    {
+        "abbreviation": "インドロ",
+        "word": "インドロップ"
+    },
+    {
+        "abbreviation": "ヴォーカル",
+        "word": "ヴォーカル・ミュージック"
+    },
+    {
+        "abbreviation": " エシエリツヒ",
+        "word": " オルガニザチオン・ エシエリツヒ"
+    },
+    {
+        "abbreviation": "エバーシャープ",
+        "word": "エバーシャープ・ペンシル"
+    },
+    {
+        "abbreviation": "エロ",
+        "word": "エロース"
+    },
+    {
+        "abbreviation": "エロ",
+        "word": "エロティシズム"
+    },
+    {
+        "abbreviation": "エロ（エロ）",
+        "word": "エロティック（エロチック）"
+    },
+    {
+        "abbreviation": "オイル",
+        "word": "オイルカラー・ペインティング"
+    },
+    {
+        "abbreviation": "オーク",
+        "word": "ウオーク"
+    },
+    {
+        "abbreviation": "オーダア",
+        "word": "バティング・オーダア"
+    },
+    {
+        "abbreviation": "オーバー・スロー",
+        "word": "オーバー・ハンド・スロー"
+    },
+    {
+        "abbreviation": "オープン",
+        "word": "オープン・カー"
+    },
+    {
+        "abbreviation": "オフセット",
+        "word": "オフセット・プリンチング"
+    },
+    {
+        "abbreviation": "カツ",
+        "word": "カツレツ"
+    },
+    {
+        "abbreviation": "ガム",
+        "word": "チユウイン・ガム"
+    },
+    {
+        "abbreviation": "カーバイド",
+        "word": "カルシューム・カーバイド"
+    },
+    {
+        "abbreviation": "キヤスト",
+        "word": "オールスター・キヤスト"
+    },
+    {
+        "abbreviation": "グラウンド",
+        "word": "プレー・グラウンド"
+    },
+    {
+        "abbreviation": "グラビュア",
+        "word": "フオト・グラビュア"
+    },
+    {
+        "abbreviation": "グラフ",
+        "word": "グラフィック"
+    },
+    {
+        "abbreviation": "クリーム",
+        "word": "アイス・クリーム"
+    },
+    {
+        "abbreviation": "グリル",
+        "word": "グリル・ルーム"
+    },
+    {
+        "abbreviation": "クロール",
+        "word": "クロール・ストローク"
+    },
+    {
+        "abbreviation": "クロッスワード",
+        "word": "クロッスワード・パズル"
+    },
+    {
+        "abbreviation": "グロ",
+        "word": "グロテスク"
+    },
+    {
+        "abbreviation": "ケーブル",
+        "word": "ケーブル・グラム"
+    },
+    {
+        "abbreviation": "ゲル",
+        "word": "ゲルト"
+    },
+    {
+        "abbreviation": "コーチャー",
+        "word": "ランチー・コーチャー"
+    },
+    {
+        "abbreviation": "ゴール",
+        "word": "イン・ゴール"
+    },
+    {
+        "abbreviation": "コックス ",
+        "word": "コックス エーン "
+    },
+    {
+        "abbreviation": "ゴノ",
+        "word": "ゴノリーア"
+    },
+    {
+        "abbreviation": "コミック",
+        "word": "コミック・オペラ"
+    },
+    {
+        "abbreviation": "コンテ",
+        "word": "コンテ・クレヨン"
+    },
+    {
+        "abbreviation": "コンビ",
+        "word": "コンビィネーション"
+    },
+    {
+        "abbreviation": "サイレント",
+        "word": "サイレント・ピクチユア"
+    },
+    {
+        "abbreviation": "サブ",
+        "word": "サブウェー"
+    },
+    {
+        "abbreviation": "サブ",
+        "word": "サブスティーテュート"
+    },
+    {
+        "abbreviation": "サブ",
+        "word": "サブプレーヤー"
+    },
+    {
+        "abbreviation": "サブ",
+        "word": "サブマリン"
+    },
+    {
+        "abbreviation": "サンチ",
+        "word": "サンチメートル"
+    },
+    {
+        "abbreviation": "シール",
+        "word": "シール・スキン"
+    },
+    {
+        "abbreviation": "シネマ",
+        "word": "シネマﾄグラフ"
+    },
+    {
+        "abbreviation": "ジャズ",
+        "word": "ジャズ・バンド"
+    },
+    {
+        "abbreviation": "シヤワー",
+        "word": "シヤワー・バス"
+    },
+    {
+        "abbreviation": "ジャンプ",
+        "word": "ホツプステツプ・ジャンプ"
+    },
+    {
+        "abbreviation": "シングル",
+        "word": "シングル・ヒット"
+    },
+    {
+        "abbreviation": "シングル",
+        "word": "シングル・キヤツチ"
+    },
+    {
+        "abbreviation": "シンパ（シンパ）",
+        "word": "シンパサイザー（シンパサイザア）"
+    },
+    {
+        "abbreviation": "スウィング",
+        "word": "ボディー・スウィング"
+    },
+    {
+        "abbreviation": "スクリプト",
+        "word": "マニユスクリプト"
+    },
+    {
+        "abbreviation": "スタンド",
+        "word": "グランド・スタンド"
+    },
+    {
+        "abbreviation": "スタンド",
+        "word": "ラムプ・スタンド"
+    },
+    {
+        "abbreviation": "スティーム",
+        "word": "スティーム・ヒーター"
+    },
+    {
+        "abbreviation": "ストレート",
+        "word": "ストレート・ボール"
+    },
+    {
+        "abbreviation": "スナップ",
+        "word": "スナップ・ショット"
+    },
+    {
+        "abbreviation": "スプリント",
+        "word": "スプリント・レース"
+    },
+    {
+        "abbreviation": "スペル",
+        "word": "スペルリング"
+    },
+    {
+        "abbreviation": "セカンド",
+        "word": "セカンド・ベース"
+    },
+    {
+        "abbreviation": "ゼネ・スト",
+        "word": "ゼネラル・ストライキ"
+    },
+    {
+        "abbreviation": "セラ・パン",
+        "word": "セーラー・パンツ"
+    },
+    {
+        "abbreviation": "ゼロ・ゲー",
+        "word": "ゼロ・ゲーム"
+    },
+    {
+        "abbreviation": "センチ",
+        "word": "センチメンタル"
+    },
+    {
+        "abbreviation": "ソフト",
+        "word": "ソフト・ハット"
+    },
+    {
+        "abbreviation": "タイ",
+        "word": "ネクタイ"
+    },
+    {
+        "abbreviation": "チョップ",
+        "word": "チョップ・ストローク"
+    },
+    {
+        "abbreviation": "テキサス",
+        "word": "テキサス・リーガー"
+    },
+    {
+        "abbreviation": "テクニ・カラー",
+        "word": "テクニック・カラー"
+    },
+    {
+        "abbreviation": "テスト",
+        "word": "メンタル・テスト"
+    },
+    {
+        "abbreviation": "デパート",
+        "word": "デパートメント・ストアー"
+    },
+    {
+        "abbreviation": "デマ",
+        "word": "デマゴーギ"
+    },
+    {
+        "abbreviation": "デマ",
+        "word": "デマゴーグ"
+    },
+    {
+        "abbreviation": "デモ",
+        "word": "デモンストレーション"
+    },
+    {
+        "abbreviation": "テロ",
+        "word": "テロリズム"
+    },
+    {
+        "abbreviation": "テロ",
+        "word": "テロリスト"
+    },
+    {
+        "abbreviation": "ドク",
+        "word": "ドクター"
+    },
+    {
+        "abbreviation": "トラ",
+        "word": "ウルトラ"
+    },
+    {
+        "abbreviation": "トレーニング",
+        "word": "トレーニング・パンツ"
+    },
+    {
+        "abbreviation": "ドロップ",
+        "word": "ドロップ・キック"
+    },
+    {
+        "abbreviation": "ドロウンウオーク",
+        "word": "ドロウンウオーク・レース"
+    },
+    {
+        "abbreviation": "ナス",
+        "word": "ボーナス"
+    },
+    {
+        "abbreviation": "ニック",
+        "word": "ニック・ネーム"
+    },
+    {
+        "abbreviation": "ネガ",
+        "word": "ネガティブ"
+    },
+    {
+        "abbreviation": "ネガ",
+        "word": "ネガティヴ・フイルム"
+    },
+    {
+        "abbreviation": "ノー・ズロ",
+        "word": "ノー・ズロース"
+    },
+    {
+        "abbreviation": "ノツク",
+        "word": "シート・ノツク"
+    },
+    {
+        "abbreviation": "パー",
+        "word": "ミント・パー"
+    },
+    {
+        "abbreviation": "ハードル",
+        "word": "ハードル・レース"
+    },
+    {
+        "abbreviation": "パイ",
+        "word": "スパイ"
+    },
+    {
+        "abbreviation": "ハイハードル",
+        "word": "ハイハードル・レース"
+    },
+    {
+        "abbreviation": "ハイポー",
+        "word": "ハイポーサルファイト"
+    },
+    {
+        "abbreviation": "ハイポ",
+        "word": "ハイポサルファイト・ソーダ"
+    },
+    {
+        "abbreviation": "バス・コン",
+        "word": "バス・コントロール"
+    },
+    {
+        "abbreviation": "バック",
+        "word": "バック・ガード"
+    },
+    {
+        "abbreviation": "バツト",
+        "word": "ゴールデン・バツト"
+    },
+    {
+        "abbreviation": "バフ",
+        "word": "パウダー・バフ"
+    },
+    {
+        "abbreviation": "ハン・スト",
+        "word": "ハンガー・ストライキ"
+    },
+    {
+        "abbreviation": "ハンクロ・タイプ",
+        "word": "ハンクロフト・タイプ"
+    },
+    {
+        "abbreviation": "ハンド",
+        "word": "ハンドリング"
+    },
+    {
+        "abbreviation": "バント",
+        "word": "バント・ヒット"
+    },
+    {
+        "abbreviation": "バンド",
+        "word": "ミュージック・バンド"
+    },
+    {
+        "abbreviation": "ピケ",
+        "word": "ピケツチング"
+    },
+    {
+        "abbreviation": "ピケ",
+        "word": "ピケット"
+    },
+    {
+        "abbreviation": "ピッケル",
+        "word": "アイス・ピッケル"
+    },
+    {
+        "abbreviation": "ヒット",
+        "word": "セーフティー・ヒット"
+    },
+    {
+        "abbreviation": "ヒット",
+        "word": "ベース・ヒット"
+    },
+    {
+        "abbreviation": "ファースト",
+        "word": "ファースト・ベース"
+    },
+    {
+        "abbreviation": "ファイナル",
+        "word": "ファイナル・ラウンド"
+    },
+    {
+        "abbreviation": "ファンシーウェースト",
+        "word": "ファンシーウェースト・コート"
+    },
+    {
+        "abbreviation": "ブース",
+        "word": "カメラ・ブース"
+    },
+    {
+        "abbreviation": "フィニッシュ",
+        "word": "フィニッシュ・ライン"
+    },
+    {
+        "abbreviation": "フォーアハンド",
+        "word": "フォーアハンド・ストローク"
+    },
+    {
+        "abbreviation": "フォーン",
+        "word": "テレフォーン"
+    },
+    {
+        "abbreviation": "フォト",
+        "word": "フォト・グラフ"
+    },
+    {
+        "abbreviation": "プチ・ブル",
+        "word": "プチ・ブルジョア"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロダクション"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロパガンダ"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロパビリティ"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロフエサー"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロフエション"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロマイド"
+    },
+    {
+        "abbreviation": "フライ",
+        "word": "フライ・ボール"
+    },
+    {
+        "abbreviation": "プレー",
+        "word": "プレー・ボール"
+    },
+    {
+        "abbreviation": "プレート",
+        "word": "ピッチヤー・プレート"
+    },
+    {
+        "abbreviation": "ブレスト",
+        "word": "ブレスト・ストローク"
+    },
+    {
+        "abbreviation": "ブロークン",
+        "word": "ブロークン・イングリツシュ"
+    },
+    {
+        "abbreviation": "プロ・デモ",
+        "word": "プロレタリア・デモクラシー"
+    },
+    {
+        "abbreviation": "ボード",
+        "word": "ブラック・ボード"
+    },
+    {
+        "abbreviation": "ポジ",
+        "word": "ポジテイヴ"
+    },
+    {
+        "abbreviation": "ポジ",
+        "word": "ポジテイヴ・フィルム"
+    },
+    {
+        "abbreviation": "ホ・ス・ジャンプ",
+        "word": "ホップ・ステップ・ジャンプ"
+    },
+    {
+        "abbreviation": "ポリ・マン",
+        "word": "ポリス・マン"
+    },
+    {
+        "abbreviation": "ボル",
+        "word": "ボルシエビキー"
+    },
+    {
+        "abbreviation": "ホルン",
+        "word": "フレンチ・ホルン"
+    },
+    {
+        "abbreviation": "ホワイト",
+        "word": "ホワイト・スレーヴ"
+    },
+    {
+        "abbreviation": "マイク",
+        "word": "マイクロ・フオーン"
+    },
+    {
+        "abbreviation": "マス",
+        "word": "マスターベーション"
+    },
+    {
+        "abbreviation": "マソ",
+        "word": "マソヒズム"
+    },
+    {
+        "abbreviation": "マット",
+        "word": "ドア・マット"
+    },
+    {
+        "abbreviation": "マラソン",
+        "word": "マラソン・レース"
+    },
+    {
+        "abbreviation": "メフイスト",
+        "word": "メフイストフエーレス"
+    },
+    {
+        "abbreviation": "メトロ",
+        "word": "メトロ・ポリタン"
+    },
+    {
+        "abbreviation": "モ・ガ",
+        "word": "モダーン・ガール"
+    },
+    {
+        "abbreviation": "モ・ボ（モ・ボ）",
+        "word": "モダーン・ボーイ（モーダン・ボーイ）"
+    },
+    {
+        "abbreviation": "モンス",
+        "word": "モンスリーシツク"
+    },
+    {
+        "abbreviation": "ライト",
+        "word": "ライト・フイルダー"
+    },
+    {
+        "abbreviation": "ラン・アウト",
+        "word": "ランナー・アウト"
+    },
+    {
+        "abbreviation": "リレー",
+        "word": "リレー・レース"
+    },
+    {
+        "abbreviation": "ルーラー",
+        "word": "インク・ルーラー"
+    },
+    {
+        "abbreviation": "ルンペン",
+        "word": "ルンペン・プロレタリア"
+    },
+    {
+        "abbreviation": "レフ",
+        "word": "レフレクタア"
+    },
+    {
+        "abbreviation": "レフト",
+        "word": "レフト・フィルダー"
+    },
+    {
+        "abbreviation": "レポ",
+        "word": "レポート"
+    },
+    {
+        "abbreviation": "レポ",
+        "word": "レポーター"
+    },
+    {
+        "abbreviation": "ローハードル",
+        "word": "ローハードル・レース"
+    },
+    {
+        "abbreviation": "ロケ・ハン",
+        "word": "ロケーション・ハンテイング"
+    },
+    {
+        "abbreviation": "ロケ",
+        "word": "ロケーシヨン"
+    },
+    {
+        "abbreviation": "ロング",
+        "word": "ロング・ショット"
+    },
+    {
+        "abbreviation": "ワンピース",
+        "word": "ワンピース・ドレス"
+    },
+    {
+        "abbreviation": "アーガイル",
+        "word": "アーガイル・チェック"
+    },
+    {
+        "abbreviation": "アイビー",
+        "word": "アイビー・ルック"
+    },
+    {
+        "abbreviation": "アウ・ドロ",
+        "word": "アウト・ドロップ"
+    },
+    {
+        "abbreviation": "アスコット",
+        "word": "アスコット・タイ"
+    },
+    {
+        "abbreviation": "アセス",
+        "word": "アセスメント"
+    },
+    {
+        "abbreviation": "アチーブ",
+        "word": "アチーブメント・テスト"
+    },
+    {
+        "abbreviation": "ア・テスト",
+        "word": "アチーブメント・テスト"
+    },
+    {
+        "abbreviation": "アップ",
+        "word": "アップ・スタイル"
+    },
+    {
+        "abbreviation": "アップ",
+        "word": "アップ・ヘア"
+    },
+    {
+        "abbreviation": "アッペ",
+        "word": "アッペンディックス"
+    },
+    {
+        "abbreviation": "アド・ビル",
+        "word": "アドヴァタイズメント・ビルディング"
+    },
+    {
+        "abbreviation": "アナクロ",
+        "word": "アナクロニズム"
+    },
+    {
+        "abbreviation": "アニメ",
+        "word": "アニメーション"
+    },
+    {
+        "abbreviation": "アニメ・ラマ",
+        "word": "アニメーション・ドラマ"
+    },
+    {
+        "abbreviation": "アド",
+        "word": "アドレス"
+    },
+    {
+        "abbreviation": "アブ",
+        "word": "アブノーマル"
+    },
+    {
+        "abbreviation": "アフロ",
+        "word": "アフロ・ヘア"
+    },
+    {
+        "abbreviation": "アプレ",
+        "word": "アプレ・ゲール"
+    },
+    {
+        "abbreviation": "アフ・レコ",
+        "word": "アフタア・レコーディング"
+    },
+    {
+        "abbreviation": "アポ",
+        "word": "アポイントメント"
+    },
+    {
+        "abbreviation": "アマ",
+        "word": "アマチュア"
+    },
+    {
+        "abbreviation": "アメ・フト",
+        "word": "アメリカン・フットボール"
+    },
+    {
+        "abbreviation": "アル・コミ",
+        "word": "アルコール・コミュニケーション"
+    },
+    {
+        "abbreviation": "アル・サロ",
+        "word": "アルバイト・サロン"
+    },
+    {
+        "abbreviation": "アレンジ",
+        "word": "アレンジメント"
+    },
+    {
+        "abbreviation": "アロハ",
+        "word": "アロハ・シャツ"
+    },
+    {
+        "abbreviation": "アン・グラ",
+        "word": "アンダー・グラウンド"
+    },
+    {
+        "abbreviation": "アンプ",
+        "word": "アンプリファイア"
+    },
+    {
+        "abbreviation": "イージー",
+        "word": "イージー・ゴーイング"
+    },
+    {
+        "abbreviation": "イヴニング",
+        "word": "イヴニング・ドレス"
+    },
+    {
+        "abbreviation": "イミグレ",
+        "word": "イミグレーション"
+    },
+    {
+        "abbreviation": "イメ・チェン",
+        "word": "イメージ・チェンジ"
+    },
+    {
+        "abbreviation": "イラスト",
+        "word": "イラストレーション"
+    },
+    {
+        "abbreviation": "イレーザー",
+        "word": "マグネチック・イレーザー"
+    },
+    {
+        "abbreviation": "イレギュラー",
+        "word": "イレギュラー・バウンド"
+    },
+    {
+        "abbreviation": "インスト",
+        "word": "インストラクション"
+    },
+    {
+        "abbreviation": "インター",
+        "word": "インターナショナル"
+    },
+    {
+        "abbreviation": "インター",
+        "word": "インターチェンジ"
+    },
+    {
+        "abbreviation": "インフレ",
+        "word": "インフレーション"
+    },
+    {
+        "abbreviation": "イントロ",
+        "word": "イントロダクション"
+    },
+    {
+        "abbreviation": "インポ",
+        "word": "インポテンツ"
+    },
+    {
+        "abbreviation": "ヴァリ・コン",
+        "word": "ヴァリアブル・コンデンサー"
+    },
+    {
+        "abbreviation": "ヴァラエティ",
+        "word": "ヴァラエティ・ショウ"
+    },
+    {
+        "abbreviation": "ヴァン",
+        "word": "ヴァンガード"
+    },
+    {
+        "abbreviation": "ウィンドー",
+        "word": "ショー・ウィンドー"
+    },
+    {
+        "abbreviation": "ウィンナー",
+        "word": "ウィンナー・ソーセージ"
+    },
+    {
+        "abbreviation": "ウェスターン",
+        "word": "ウェスターン・ミュジック"
+    },
+    {
+        "abbreviation": "ウェースト",
+        "word": "ウェースト・ボール"
+    },
+    {
+        "abbreviation": "ウェーブ",
+        "word": "パーマネント・ウェーブ"
+    },
+    {
+        "abbreviation": "ウォーキング",
+        "word": "ウォーキング・レース"
+    },
+    {
+        "abbreviation": "エア・コン",
+        "word": "エア・コンディショナー"
+    },
+    {
+        "abbreviation": "エース",
+        "word": "サービス・エース"
+    },
+    {
+        "abbreviation": "エキスポ",
+        "word": "エキスポジション"
+    },
+    {
+        "abbreviation": "エクスプレッス",
+        "word": "エクスプレッス・トレーン"
+    },
+    {
+        "abbreviation": "エコ・ラン",
+        "word": "エコノミー・ラン"
+    },
+    {
+        "abbreviation": "エフェクト",
+        "word": "サウンド・エフェクト"
+    },
+    {
+        "abbreviation": "エレクトロン",
+        "word": "エレクトロン・メタル"
+    },
+    {
+        "abbreviation": "エン・スト",
+        "word": "エンジン・ストップ"
+    },
+    {
+        "abbreviation": "エンバイロンメント",
+        "word": "エンバイロンメント・アート"
+    },
+    {
+        "abbreviation": "エン・プラ",
+        "word": "エンジニアリング・プラスチック"
+    },
+    {
+        "abbreviation": "エン・プラ",
+        "word": "エンター・プライズ"
+    },
+    {
+        "abbreviation": "オートマティック",
+        "word": "オートマティック・レヴォルヴァー"
+    },
+    {
+        "abbreviation": "オートマチック",
+        "word": "オートマチック・ピストル"
+    },
+    {
+        "abbreviation": "オートメ",
+        "word": "オートメーション"
+    },
+    {
+        "abbreviation": "オケ",
+        "word": "オーケストラ"
+    },
+    {
+        "abbreviation": "オネ・ジョン",
+        "word": "オネスト・ジョン"
+    },
+    {
+        "abbreviation": "オプ・アート",
+        "word": "オプティカル・アート"
+    },
+    {
+        "abbreviation": "オフ・コン",
+        "word": "オフィス・コンピュータ"
+    },
+    {
+        "abbreviation": "オフ・リミ",
+        "word": "オフ・リミット"
+    },
+    {
+        "abbreviation": "オフ・レコ",
+        "word": "オフ・ザ・レコード"
+    },
+    {
+        "abbreviation": "オペ",
+        "word": "オペレーション"
+    },
+    {
+        "abbreviation": "オムニバス",
+        "word": "オムニバス・フィルム"
+    },
+    {
+        "abbreviation": "オルグ",
+        "word": "オルグ・ビューロー"
+    },
+    {
+        "abbreviation": "オン・パレ",
+        "word": "オン・パレード"
+    },
+    {
+        "abbreviation": "ガス・クロ",
+        "word": "ガス・クロマトグラフィ"
+    },
+    {
+        "abbreviation": "カセット",
+        "word": "カセット・テープ"
+    },
+    {
+        "abbreviation": "ガター",
+        "word": "ガター・ボール"
+    },
+    {
+        "abbreviation": "カット",
+        "word": "カット・プレー"
+    },
+    {
+        "abbreviation": "カブ",
+        "word": "カブ・スカウト"
+    },
+    {
+        "abbreviation": "カメ・リハ",
+        "word": "カメラ・リハーサル"
+    },
+    {
+        "abbreviation": "カルキ",
+        "word": "クロール・カルキ"
+    },
+    {
+        "abbreviation": "カレー",
+        "word": "カレー・ライス"
+    },
+    {
+        "abbreviation": "カンパ（カンパ、カンパ）",
+        "word": "カンパニア（カンパーニュ、カンパーニャ）"
+    },
+    {
+        "abbreviation": "カン・ペ",
+        "word": "カンニング・ペーパー"
+    },
+    {
+        "abbreviation": "キャスター",
+        "word": "ニュース・キャスター"
+    },
+    {
+        "abbreviation": "ギャバ",
+        "word": "ギャバジン"
+    },
+    {
+        "abbreviation": "キャピタル",
+        "word": "キャピタル・レター"
+    },
+    {
+        "abbreviation": "キャブ",
+        "word": "キャブレター"
+    },
+    {
+        "abbreviation": "キャフ",
+        "word": "キャフテリア"
+    },
+    {
+        "abbreviation": "ギャラ",
+        "word": "ギャランティ"
+    },
+    {
+        "abbreviation": "キャップ",
+        "word": "キャップテン"
+    },
+    {
+        "abbreviation": "キロ",
+        "word": "キロメートル"
+    },
+    {
+        "abbreviation": "キロ",
+        "word": "キロサイクル"
+    },
+    {
+        "abbreviation": "キロ",
+        "word": "キロワット"
+    },
+    {
+        "abbreviation": "キロ",
+        "word": "キロリットル"
+    },
+    {
+        "abbreviation": "クライミング",
+        "word": "ロック・クライミング"
+    },
+    {
+        "abbreviation": "クリーンアップ",
+        "word": "クリーンアップ・トリオ"
+    },
+    {
+        "abbreviation": "クリスタル",
+        "word": "クリスタル・ガラス"
+    },
+    {
+        "abbreviation": "クローク",
+        "word": "クローク・ルーム"
+    },
+    {
+        "abbreviation": "クロース",
+        "word": "テーブル・クロース"
+    },
+    {
+        "abbreviation": "クロール",
+        "word": "クロール・カルキ"
+    },
+    {
+        "abbreviation": "クロスカントリー",
+        "word": "クロスカントリー・レース"
+    },
+    {
+        "abbreviation": "ケアレス・ミス",
+        "word": "ケアレス・ミステーク"
+    },
+    {
+        "abbreviation": "ゲーブル",
+        "word": "サブマリン・ゲーブル"
+    },
+    {
+        "abbreviation": "ケーブル",
+        "word": "ケーブル・カー"
+    },
+    {
+        "abbreviation": "ゲバ",
+        "word": "ゲバルト"
+    },
+    {
+        "abbreviation": "ゴースト",
+        "word": "ゴースト・イメージ"
+    },
+    {
+        "abbreviation": "コースター",
+        "word": "ローラー・コースター"
+    },
+    {
+        "abbreviation": "コースター",
+        "word": "コースター・ブレーキ"
+    },
+    {
+        "abbreviation": "コーポ",
+        "word": "コーポラス"
+    },
+    {
+        "abbreviation": "ゴールド",
+        "word": "ゴールド・パーマ"
+    },
+    {
+        "abbreviation": "コーン",
+        "word": "アイスクリーム・コーン"
+    },
+    {
+        "abbreviation": "コジェネ",
+        "word": "コジェネレーション"
+    },
+    {
+        "abbreviation": "コネ",
+        "word": "コネクション"
+    },
+    {
+        "abbreviation": "コマーシャル",
+        "word": "コマーシャル・メッセージ"
+    },
+    {
+        "abbreviation": "コマ・ソン",
+        "word": "コマーシャル・ソング"
+    },
+    {
+        "abbreviation": "コミック",
+        "word": "コミック・オペラ"
+    },
+    {
+        "abbreviation": "コロニアル",
+        "word": "コロニアル・スタイル"
+    },
+    {
+        "abbreviation": "コンタクト",
+        "word": "コンタクト・レンズ"
+    },
+    {
+        "abbreviation": "コンテ",
+        "word": "コンティニュイティ"
+    },
+    {
+        "abbreviation": "コントロール",
+        "word": "バース・コントロール"
+    },
+    {
+        "abbreviation": "コンパート",
+        "word": "コンパートメント"
+    },
+    {
+        "abbreviation": "コンパチ",
+        "word": "コンパチブル"
+    },
+    {
+        "abbreviation": "コンファレンス",
+        "word": "シッピング・コンファレンス"
+    },
+    {
+        "abbreviation": "コンペ",
+        "word": "コンペティション"
+    },
+    {
+        "abbreviation": "コンポ",
+        "word": "コンポーネント・ステレオ"
+    },
+    {
+        "abbreviation": "コンポ",
+        "word": "コンポーネント"
+    },
+    {
+        "abbreviation": "コン・マン",
+        "word": "コンフィデンス・マン"
+    },
+    {
+        "abbreviation": "サーキット",
+        "word": "サーキット・ドライヴ"
+    },
+    {
+        "abbreviation": "サイケ",
+        "word": "サイケデリック"
+    },
+    {
+        "abbreviation": "サウ・トラ",
+        "word": "サウンド・トラック"
+    },
+    {
+        "abbreviation": "サス・プロ",
+        "word": "サステイニング・プログラム"
+    },
+    {
+        "abbreviation": "サドマゾ",
+        "word": "サドマゾヒズム"
+    },
+    {
+        "abbreviation": "サブ・コン",
+        "word": "サブ・コントラクター"
+    },
+    {
+        "abbreviation": "サボ",
+        "word": "サボタージュ"
+    },
+    {
+        "abbreviation": "サラ",
+        "word": "サラ・プレット"
+    },
+    {
+        "abbreviation": "サンタ",
+        "word": "サンタ・クロース"
+    },
+    {
+        "abbreviation": "ジー・パン",
+        "word": "ジーン・パンツ"
+    },
+    {
+        "abbreviation": "シームレス",
+        "word": "シームレス・ストッキング"
+    },
+    {
+        "abbreviation": "ジェット",
+        "word": "ジェット・エンジン"
+    },
+    {
+        "abbreviation": "ジェット",
+        "word": "ジェット・プレーン"
+    },
+    {
+        "abbreviation": "シネ・スコ",
+        "word": "シネマ・スコープ"
+    },
+    {
+        "abbreviation": "シャー・ペン",
+        "word": "シャープ・ペンシル"
+    },
+    {
+        "abbreviation": "シャープ",
+        "word": "シャープ・ペンシル"
+    },
+    {
+        "abbreviation": "ジャイロ",
+        "word": "ジャイロコンパス"
+    },
+    {
+        "abbreviation": "ジャイロ",
+        "word": "ジャイロスコープ"
+    },
+    {
+        "abbreviation": "ジャパ・リッシュ",
+        "word": "ジャパニーズ・イングリッシュ"
+    },
+    {
+        "abbreviation": "シュール",
+        "word": "シュールレアリスム"
+    },
+    {
+        "abbreviation": "シュラフ",
+        "word": "シュラフ・ザック"
+    },
+    {
+        "abbreviation": "ジュラ",
+        "word": "ジュラルミン"
+    },
+    {
+        "abbreviation": "ショルダー",
+        "word": "ショルダー・バッグ"
+    },
+    {
+        "abbreviation": "シル",
+        "word": "シルリング"
+    },
+    {
+        "abbreviation": "ジム",
+        "word": "ジムナジューム"
+    },
+    {
+        "abbreviation": "シンクロ",
+        "word": "シンクロナイズ"
+    },
+    {
+        "abbreviation": "シンポ",
+        "word": "シンポジウム"
+    },
+    {
+        "abbreviation": "スーパー",
+        "word": "スーパー・ヘテロダイン"
+    },
+    {
+        "abbreviation": "スーパー",
+        "word": "スーパー・インポーズ"
+    },
+    {
+        "abbreviation": "スーパー",
+        "word": "スーパー・マーケット"
+    },
+    {
+        "abbreviation": "ズーム",
+        "word": "ズーム・レンズ"
+    },
+    {
+        "abbreviation": "スウィッチ",
+        "word": "スウィッチ・バッティング"
+    },
+    {
+        "abbreviation": "スキゾ",
+        "word": "スキゾフレニア"
+    },
+    {
+        "abbreviation": "スクイズ",
+        "word": "スクイズ・プレー"
+    },
+    {
+        "abbreviation": "スクラッチ",
+        "word": "スクラッチ・ノイズ"
+    },
+    {
+        "abbreviation": "スクラッチ",
+        "word": "スクラッチ・レース"
+    },
+    {
+        "abbreviation": "スケ・ボー",
+        "word": "スケート・ボート"
+    },
+    {
+        "abbreviation": "スコッチ",
+        "word": "スコッチ・ウィスキー"
+    },
+    {
+        "abbreviation": "スコッチ",
+        "word": "スコッチ・ツイード"
+    },
+    {
+        "abbreviation": "スタ",
+        "word": "スタジオ"
+    },
+    {
+        "abbreviation": "スタ・ジャン",
+        "word": "スタジアム・ジャンパー"
+    },
+    {
+        "abbreviation": "スタ・メン",
+        "word": "スターティング・メンバー"
+    },
+    {
+        "abbreviation": "ステ・ブレ",
+        "word": "ステーション・ブレーク"
+    },
+    {
+        "abbreviation": "ステンレス",
+        "word": "ステンレス・ステール"
+    },
+    {
+        "abbreviation": "ステンシル",
+        "word": "ステンシル・ペーパー"
+    },
+    {
+        "abbreviation": "スト・マイ",
+        "word": "ストプト・マイシン"
+    },
+    {
+        "abbreviation": "ストリップ",
+        "word": "ストリップ・ショー"
+    },
+    {
+        "abbreviation": "スナック",
+        "word": "スナック・パー"
+    },
+    {
+        "abbreviation": "スパイク",
+        "word": "スパイク・シューズ"
+    },
+    {
+        "abbreviation": "スピ・グラ",
+        "word": "スピード・グラフィック"
+    },
+    {
+        "abbreviation": "ス・フ",
+        "word": "ステーブル・ファイバー"
+    },
+    {
+        "abbreviation": "スプリング",
+        "word": "スプリング・コート"
+    },
+    {
+        "abbreviation": "スペ",
+        "word": "スペシャル"
+    },
+    {
+        "abbreviation": "スポット",
+        "word": "スポット・アナウンスメント"
+    },
+    {
+        "abbreviation": "スポット",
+        "word": "スポット・コマーシャル"
+    },
+    {
+        "abbreviation": "スポット",
+        "word": "スポット・ライト"
+    },
+    {
+        "abbreviation": "スポンジ",
+        "word": "スポンジ・ボール"
+    },
+    {
+        "abbreviation": "スマック",
+        "word": "アイス・スマック"
+    },
+    {
+        "abbreviation": "スモーキング",
+        "word": "スモーキング・ジャケット"
+    },
+    {
+        "abbreviation": "スロー・モー",
+        "word": "スロー・モーション"
+    },
+    {
+        "abbreviation": "セコンダリー",
+        "word": "セコンダリー・グライダー"
+    },
+    {
+        "abbreviation": "ゼネ・コン",
+        "word": "ゼネラル・コントラクター"
+    },
+    {
+        "abbreviation": "ゼミ",
+        "word": "ゼミナール"
+    },
+    {
+        "abbreviation": "セミ・プロ",
+        "word": "セミ・プロフェッショナル"
+    },
+    {
+        "abbreviation": "セ・リーグ",
+        "word": "セントラル・リーグ"
+    },
+    {
+        "abbreviation": "ソフト",
+        "word": "ソフト・アイスクリーム"
+    },
+    {
+        "abbreviation": "ソフト",
+        "word": "ソフト・ウェア"
+    },
+    {
+        "abbreviation": "ターボ",
+        "word": "ターボ・チャージャー"
+    },
+    {
+        "abbreviation": "ダイニング",
+        "word": "ダイニング・ルーム"
+    },
+    {
+        "abbreviation": "タイプ",
+        "word": "タイプ・ライター"
+    },
+    {
+        "abbreviation": "タイムリー",
+        "word": "タイムリー・ヒット"
+    },
+    {
+        "abbreviation": "タグ",
+        "word": "タグ・ボート"
+    },
+    {
+        "abbreviation": "ダスター",
+        "word": "ダスター・コート"
+    },
+    {
+        "abbreviation": "ダダ",
+        "word": "ダダイズム"
+    },
+    {
+        "abbreviation": "ダッチ",
+        "word": "ダッチ・アカウント"
+    },
+    {
+        "abbreviation": "タップ",
+        "word": "タップ・ダンス"
+    },
+    {
+        "abbreviation": "ダブル",
+        "word": "ダブル・ブレスト"
+    },
+    {
+        "abbreviation": "ダンプ",
+        "word": "ダンプ・カー"
+    },
+    {
+        "abbreviation": "チーク",
+        "word": "チーク・ダンス"
+    },
+    {
+        "abbreviation": "チェーン",
+        "word": "チェーン・ストア"
+    },
+    {
+        "abbreviation": "チョコ",
+        "word": "チョコレート"
+    },
+    {
+        "abbreviation": "ツイン",
+        "word": "ツイン・ベッド"
+    },
+    {
+        "abbreviation": "ツイン",
+        "word": "ツイン・ルーム"
+    },
+    {
+        "abbreviation": "ツーリスト",
+        "word": "ツーリスト・ビューロー"
+    },
+    {
+        "abbreviation": "ディーゼル",
+        "word": "ディーゼル・エンジン"
+    },
+    {
+        "abbreviation": "ディス・インテリ",
+        "word": "ディス・インテリゲンチャ"
+    },
+    {
+        "abbreviation": "ディスコ",
+        "word": "ディスコテーク"
+    },
+    {
+        "abbreviation": "テール",
+        "word": "ストップ・テール・ライト"
+    },
+    {
+        "abbreviation": "ディフ・コン",
+        "word": "ディフェンス・コンディション"
+    },
+    {
+        "abbreviation": "テキスト",
+        "word": "テキスト・ブック"
+    },
+    {
+        "abbreviation": "デコルテ",
+        "word": "ロープ・デコルテ"
+    },
+    {
+        "abbreviation": "デシン",
+        "word": "クレープ・デシン"
+    },
+    {
+        "abbreviation": "テスター",
+        "word": "ラジオ・テスター"
+    },
+    {
+        "abbreviation": "デッキ",
+        "word": "テープ・デッキ"
+    },
+    {
+        "abbreviation": "デノミ",
+        "word": "デノミネーション"
+    },
+    {
+        "abbreviation": "デュープ",
+        "word": "デュープリケート"
+    },
+    {
+        "abbreviation": "デフレ",
+        "word": "デフレーション"
+    },
+    {
+        "abbreviation": "デモ・テープ",
+        "word": "デモンストレーション・テープ"
+    },
+    {
+        "abbreviation": "テレ・カ",
+        "word": "テレホン・カード"
+    },
+    {
+        "abbreviation": "テレ・キャスト",
+        "word": "テレビジョン・ブロードキャスト"
+    },
+    {
+        "abbreviation": "テレビ",
+        "word": "テレビジョン"
+    },
+    {
+        "abbreviation": "テレビ・コンテ",
+        "word": "テレビジョン・コンティニュイティ"
+    },
+    {
+        "abbreviation": "テレ・ラブ",
+        "word": "テレホン・ラブ"
+    },
+    {
+        "abbreviation": "テンパー",
+        "word": "ジステンパー"
+    },
+    {
+        "abbreviation": "トイ・ペー",
+        "word": "トイレット・ペーパー"
+    },
+    {
+        "abbreviation": "トイレ",
+        "word": "トイレット"
+    },
+    {
+        "abbreviation": "トイレット",
+        "word": "トイレット・ルーム"
+    },
+    {
+        "abbreviation": "トーキー",
+        "word": "トーキー・ピクチュア"
+    },
+    {
+        "abbreviation": "トニック",
+        "word": "ヘア・トニック"
+    },
+    {
+        "abbreviation": "ドライ",
+        "word": "ドライ・クリーニング"
+    },
+    {
+        "abbreviation": "ドライヤー",
+        "word": "ヘア・ドライヤー"
+    },
+    {
+        "abbreviation": "ドライヴ",
+        "word": "ドライヴ・ウェー"
+    },
+    {
+        "abbreviation": "ドラ・コン",
+        "word": "ドライビング・コンテスト"
+    },
+    {
+        "abbreviation": "トランク",
+        "word": "トランク・ルーム"
+    },
+    {
+        "abbreviation": "トランジスタ",
+        "word": "トランジスタ・ラジオ"
+    },
+    {
+        "abbreviation": "トランス",
+        "word": "トランスフオーマー"
+    },
+    {
+        "abbreviation": "トリップル",
+        "word": "トリップル・ヒット"
+    },
+    {
+        "abbreviation": "トレ・パン",
+        "word": "トレーニング・パンツ"
+    },
+    {
+        "abbreviation": "ドレ・メ",
+        "word": "ドレス・メーキング"
+    },
+    {
+        "abbreviation": "トロット",
+        "word": "フォックス・トロット"
+    },
+    {
+        "abbreviation": "ナイフ",
+        "word": "テーブル・ナイフ"
+    },
+    {
+        "abbreviation": "ナックル",
+        "word": "ナックル・ボール"
+    },
+    {
+        "abbreviation": "ナンバー",
+        "word": "ナンバー・プレート"
+    },
+    {
+        "abbreviation": "ナンバリング",
+        "word": "ナンバリング・マシン"
+    },
+    {
+        "abbreviation": "ニュー・トラ",
+        "word": "ニュー・トラディショナル"
+    },
+    {
+        "abbreviation": "ヌーボー",
+        "word": "アール・ヌーボー"
+    },
+    {
+        "abbreviation": "ネオン",
+        "word": "ネオン・サイン"
+    },
+    {
+        "abbreviation": "ネゴ",
+        "word": "ネゴシエーション"
+    },
+    {
+        "abbreviation": "ネック",
+        "word": "ネック・ライン"
+    },
+    {
+        "abbreviation": "ネック",
+        "word": "ボルト・ネック"
+    },
+    {
+        "abbreviation": "ネット",
+        "word": "ネット・ワーク"
+    },
+    {
+        "abbreviation": "ノー・クラ",
+        "word": "ノー・クラッチ"
+    },
+    {
+        "abbreviation": "ノー・タイ",
+        "word": "ノー・ネクタイ"
+    },
+    {
+        "abbreviation": "ノー・ブレ",
+        "word": "ノー・ブレックファースト"
+    },
+    {
+        "abbreviation": "ノー・ブラ",
+        "word": "ノー・ブラジャー"
+    },
+    {
+        "abbreviation": "ノン・プロ",
+        "word": "ノン・プロフェッショナル"
+    },
+    {
+        "abbreviation": "ノン・ポリ",
+        "word": "ノン・ポリティカル"
+    },
+    {
+        "abbreviation": "バーゲン",
+        "word": "バーゲン・セール"
+    },
+    {
+        "abbreviation": "パース",
+        "word": "パースペクチブ"
+    },
+    {
+        "abbreviation": "パース",
+        "word": "パースペクティブ・ドローイング"
+    },
+    {
+        "abbreviation": "バー・テン",
+        "word": "バー・テンダー"
+    },
+    {
+        "abbreviation": "ハード",
+        "word": "ハード・ウェア"
+    },
+    {
+        "abbreviation": "パート",
+        "word": "パート・タイム"
+    },
+    {
+        "abbreviation": "パーマ",
+        "word": "パーマネント・ウェーブ"
+    },
+    {
+        "abbreviation": "パーマネント",
+        "word": "パーマネント・ウェーブ"
+    },
+    {
+        "abbreviation": "ハイ・オク",
+        "word": "ハイ・オクタン"
+    },
+    {
+        "abbreviation": "ハイ・テク",
+        "word": "ハイ・テクノロジー"
+    },
+    {
+        "abbreviation": "バイト",
+        "word": "アルバイト"
+    },
+    {
+        "abbreviation": "ハイドロ",
+        "word": "ハイドロキノン"
+    },
+    {
+        "abbreviation": "ハイドロ",
+        "word": "ハイドロリック"
+    },
+    {
+        "abbreviation": "ハイヤー",
+        "word": "ハイヤー・カー"
+    },
+    {
+        "abbreviation": "パイル",
+        "word": "アトミック・パイル"
+    },
+    {
+        "abbreviation": "パウダー",
+        "word": "ベーキング・パウダー"
+    },
+    {
+        "abbreviation": "バスケット",
+        "word": "バスケット・ボール"
+    },
+    {
+        "abbreviation": "バスター",
+        "word": "バスター・バント"
+    },
+    {
+        "abbreviation": "パソ・コン",
+        "word": "パーソナル・コンピュータ"
+    },
+    {
+        "abbreviation": "バック",
+        "word": "バック・ストローク"
+    },
+    {
+        "abbreviation": "バック",
+        "word": "バック・ハンド"
+    },
+    {
+        "abbreviation": "パト・タイ",
+        "word": "パート・タイム"
+    },
+    {
+        "abbreviation": "パト・カー",
+        "word": "パートロール・カー"
+    },
+    {
+        "abbreviation": "パナマ",
+        "word": "パナマ・ハット"
+    },
+    {
+        "abbreviation": "パ・リーグ",
+        "word": "パシフィック・リーグ"
+    },
+    {
+        "abbreviation": "バリ・スト",
+        "word": "バリケード・ストライキ"
+    },
+    {
+        "abbreviation": "バレー",
+        "word": "バレー・ボール"
+    },
+    {
+        "abbreviation": "バン",
+        "word": "キャラバン"
+    },
+    {
+        "abbreviation": "パンク",
+        "word": "パンク・ロック"
+    },
+    {
+        "abbreviation": "パンクロ",
+        "word": "パンクロマチック・フィルム"
+    },
+    {
+        "abbreviation": "バンス",
+        "word": "アドバンス"
+    },
+    {
+        "abbreviation": "ハンデイ",
+        "word": "ハンデイキャップ"
+    },
+    {
+        "abbreviation": "パント",
+        "word": "パント・キック"
+    },
+    {
+        "abbreviation": "ハンド",
+        "word": "ハンド・プレス"
+    },
+    {
+        "abbreviation": "パン・スト",
+        "word": "パンティ・ストッキング"
+    },
+    {
+        "abbreviation": "パンパン",
+        "word": "パンパン・ガール"
+    },
+    {
+        "abbreviation": "ビキニ",
+        "word": "ビキニ・スタイル"
+    },
+    {
+        "abbreviation": "ピケ・ライン",
+        "word": "ピケット・ライン"
+    },
+    {
+        "abbreviation": "ヒス",
+        "word": "ヒステリー"
+    },
+    {
+        "abbreviation": "ヒス・ノイズ",
+        "word": "ヒステリー・ノイズ"
+    },
+    {
+        "abbreviation": "ビュー",
+        "word": "ビューティー"
+    },
+    {
+        "abbreviation": "ビューロー",
+        "word": "ツリースト・ビューロー"
+    },
+    {
+        "abbreviation": "ヒドラ",
+        "word": "ヒドラジッド"
+    },
+    {
+        "abbreviation": "ピン",
+        "word": "ピント"
+    },
+    {
+        "abbreviation": "ファウル",
+        "word": "ファウル・ボール"
+    },
+    {
+        "abbreviation": "ファミ・コン",
+        "word": "ファミリー・コンピューター"
+    },
+    {
+        "abbreviation": "ファンデーション",
+        "word": "ファンデーション・ガーメント"
+    },
+    {
+        "abbreviation": "フィギュア",
+        "word": "フィギュア・スケーティング"
+    },
+    {
+        "abbreviation": "フィギュア",
+        "word": "フィギュア・ダンス"
+    },
+    {
+        "abbreviation": "プール",
+        "word": "スウィミング・プール"
+    },
+    {
+        "abbreviation": "フェア",
+        "word": "フェア・ボール"
+    },
+    {
+        "abbreviation": "フォーク",
+        "word": "フォーク・ソング"
+    },
+    {
+        "abbreviation": "ブ・ライン",
+        "word": "ブルガーニン・ライン"
+    },
+    {
+        "abbreviation": "フラク",
+        "word": "フラクション"
+    },
+    {
+        "abbreviation": "フラッシュ",
+        "word": "フラッシュ・バック"
+    },
+    {
+        "abbreviation": "フラッシュ",
+        "word": "フラッシュ・バルブ"
+    },
+    {
+        "abbreviation": "フラッシュ",
+        "word": "フラッシュ・ライト"
+    },
+    {
+        "abbreviation": "フリー",
+        "word": "フリー・ランス"
+    },
+    {
+        "abbreviation": "プリマ",
+        "word": "プリマ・ドンナ"
+    },
+    {
+        "abbreviation": "プリマ",
+        "word": "プリマ・バレリーナ"
+    },
+    {
+        "abbreviation": "ブル",
+        "word": "ブルドーザー"
+    },
+    {
+        "abbreviation": "フルファッション",
+        "word": "フルファッション・ストキング"
+    },
+    {
+        "abbreviation": "ブレーカー",
+        "word": "サーキット・ブレーカー"
+    },
+    {
+        "abbreviation": "ブレーン",
+        "word": "ブレーン・トラスト"
+    },
+    {
+        "abbreviation": "プレ・コン",
+        "word": "プレス・コンフエレス"
+    },
+    {
+        "abbreviation": "プレスコ",
+        "word": "プレスコーディング"
+    },
+    {
+        "abbreviation": "プレハブ",
+        "word": "プレハブリケーテッド・ハウス"
+    },
+    {
+        "abbreviation": "プレヤー",
+        "word": "レコード・プレヤー"
+    },
+    {
+        "abbreviation": "ブロード",
+        "word": "ブロード・クロース"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロセント"
+    },
+    {
+        "abbreviation": "プロ",
+        "word": "プロフェッショナル"
+    },
+    {
+        "abbreviation": "プロ・レス",
+        "word": "プロフェッショナル・レスリング"
+    },
+    {
+        "abbreviation": "プログレ",
+        "word": "プログレッシプ・ロック"
+    },
+    {
+        "abbreviation": "フロント",
+        "word": "フロント・オフィス"
+    },
+    {
+        "abbreviation": "ベ・ア",
+        "word": "ベース・アップ"
+    },
+    {
+        "abbreviation": "ベアリング",
+        "word": "ボール・ベアリング"
+    },
+    {
+        "abbreviation": "ヘテロ",
+        "word": "ヘテロセクシュアル"
+    },
+    {
+        "abbreviation": "ベリ・カード",
+        "word": "ベリフィケーション・カード"
+    },
+    {
+        "abbreviation": "ヘリ・ポート",
+        "word": "ヘリコプター・ポート"
+    },
+    {
+        "abbreviation": "ヘル",
+        "word": "ヘルメット"
+    },
+    {
+        "abbreviation": "ボー",
+        "word": "ボー・タイ"
+    },
+    {
+        "abbreviation": "ホーム",
+        "word": "プラット・ホーム"
+    },
+    {
+        "abbreviation": "ホール",
+        "word": "ダンス・ホール"
+    },
+    {
+        "abbreviation": "ポケ・コン",
+        "word": "ポケッタブル・コンピューター"
+    },
+    {
+        "abbreviation": "ポケ・ベル",
+        "word": "ポケット・ベル"
+    },
+    {
+        "abbreviation": "ホステル",
+        "word": "ユース・ホステル"
+    },
+    {
+        "abbreviation": "ホッケー",
+        "word": "フィールド・ホッケー"
+    },
+    {
+        "abbreviation": "ボディ・コン",
+        "word": "ボディー・コンシャス"
+    },
+    {
+        "abbreviation": "ボディ・ビル",
+        "word": "ボディ・ビルディング"
+    },
+    {
+        "abbreviation": "ホモ",
+        "word": "ホモジナイズ"
+    },
+    {
+        "abbreviation": "ホモ",
+        "word": "ホモセクシュアル"
+    },
+    {
+        "abbreviation": "ポルカ",
+        "word": "ポルカ・ジャケット"
+    },
+    {
+        "abbreviation": "ボルト",
+        "word": "アンカー・ボルト"
+    },
+    {
+        "abbreviation": "ポルノ",
+        "word": "ポルノ・グラフィー"
+    },
+    {
+        "abbreviation": "ポン",
+        "word": "ヒロポン"
+    },
+    {
+        "abbreviation": "マーキュロ",
+        "word": "マーキュロクロム"
+    },
+    {
+        "abbreviation": "マイク・ロケ",
+        "word": "マイクロフォン・ロケーション"
+    },
+    {
+        "abbreviation": "マイ・コン",
+        "word": "マイクロ・コンピュータ"
+    },
+    {
+        "abbreviation": "マイト",
+        "word": "ダイナマイト"
+    },
+    {
+        "abbreviation": "マイシン",
+        "word": "ストレプト・マイシン"
+    },
+    {
+        "abbreviation": "マイト・ガイ",
+        "word": "ダイナマイト・ガイ"
+    },
+    {
+        "abbreviation": "マイム",
+        "word": "パントマイム"
+    },
+    {
+        "abbreviation": "マクロ",
+        "word": "マクロスコピック"
+    },
+    {
+        "abbreviation": "マザ・コン",
+        "word": "マザー・コンプレックス"
+    },
+    {
+        "abbreviation": "マジック",
+        "word": "マジック・インキ"
+    },
+    {
+        "abbreviation": "マス・コミ",
+        "word": "マス・コミュニケーション"
+    },
+    {
+        "abbreviation": "マス・コン",
+        "word": "マス・コンサンピション"
+    },
+    {
+        "abbreviation": "マス・プロ",
+        "word": "マス・プロダクション"
+    },
+    {
+        "abbreviation": "マゾ",
+        "word": "マゾヒスト"
+    },
+    {
+        "abbreviation": "マテ・ハン",
+        "word": "マテリアル・ハンドリング"
+    },
+    {
+        "abbreviation": "マニフェスト",
+        "word": "コンミュニスト・マニフェスト"
+    },
+    {
+        "abbreviation": "マネー・ビル",
+        "word": "マネー・ビルディング"
+    },
+    {
+        "abbreviation": "マネキン",
+        "word": "マネキン・ガール"
+    },
+    {
+        "abbreviation": "マネ・スタ",
+        "word": "マネージメント・スタッフ"
+    },
+    {
+        "abbreviation": "マ・ボ",
+        "word": "マルクス・ボーイ"
+    },
+    {
+        "abbreviation": "マル・エン",
+        "word": "マルクス・エンゲルス"
+    },
+    {
+        "abbreviation": "マルチ",
+        "word": "マルチ・フィラメント"
+    },
+    {
+        "abbreviation": "マル・チョイ",
+        "word": "マルティプル・チョイス"
+    },
+    {
+        "abbreviation": "マンサード",
+        "word": "マンサード・ルーフ"
+    },
+    {
+        "abbreviation": "マンネリ",
+        "word": "マンネリズム"
+    },
+    {
+        "abbreviation": "ミクロ",
+        "word": "ミクロスコピック"
+    },
+    {
+        "abbreviation": "ミスプリ",
+        "word": "ミスプリント"
+    },
+    {
+        "abbreviation": "ミディ・コミ",
+        "word": "ミディ・コミュニケーション"
+    },
+    {
+        "abbreviation": "ミニ・コミ",
+        "word": "ミニ・コミュニケーション"
+    },
+    {
+        "abbreviation": "ミニ",
+        "word": "ミニ・テープ・レコーダー"
+    },
+    {
+        "abbreviation": "ミニ",
+        "word": "ミニ・スカート"
+    },
+    {
+        "abbreviation": "ミュージカル",
+        "word": "ミュージカル・コメディ"
+    },
+    {
+        "abbreviation": "ミリ",
+        "word": "ミリバール"
+    },
+    {
+        "abbreviation": "ミリ",
+        "word": "ミリグラム"
+    },
+    {
+        "abbreviation": "ミリ",
+        "word": "ミリアンペア"
+    },
+    {
+        "abbreviation": "ミリング",
+        "word": "ミリング・マシン"
+    },
+    {
+        "abbreviation": "ムン・テラ",
+        "word": "ムント・テラピー"
+    },
+    {
+        "abbreviation": "メード",
+        "word": "ハウス・メード"
+    },
+    {
+        "abbreviation": "メガ",
+        "word": "メガサイクル"
+    },
+    {
+        "abbreviation": "メ・ドラ",
+        "word": "メス・ドライバー"
+    },
+    {
+        "abbreviation": "メット",
+        "word": "ヘルメット"
+    },
+    {
+        "abbreviation": "メチル",
+        "word": "メチル・アルコール"
+    },
+    {
+        "abbreviation": "メドレー",
+        "word": "メドレー・リレー"
+    },
+    {
+        "abbreviation": "メドレー",
+        "word": "メドレー・レース"
+    },
+    {
+        "abbreviation": "メロ",
+        "word": "メロディ"
+    },
+    {
+        "abbreviation": "モ・マ",
+        "word": "モダン・マダム"
+    },
+    {
+        "abbreviation": "モーニング",
+        "word": "モーニング・サービス"
+    },
+    {
+        "abbreviation": "モデル",
+        "word": "ファッション・モデル"
+    },
+    {
+        "abbreviation": "モノ",
+        "word": "モノラル・レコード"
+    },
+    {
+        "abbreviation": "モノクロ",
+        "word": "モノクローム"
+    },
+    {
+        "abbreviation": "モノラル",
+        "word": "モノラル・レコード"
+    },
+    {
+        "abbreviation": "モルタル",
+        "word": "セメント・モルタル"
+    },
+    {
+        "abbreviation": "モンキー",
+        "word": "モンキー・レンチ"
+    },
+    {
+        "abbreviation": "ヤッケ",
+        "word": "ウィンド・ヤッケ"
+    },
+    {
+        "abbreviation": "ユーティリティー",
+        "word": "ユーティリティー・ルーム"
+    },
+    {
+        "abbreviation": "ヨー・チン",
+        "word": "ヨード・チンキ"
+    },
+    {
+        "abbreviation": "ヨード",
+        "word": "ヨード・チンキ"
+    },
+    {
+        "abbreviation": "ライカ",
+        "word": "ライカ・カメラ"
+    },
+    {
+        "abbreviation": "ラグラン",
+        "word": "ラグラン・スリープ"
+    },
+    {
+        "abbreviation": "ラジオ",
+        "word": "ラジオ・テレグラフ"
+    },
+    {
+        "abbreviation": "ラジオ",
+        "word": "ラジオ・テレフォン"
+    },
+    {
+        "abbreviation": "ラジオ",
+        "word": "ラジオ・ブロードキャスチング"
+    },
+    {
+        "abbreviation": "ラジ・カセ",
+        "word": "ラジオ・カセット"
+    },
+    {
+        "abbreviation": "ラジ・コン",
+        "word": "ラジオ・コントロール"
+    },
+    {
+        "abbreviation": "ラッシュ",
+        "word": "ラッシュ・アワー"
+    },
+    {
+        "abbreviation": "ラッシュ",
+        "word": "ラッシュ・プリント"
+    },
+    {
+        "abbreviation": "ラップ",
+        "word": "ラップ・コート"
+    },
+    {
+        "abbreviation": "ラップ",
+        "word": "ラップ・タイム"
+    },
+    {
+        "abbreviation": "ラフ",
+        "word": "ラフ・スケッチ"
+    },
+    {
+        "abbreviation": "ラボ",
+        "word": "ラボラトリー"
+    },
+    {
+        "abbreviation": "ラボ",
+        "word": "ランゲージ・ラボラトリー"
+    },
+    {
+        "abbreviation": "ランニング",
+        "word": "ランニング・シャツ"
+    },
+    {
+        "abbreviation": "リーゼント",
+        "word": "リーゼント・スタイル"
+    },
+    {
+        "abbreviation": "リスケ",
+        "word": "リスケジューリング"
+    },
+    {
+        "abbreviation": "リハビリ",
+        "word": "リハビリテーション"
+    },
+    {
+        "abbreviation": "リビング",
+        "word": "リビング・ルーム"
+    },
+    {
+        "abbreviation": "リフレ",
+        "word": "リフレーション"
+    },
+    {
+        "abbreviation": "リモ・コン",
+        "word": "リモート・コントロール"
+    },
+    {
+        "abbreviation": "リユック",
+        "word": "リユック・サック"
+    },
+    {
+        "abbreviation": "リリーフ",
+        "word": "リリーフ・ピッチャー"
+    },
+    {
+        "abbreviation": "リンクス",
+        "word": "ゴルフ・リンクス"
+    },
+    {
+        "abbreviation": "ルポ",
+        "word": "ルポルタージュ"
+    },
+    {
+        "abbreviation": "レギュラー",
+        "word": "レギュラー・メンバー"
+    },
+    {
+        "abbreviation": "レク・モニ",
+        "word": "レクリエーション・モニター"
+    },
+    {
+        "abbreviation": "レザー",
+        "word": "レザー・クロス"
+    },
+    {
+        "abbreviation": "レジ",
+        "word": "レジスター"
+    },
+    {
+        "abbreviation": "レズ",
+        "word": "レズビアン"
+    },
+    {
+        "abbreviation": "レディ・コン",
+        "word": "レディーミックス・コンクリート"
+    },
+    {
+        "abbreviation": "レフ",
+        "word": "レフレックス"
+    },
+    {
+        "abbreviation": "レフ",
+        "word": "レフレックス・カメラ"
+    },
+    {
+        "abbreviation": "ロー",
+        "word": "ロー・ギア"
+    },
+    {
+        "abbreviation": "ロック",
+        "word": "ロック・ミュージック"
+    },
+    {
+        "abbreviation": "ロック",
+        "word": "オン・ザ・ロック"
+    },
+    {
+        "abbreviation": "ロリ・コン",
+        "word": "ロリータ・コンプレックス"
+    },
+    {
+        "abbreviation": "ワー・プロ",
+        "word": "ワード・プロセッサー"
+    },
+    {
+        "abbreviation": "ワイヤ",
+        "word": "ワイヤ・ロープ"
+    },
+    {
+        "abbreviation": "ワゴン",
+        "word": "ステーション・ワゴン"
+    },
+    {
+        "abbreviation": "ワン・ゲル",
+        "word": "ワンダー・フォーゲル"
+    },
+    {
+        "abbreviation": "アイ・コラ",
+        "word": "アイドル・コラージュ"
+    },
+    {
+        "abbreviation": "アイ・パー",
+        "word": "アイロン・パーマ"
+    },
+    {
+        "abbreviation": "アウター",
+        "word": "アウター・ウェア"
+    },
+    {
+        "abbreviation": "アウトレット",
+        "word": "アウトレット・ストア"
+    },
+    {
+        "abbreviation": "アカ・ハラ",
+        "word": "アカデミック・ハラスメント"
+    },
+    {
+        "abbreviation": "アクセル",
+        "word": "アクセル・パウルゼン・ジャンプ"
+    },
+    {
+        "abbreviation": "アグニ",
+        "word": "アグニ・ミサイル"
+    },
+    {
+        "abbreviation": "アグリー",
+        "word": "アグリーメント"
+    },
+    {
+        "abbreviation": "アゲンスト",
+        "word": "アゲンスト・ウインド"
+    },
+    {
+        "abbreviation": "アコ・ギ",
+        "word": "アコースティック・ギター"
+    },
+    {
+        "abbreviation": "アソシエート",
+        "word": "アソシエート・メンバー"
+    },
+    {
+        "abbreviation": "アチーブ",
+        "word": "アチーブメント"
+    },
+    {
+        "abbreviation": "アップ",
+        "word": "クランク・アップ"
+    },
+    {
+        "abbreviation": "アップ",
+        "word": "アングロ・アップ"
+    },
+    {
+        "abbreviation": "アッパー",
+        "word": "アッパー・カット"
+    },
+    {
+        "abbreviation": "アップライト",
+        "word": "アップライト・ピアノ"
+    },
+    {
+        "abbreviation": "アップル",
+        "word": "アップル・コンピュータ"
+    },
+    {
+        "abbreviation": "アナカン",
+        "word": "アナカンパニード・バゲージ"
+    },
+    {
+        "abbreviation": "アナ・ドル",
+        "word": "アナウンサー・アイドル"
+    },
+    {
+        "abbreviation": "アナリスト",
+        "word": "システム・アナリスト"
+    },
+    {
+        "abbreviation": "アニ・ソン",
+        "word": "アニメ・ソング"
+    },
+    {
+        "abbreviation": "アプリケーション",
+        "word": "アプリケーション・ソフト"
+    },
+    {
+        "abbreviation": "アプローチ",
+        "word": "アプローチ・ショット"
+    },
+    {
+        "abbreviation": "アベレージ",
+        "word": "バッティング・アベレージ"
+    },
+    {
+        "abbreviation": "アポ",
+        "word": "アポストロフィー"
+    },
+    {
+        "abbreviation": "アポイント",
+        "word": "アポイントメント"
+    },
+    {
+        "abbreviation": "アメリカン",
+        "word": "アメリカン・コーヒー"
+    },
+    {
+        "abbreviation": "アメ・カジ",
+        "word": "アメリカン・カジュアル"
+    },
+    {
+        "abbreviation": "アメ・コミ",
+        "word": "アメリカン・コミックス"
+    },
+    {
+        "abbreviation": "アメ・ショ",
+        "word": "アメリカン・ショートヘア"
+    },
+    {
+        "abbreviation": "アメ・ショー",
+        "word": "アメリカン・ショートヘア"
+    },
+    {
+        "abbreviation": "アメ・トラ",
+        "word": "アメリカン・トラディショナル"
+    },
+    {
+        "abbreviation": "アラ・サー",
+        "word": "アラウンド・サーティー"
+    },
+    {
+        "abbreviation": "アラ・フォー",
+        "word": "アラウンド・フォーティー"
+    },
+    {
+        "abbreviation": "アリアン",
+        "word": "アリアン・ロケット"
+    },
+    {
+        "abbreviation": "アル・ハラ",
+        "word": "アルコール・ハラスメント"
+    },
+    {
+        "abbreviation": "アルマーニ",
+        "word": "ジョルジオ・アルマーニ"
+    },
+    {
+        "abbreviation": "アンカー",
+        "word": "アンカー・マン"
+    },
+    {
+        "abbreviation": "アンダーカバー",
+        "word": "アンダーカバー・エージェント"
+    },
+    {
+        "abbreviation": "イタ・カジ",
+        "word": "イタリアン・カジュアル"
+    },
+    {
+        "abbreviation": "イメ・クラ",
+        "word": "イメージ・クラブ"
+    },
+    {
+        "abbreviation": "イメ・トレ",
+        "word": "イメージ・トレーニング"
+    },
+    {
+        "abbreviation": "インショップ",
+        "word": "ショップ・インショップ"
+    },
+    {
+        "abbreviation": "インスト",
+        "word": "インストルメンタル"
+    },
+    {
+        "abbreviation": "インディー",
+        "word": "インディーズ"
+    },
+    {
+        "abbreviation": "インナー",
+        "word": "インナー・ウェア"
+    },
+    {
+        "abbreviation": "インフォーマル",
+        "word": "インフォーマル・ドレス"
+    },
+    {
+        "abbreviation": "イン・プレ",
+        "word": "インドア・プレーグラウンド"
+    },
+    {
+        "abbreviation": "インフラ",
+        "word": "インフラストラクチャー"
+    },
+    {
+        "abbreviation": "インプリ",
+        "word": "インプリメント"
+    },
+    {
+        "abbreviation": "インプリ",
+        "word": "インプリメンテーション"
+    },
+    {
+        "abbreviation": "ウエーブ",
+        "word": "ウエーブ・ヘア"
+    },
+    {
+        "abbreviation": "ヴェルサーチ",
+        "word": "ジャンニ・ヴェルサーチ"
+    },
+    {
+        "abbreviation": "エア",
+        "word": "エアリアル"
+    },
+    {
+        "abbreviation": "エアロビ",
+        "word": "エアロビクス"
+    },
+    {
+        "abbreviation": "エイ・ハラ",
+        "word": "エイジング・ハラスメント"
+    },
+    {
+        "abbreviation": "エキジビジョン",
+        "word": "エキジビジョン・ゲーム"
+    },
+    {
+        "abbreviation": "エクステ",
+        "word": "エクステンション"
+    },
+    {
+        "abbreviation": "エコ",
+        "word": "エコロジー"
+    },
+    {
+        "abbreviation": "エゴ",
+        "word": "エゴイズム"
+    },
+    {
+        "abbreviation": "エコー",
+        "word": "エコー・バック"
+    },
+    {
+        "abbreviation": "エゴ・サ",
+        "word": "エゴ・サーチ"
+    },
+    {
+        "abbreviation": "エステ",
+        "word": "エステティック"
+    },
+    {
+        "abbreviation": "エステティック",
+        "word": "エステティック・サロン"
+    },
+    {
+        "abbreviation": "エスノ",
+        "word": "エスノ・ポップ"
+    },
+    {
+        "abbreviation": "エプロン",
+        "word": "エプロン・ステージ"
+    },
+    {
+        "abbreviation": "エミュ",
+        "word": "エミュレーター"
+    },
+    {
+        "abbreviation": "エレ・アコ",
+        "word": "エレクトリック・アコースティックギター"
+    },
+    {
+        "abbreviation": "エレキ",
+        "word": "エレキ・ギター"
+    },
+    {
+        "abbreviation": "エレベ",
+        "word": "エレベーター"
+    },
+    {
+        "abbreviation": "エンスー",
+        "word": "エンスージアスト"
+    },
+    {
+        "abbreviation": "オートマチック",
+        "word": "オートマチック・トランスミッション"
+    },
+    {
+        "abbreviation": "オートロック",
+        "word": "オートロック・システム"
+    },
+    {
+        "abbreviation": "オーバー",
+        "word": "オーバー・パー"
+    },
+    {
+        "abbreviation": "オール",
+        "word": "オール・ナイト"
+    },
+    {
+        "abbreviation": "オフ",
+        "word": "オフ・セット"
+    },
+    {
+        "abbreviation": "オフ",
+        "word": "シーズン・オフ"
+    },
+    {
+        "abbreviation": "オフ・ゲー",
+        "word": "オフライン・ゲーム"
+    },
+    {
+        "abbreviation": "オフ・タートル",
+        "word": "オフ・タートルネック"
+    },
+    {
+        "abbreviation": "オフ・ミ",
+        "word": "オフライン・ミーティング"
+    },
+    {
+        "abbreviation": "オポジション",
+        "word": "オポジション・パーティー"
+    },
+    {
+        "abbreviation": "オリ・キャラ",
+        "word": "オリジナル・キャラクター"
+    },
+    {
+        "abbreviation": "オン・レコ",
+        "word": "オン・ザ・レコード"
+    },
+    {
+        "abbreviation": "カーゴ",
+        "word": "カーゴ・シップ"
+    },
+    {
+        "abbreviation": "カーゴ",
+        "word": "カーゴ・プレーン"
+    },
+    {
+        "abbreviation": "ガード",
+        "word": "ガード・レール"
+    },
+    {
+        "abbreviation": "カード",
+        "word": "キャッシュ・カード"
+    },
+    {
+        "abbreviation": "カード",
+        "word": "クレジット・カード"
+    },
+    {
+        "abbreviation": "カー・ナビ",
+        "word": "カー・ナビゲーション"
+    },
+    {
+        "abbreviation": "ガイド",
+        "word": "バス・ガイド"
+    },
+    {
+        "abbreviation": "カウンター",
+        "word": "カウンター・アタック"
+    },
+    {
+        "abbreviation": "カジュ・ロリ",
+        "word": "カジュアル・ロリータ"
+    },
+    {
+        "abbreviation": "カッパ",
+        "word": "カッパ・ロケット"
+    },
+    {
+        "abbreviation": "カナディアン",
+        "word": "カナディアン・カヌー"
+    },
+    {
+        "abbreviation": "カバー",
+        "word": "カバーリング"
+    },
+    {
+        "abbreviation": "カバー",
+        "word": "カバー・バージョン"
+    },
+    {
+        "abbreviation": "カポ",
+        "word": "カポタスト"
+    },
+    {
+        "abbreviation": "ガム・シロ",
+        "word": "ガム・シロップ"
+    },
+    {
+        "abbreviation": "カメ・アシ",
+        "word": "カメラ・アシスタント"
+    },
+    {
+        "abbreviation": "カラー",
+        "word": "カラー・テレビ"
+    },
+    {
+        "abbreviation": "カラー",
+        "word": "カラー・フィルム"
+    },
+    {
+        "abbreviation": "カラ・コン",
+        "word": "カラー・コンタクトレンズ"
+    },
+    {
+        "abbreviation": "ガラ・スマ",
+        "word": "ガラパゴス・スマートフォン"
+    },
+    {
+        "abbreviation": "ガリ・バタ",
+        "word": "ガーリック・バター"
+    },
+    {
+        "abbreviation": "キャバ",
+        "word": "キャバシティー"
+    },
+    {
+        "abbreviation": "キャミ・ワンピ",
+        "word": "キャミソール・ワンピース"
+    },
+    {
+        "abbreviation": "キャラ",
+        "word": "キャラクター"
+    },
+    {
+        "abbreviation": "キャラ・ゲー",
+        "word": "キャラクター・ゲーム"
+    },
+    {
+        "abbreviation": "キャラ・ソン",
+        "word": "キャラクター・ソング"
+    },
+    {
+        "abbreviation": "キャラバン",
+        "word": "キャラバン・シューズ"
+    },
+    {
+        "abbreviation": "キャリ・セン",
+        "word": "キャリア・センター"
+    },
+    {
+        "abbreviation": "ギャルゲー",
+        "word": "ギャル・ゲーム"
+    },
+    {
+        "abbreviation": "キャン・ギャル",
+        "word": "キャンペーン・ギャル"
+    },
+    {
+        "abbreviation": "クーリエ",
+        "word": "クーリエ・サービス"
+    },
+    {
+        "abbreviation": "クール",
+        "word": "クール・ジャズ"
+    },
+    {
+        "abbreviation": "クライミング",
+        "word": "アイス・クライミング"
+    },
+    {
+        "abbreviation": "グラウンド",
+        "word": "グラウンド・コンピューティング"
+    },
+    {
+        "abbreviation": "クラウト",
+        "word": "クラウト・サービス"
+    },
+    {
+        "abbreviation": "クラシック",
+        "word": "クラシック・レース"
+    },
+    {
+        "abbreviation": "クラブ",
+        "word": "クラブ・バケット"
+    },
+    {
+        "abbreviation": "クリア",
+        "word": "クリアランス"
+    },
+    {
+        "abbreviation": "グリー",
+        "word": "グリー・クラブ"
+    },
+    {
+        "abbreviation": "クリーナー",
+        "word": "エア・クリーナー"
+    },
+    {
+        "abbreviation": "クリオ",
+        "word": "クリオ・プレシピテート"
+    },
+    {
+        "abbreviation": "クロス",
+        "word": "クロス・ボール"
+    },
+    {
+        "abbreviation": "クロスカントリー",
+        "word": "クロスカントリー・スキー"
+    },
+    {
+        "abbreviation": "グラ・イコ",
+        "word": "グラフィック・イコライザー"
+    },
+    {
+        "abbreviation": "グラ・ボ",
+        "word": "グラフィック・ボード"
+    },
+    {
+        "abbreviation": "グラ・チャン",
+        "word": "グランド・チャンピオン"
+    },
+    {
+        "abbreviation": "グラ・ドル",
+        "word": "グラビア・アイドル"
+    },
+    {
+        "abbreviation": "グル・チャ",
+        "word": "グループ・チャット"
+    },
+    {
+        "abbreviation": "クレ・カ",
+        "word": "クレジット・カード"
+    },
+    {
+        "abbreviation": "グロ・スマ",
+        "word": "グローバル・スマートフォン"
+    },
+    {
+        "abbreviation": "クンニ",
+        "word": "クンニリングス"
+    },
+    {
+        "abbreviation": "ゲー・セン",
+        "word": "ゲーム・センター"
+    },
+    {
+        "abbreviation": "ゲー・フラ",
+        "word": "ゲート・フラッグ"
+    },
+    {
+        "abbreviation": "ゴータビリティー",
+        "word": "スケープ・ゴータビリティー"
+    },
+    {
+        "abbreviation": "コーデ",
+        "word": "コーディネート"
+    },
+    {
+        "abbreviation": "コール",
+        "word": "コール・オプション"
+    },
+    {
+        "abbreviation": "ゴスペル",
+        "word": "ゴスペル・ソング"
+    },
+    {
+        "abbreviation": "コス・パ",
+        "word": "コスト・パフォーマンス"
+    },
+    {
+        "abbreviation": "コス・プレ",
+        "word": "コスチューム・プレイ"
+    },
+    {
+        "abbreviation": "コピー・ペ",
+        "word": "コピー・アンド・ペースト"
+    },
+    {
+        "abbreviation": "コミ・カレ",
+        "word": "コミュニティ・カレッジ"
+    },
+    {
+        "abbreviation": "コミ・ケ",
+        "word": "コミック・マーケット"
+    },
+    {
+        "abbreviation": "コラボ",
+        "word": "コラボレーション"
+    },
+    {
+        "abbreviation": "コラボ",
+        "word": "コラボレート"
+    },
+    {
+        "abbreviation": "コロン",
+        "word": "オーデ・コロン"
+    },
+    {
+        "abbreviation": "コンサバ",
+        "word": "コンサバティブ"
+    },
+    {
+        "abbreviation": "コンサル",
+        "word": "コンサルティング"
+    },
+    {
+        "abbreviation": "コンサル",
+        "word": "コンサルタント"
+    },
+    {
+        "abbreviation": "コンサル",
+        "word": "コンサルテーション"
+    },
+    {
+        "abbreviation": "コンダクター",
+        "word": "ツアー・コンダクター"
+    },
+    {
+        "abbreviation": "コンド",
+        "word": "コンドミニアム"
+    },
+    {
+        "abbreviation": "コンパチ",
+        "word": "コンパチビリティー"
+    },
+    {
+        "abbreviation": "コンピ",
+        "word": "コンピレーション"
+    },
+    {
+        "abbreviation": "コンビニ",
+        "word": "コンビニエンス・ストア"
+    },
+    {
+        "abbreviation": "コンプ",
+        "word": "コンプリート"
+    },
+    {
+        "abbreviation": "コンプリ",
+        "word": "コンプリート"
+    },
+    {
+        "abbreviation": "コン・マス",
+        "word": "コンサート・マスター"
+    },
+    {
+        "abbreviation": "コン・ミス",
+        "word": "コンサート・ミストレス"
+    },
+    {
+        "abbreviation": "サス",
+        "word": "サスペンション"
+    },
+    {
+        "abbreviation": "サブ",
+        "word": "サブオーディネート"
+    },
+    {
+        "abbreviation": "サブアカ",
+        "word": "サブアカウント"
+    },
+    {
+        "abbreviation": "サブカル",
+        "word": "サブカルチャー"
+    },
+    {
+        "abbreviation": "サブノート",
+        "word": "サブノート・パソコン"
+    },
+    {
+        "abbreviation": "サプリ",
+        "word": "サプリメント"
+    },
+    {
+        "abbreviation": "サラウンド",
+        "word": "サラウンド・システム"
+    },
+    {
+        "abbreviation": "サルコー",
+        "word": "サルコー・ジャンプ"
+    },
+    {
+        "abbreviation": "サン・オイル",
+        "word": "サンタン・オイル"
+    },
+    {
+        "abbreviation": "サン・ドラ",
+        "word": "サンデー・ドライバー"
+    },
+    {
+        "abbreviation": "ジー・ジャン",
+        "word": "ジーンズ・ジャンパー"
+    },
+    {
+        "abbreviation": "シス・アド",
+        "word": "システム・アドミニストレーター"
+    },
+    {
+        "abbreviation": "シス・オペ",
+        "word": "システム・オペレーター"
+    },
+    {
+        "abbreviation": "シス・コン",
+        "word": "シスター・コンプレックス"
+    },
+    {
+        "abbreviation": "シス・コン",
+        "word": "システム・コンポーネント"
+    },
+    {
+        "abbreviation": "シネ・コン",
+        "word": "シネマ・コンプレックス"
+    },
+    {
+        "abbreviation": "シフト",
+        "word": "シフト・キー"
+    },
+    {
+        "abbreviation": "ジャーマン",
+        "word": "ジャーマン・スープレックス・ホールド"
+    },
+    {
+        "abbreviation": "シャドー",
+        "word": "アイ・シャドー"
+    },
+    {
+        "abbreviation": "シャトル",
+        "word": "シャトル・コック"
+    },
+    {
+        "abbreviation": "シャトル",
+        "word": "スペース・シャトル"
+    },
+    {
+        "abbreviation": "ジャパ・メタ",
+        "word": "ジャパニーズ・メタル"
+    },
+    {
+        "abbreviation": "ジャンパー",
+        "word": "ジャンパー・スカート"
+    },
+    {
+        "abbreviation": "ジョイント",
+        "word": "ジョイント・コンサート"
+    },
+    {
+        "abbreviation": "ショート",
+        "word": "ショート・サーキット"
+    },
+    {
+        "abbreviation": "ショー・パン",
+        "word": "ショート・パンツ"
+    },
+    {
+        "abbreviation": "ジョッキー",
+        "word": "ディスク・ジョッキー"
+    },
+    {
+        "abbreviation": "シングル",
+        "word": "シングルス"
+    },
+    {
+        "abbreviation": "シングル",
+        "word": "シングル・プレーヤー"
+    },
+    {
+        "abbreviation": "シングル",
+        "word": "シングル・ベッド"
+    },
+    {
+        "abbreviation": "シンクロ",
+        "word": "シンクロナイズド・スイミング"
+    },
+    {
+        "abbreviation": "シンセ",
+        "word": "シンセサイザー"
+    },
+    {
+        "abbreviation": "シンチ・カメラ",
+        "word": "シンチレーション・カメラ"
+    },
+    {
+        "abbreviation": "スイート",
+        "word": "スイート・ルーム"
+    },
+    {
+        "abbreviation": "スーパー",
+        "word": "スーパー・ストア"
+    },
+    {
+        "abbreviation": "スウィフト",
+        "word": "スウィフト・ボール"
+    },
+    {
+        "abbreviation": "スウェー",
+        "word": "スウェー・バック"
+    },
+    {
+        "abbreviation": "スウェット",
+        "word": "スウェット・シャツ"
+    },
+    {
+        "abbreviation": "スカトロ",
+        "word": "スカトロジー"
+    },
+    {
+        "abbreviation": "スク・ショ",
+        "word": "スクリーン・ショット"
+    },
+    {
+        "abbreviation": "スク・バ",
+        "word": "スクール・バック"
+    },
+    {
+        "abbreviation": "スクランブル",
+        "word": "スクランブル・エッグ"
+    },
+    {
+        "abbreviation": "スケルトン",
+        "word": "スケルトン・ブラシ"
+    },
+    {
+        "abbreviation": "スタ・メン",
+        "word": "スターティング・メンバー"
+    },
+    {
+        "abbreviation": "ステージ・マネ",
+        "word": "ステージ・マネジャー"
+    },
+    {
+        "abbreviation": "スタ・バ",
+        "word": "スター・バックスコーヒー"
+    },
+    {
+        "abbreviation": "スタンダート",
+        "word": "スタンダート・ナンバー"
+    },
+    {
+        "abbreviation": "スタンター",
+        "word": "グロー・スタンター"
+    },
+    {
+        "abbreviation": "スタント",
+        "word": "スタント・マン"
+    },
+    {
+        "abbreviation": "ステア",
+        "word": "ステアリング"
+    },
+    {
+        "abbreviation": "ステアリング",
+        "word": "ステアリング・ホイール"
+    },
+    {
+        "abbreviation": "ステ・マ",
+        "word": "ステルス・マーケティング"
+    },
+    {
+        "abbreviation": "スト・パー",
+        "word": "ストレート・パーマ"
+    },
+    {
+        "abbreviation": "ストリップ",
+        "word": "コミックス・ストリップ"
+    },
+    {
+        "abbreviation": "ストパー",
+        "word": "ストレート・パーマ"
+    },
+    {
+        "abbreviation": "スノボー",
+        "word": "スノー・ボード"
+    },
+    {
+        "abbreviation": "スノ・ボ",
+        "word": "スノー・ボード"
+    },
+    {
+        "abbreviation": "スパ・コン",
+        "word": "スーパー・コンピューター"
+    },
+    {
+        "abbreviation": "スパ・モ",
+        "word": "スーパー・モデル"
+    },
+    {
+        "abbreviation": "スプリット",
+        "word": "スプリット・タイム"
+    },
+    {
+        "abbreviation": "スポ・チャン",
+        "word": "スポーツ・チャンバラ"
+    },
+    {
+        "abbreviation": "スポ・ブラ",
+        "word": "スポーツ・ブラ"
+    },
+    {
+        "abbreviation": "スリッポン",
+        "word": "スリッポン・シューズ"
+    },
+    {
+        "abbreviation": "スレ",
+        "word": "スレッド"
+    },
+    {
+        "abbreviation": "セーブ",
+        "word": "セーブ・ポイント"
+    },
+    {
+        "abbreviation": "セールス",
+        "word": "セールス・マン"
+    },
+    {
+        "abbreviation": "セク・ハラ",
+        "word": "セクシュアル・ハラスメント"
+    },
+    {
+        "abbreviation": "セ・フレ",
+        "word": "セックス・フレンド"
+    },
+    {
+        "abbreviation": "セル",
+        "word": "セルロイド"
+    },
+    {
+        "abbreviation": "セル",
+        "word": "セル・モーター"
+    },
+    {
+        "abbreviation": "セル・ホン",
+        "word": "セルラー・ホン"
+    },
+    {
+        "abbreviation": "セレブ",
+        "word": "セレブリティー"
+    },
+    {
+        "abbreviation": "センディング",
+        "word": "センディング・サービス"
+    },
+    {
+        "abbreviation": "セントラル",
+        "word": "セントラル・リーグ"
+    },
+    {
+        "abbreviation": "ソープ",
+        "word": "ソープ・ランド"
+    },
+    {
+        "abbreviation": "ソー・ハラ",
+        "word": "ソーシャルメディア・ハラスメント"
+    },
+    {
+        "abbreviation": "ソウル",
+        "word": "ソウル・ミュージック"
+    },
+    {
+        "abbreviation": "ソフトコンタクト",
+        "word": "ソフトコンタクト・レンズ"
+    },
+    {
+        "abbreviation": "ゾンデ",
+        "word": "ラジオ・ゾンデ"
+    },
+    {
+        "abbreviation": "ダー",
+        "word": "ダーリン"
+    },
+    {
+        "abbreviation": "ターコイズ",
+        "word": "ターコイズ・ブルー"
+    },
+    {
+        "abbreviation": "ダート",
+        "word": "ダート・コース"
+    },
+    {
+        "abbreviation": "ターフ",
+        "word": "ターフ・コース"
+    },
+    {
+        "abbreviation": "ダービー",
+        "word": "ダービー・マッチ"
+    },
+    {
+        "abbreviation": "タイト",
+        "word": "タイト・スカート"
+    },
+    {
+        "abbreviation": "タイム",
+        "word": "タイム・アウト"
+    },
+    {
+        "abbreviation": "ダイニング",
+        "word": "ダイニング・キッチン"
+    },
+    {
+        "abbreviation": "ダッグ",
+        "word": "ダッグ・マッチ"
+    },
+    {
+        "abbreviation": "ダッシュ",
+        "word": "ダッシュ・ボード"
+    },
+    {
+        "abbreviation": "タッパー",
+        "word": "タッパー・ウェア"
+    },
+    {
+        "abbreviation": "タブ",
+        "word": "タブレット"
+    },
+    {
+        "abbreviation": "タブ",
+        "word": "タブロイド"
+    },
+    {
+        "abbreviation": "ダブル",
+        "word": "ダブル・カフス"
+    },
+    {
+        "abbreviation": "ダブル",
+        "word": "ダブル・ベッド"
+    },
+    {
+        "abbreviation": "ダブル",
+        "word": "ダブル・ルーム"
+    },
+    {
+        "abbreviation": "ダン・ドリ",
+        "word": "ダンス・ドリル"
+    },
+    {
+        "abbreviation": "チェッカー",
+        "word": "チェッカー・フラッグ"
+    },
+    {
+        "abbreviation": "チェック",
+        "word": "チェック・メート"
+    },
+    {
+        "abbreviation": "チノ・パン",
+        "word": "チノ・パンツ"
+    },
+    {
+        "abbreviation": "チャイ・ドル",
+        "word": "チャイルド・アイドル"
+    },
+    {
+        "abbreviation": "チョーク",
+        "word": "チョーク・コイル"
+    },
+    {
+        "abbreviation": "チョーク",
+        "word": "チョーク・スリーパー"
+    },
+    {
+        "abbreviation": "ツア・コン",
+        "word": "ツアー・コンダクター"
+    },
+    {
+        "abbreviation": "ツーピース",
+        "word": "ツーピース・ドレス"
+    },
+    {
+        "abbreviation": "デフ",
+        "word": "ディファレンシャル・ギア"
+    },
+    {
+        "abbreviation": "テーラード",
+        "word": "テーラード・スーツ"
+    },
+    {
+        "abbreviation": "デキシー",
+        "word": "デキシーランド・ジャズ"
+    },
+    {
+        "abbreviation": "テク",
+        "word": "テクノロジー"
+    },
+    {
+        "abbreviation": "テク",
+        "word": "テクニカル"
+    },
+    {
+        "abbreviation": "テク",
+        "word": "テクニック"
+    },
+    {
+        "abbreviation": "テクノ",
+        "word": "テクノ・ポップ"
+    },
+    {
+        "abbreviation": "テク・ハラ",
+        "word": "テクニカル・ハラスメント"
+    },
+    {
+        "abbreviation": "デグレ",
+        "word": "デグレート"
+    },
+    {
+        "abbreviation": "デコ",
+        "word": "デコレーション"
+    },
+    {
+        "abbreviation": "デコ・チョコ",
+        "word": "デコレーション・チョコレート"
+    },
+    {
+        "abbreviation": "デコ・トラ",
+        "word": "デコレーション・トラック"
+    },
+    {
+        "abbreviation": "デコ・メ",
+        "word": "デコ・メール"
+    },
+    {
+        "abbreviation": "デジ・カメ",
+        "word": "デジタル・カメラ"
+    },
+    {
+        "abbreviation": "デジ・ロック",
+        "word": "デジタル・ロック"
+    },
+    {
+        "abbreviation": "デモ",
+        "word": "デモ・テープ"
+    },
+    {
+        "abbreviation": "デリ",
+        "word": "デリバリー"
+    },
+    {
+        "abbreviation": "デリ",
+        "word": "デリカテッセン"
+    },
+    {
+        "abbreviation": "デリカ",
+        "word": "デリカテッセン"
+    },
+    {
+        "abbreviation": "デリ・ヘル",
+        "word": "デリバリー・ヘルス"
+    },
+    {
+        "abbreviation": "テレ・アポ",
+        "word": "テレホン・アポインター"
+    },
+    {
+        "abbreviation": "テレ・アポ",
+        "word": "テレホン・アポイントメント"
+    },
+    {
+        "abbreviation": "テレ・クラ",
+        "word": "テレホン・クラブ"
+    },
+    {
+        "abbreviation": "テ・レコ",
+        "word": "テープ・レコーダー"
+    },
+    {
+        "abbreviation": "テンプ",
+        "word": "テンプレート"
+    },
+    {
+        "abbreviation": "トート",
+        "word": "トート・バッグ"
+    },
+    {
+        "abbreviation": "ドク・ハラ",
+        "word": "ドクター・ハラスメント"
+    },
+    {
+        "abbreviation": "トップ",
+        "word": "トップス"
+    },
+    {
+        "abbreviation": "ドライ",
+        "word": "ドライ・ビール"
+    },
+    {
+        "abbreviation": "ドライバー",
+        "word": "デバイス・ドライバー"
+    },
+    {
+        "abbreviation": "トラ・バ",
+        "word": "トラック・バック"
+    },
+    {
+        "abbreviation": "トラ・メガ",
+        "word": "トランジスター・メガホン"
+    },
+    {
+        "abbreviation": "ドラ・レコ",
+        "word": "ドライブ・レコーダー"
+    },
+    {
+        "abbreviation": "ドリップ",
+        "word": "ドリップ・コーヒー"
+    },
+    {
+        "abbreviation": "トレ・カ",
+        "word": "トレーティング・カード"
+    },
+    {
+        "abbreviation": "トレ・セン",
+        "word": "トレーニング・センター"
+    },
+    {
+        "abbreviation": "ドレッド",
+        "word": "ドレッド・ヘア"
+    },
+    {
+        "abbreviation": "トレンチ",
+        "word": "トレンチ・コート"
+    },
+    {
+        "abbreviation": "ドロー",
+        "word": "ドロー・ボール"
+    },
+    {
+        "abbreviation": "ドン・ペリ",
+        "word": "ドン・ペリニョン"
+    },
+    {
+        "abbreviation": "ナックル",
+        "word": "ナックル・フォア"
+    },
+    {
+        "abbreviation": "ナビ",
+        "word": "ナビゲーター"
+    },
+    {
+        "abbreviation": "ナビ",
+        "word": "ナビゲーション"
+    },
+    {
+        "abbreviation": "ナン・クロ",
+        "word": "ナンバー・クロスワードパズル"
+    },
+    {
+        "abbreviation": "ニトロ",
+        "word": "ニトログリセリン"
+    },
+    {
+        "abbreviation": "ニューエージ",
+        "word": "ニューエージ・ミュージック"
+    },
+    {
+        "abbreviation": "ヌー・サン",
+        "word": "ヌード・サンダル"
+    },
+    {
+        "abbreviation": "ネーティブ",
+        "word": "ネーティブ・スピーカー"
+    },
+    {
+        "abbreviation": "ネオ・コン",
+        "word": "ネオ・コンサーバティブ"
+    },
+    {
+        "abbreviation": "ネオナチ",
+        "word": "ネオナチズム"
+    },
+    {
+        "abbreviation": "ネガ・キャン",
+        "word": "ネガティブ・キャンペーン"
+    },
+    {
+        "abbreviation": "ネガ・コメ",
+        "word": "ネガティブ・コメント"
+    },
+    {
+        "abbreviation": "ネット",
+        "word": "インターネット"
+    },
+    {
+        "abbreviation": "ネト・ア",
+        "word": "ネット・アイドル"
+    },
+    {
+        "abbreviation": "ネト・ゲ",
+        "word": "ネット・ゲーム"
+    },
+    {
+        "abbreviation": "ネット・ロア",
+        "word": "インターネット・フォークロア"
+    },
+    {
+        "abbreviation": "ノー・ギャラ",
+        "word": "ノー・ギャランティ"
+    },
+    {
+        "abbreviation": "ノー・コン",
+        "word": "ノー・コントロール"
+    },
+    {
+        "abbreviation": "ノー・スリ",
+        "word": "ノー・スリーブ"
+    },
+    {
+        "abbreviation": "パーシャル",
+        "word": "パーシャル・フリージング"
+    },
+    {
+        "abbreviation": "ハードコンタクト",
+        "word": "ハードコンタクト・レンズ"
+    },
+    {
+        "abbreviation": "ハーフサイズ",
+        "word": "ハーフサイズ・カメラ"
+    },
+    {
+        "abbreviation": "パーマ",
+        "word": "パーマネント"
+    },
+    {
+        "abbreviation": "バイオ",
+        "word": "バイオテクノロジー"
+    },
+    {
+        "abbreviation": "ハイオク",
+        "word": "ハイオク・ガソリン"
+    },
+    {
+        "abbreviation": "バイオ",
+        "word": "バイオニクス"
+    },
+    {
+        "abbreviation": "ハイキー",
+        "word": "ハイキー・トーン"
+    },
+    {
+        "abbreviation": "パイク",
+        "word": "ターン・パイク"
+    },
+    {
+        "abbreviation": "ハイス",
+        "word": "ハイスピート・ステール"
+    },
+    {
+        "abbreviation": "ハイ・ソ",
+        "word": "ハイ・ソサエティー"
+    },
+    {
+        "abbreviation": "パイロット",
+        "word": "パイロット・ランプ"
+    },
+    {
+        "abbreviation": "ハウス",
+        "word": "ハウス・ミュージック"
+    },
+    {
+        "abbreviation": "ハザード",
+        "word": "ハザード・ランプ"
+    },
+    {
+        "abbreviation": "パシフィック",
+        "word": "パシフィック・リーグ"
+    },
+    {
+        "abbreviation": "パチ",
+        "word": "パチンコ"
+    },
+    {
+        "abbreviation": "バック",
+        "word": "バック・ギア"
+    },
+    {
+        "abbreviation": "パッケージ",
+        "word": "パッケージ・プログラム"
+    },
+    {
+        "abbreviation": "ハピ・コア",
+        "word": "ハッピー・ハードコア"
+    },
+    {
+        "abbreviation": "パラノ",
+        "word": "パラノイア"
+    },
+    {
+        "abbreviation": "パリ・コレ",
+        "word": "パリ・コレクション"
+    },
+    {
+        "abbreviation": "パリダカ",
+        "word": "パリダカール・ラリー"
+    },
+    {
+        "abbreviation": "ハロ・ワ",
+        "word": "ハロー・ワーク"
+    },
+    {
+        "abbreviation": "パワ・コン",
+        "word": "パワー・コンディショナー"
+    },
+    {
+        "abbreviation": "パワ・ステ",
+        "word": "パワー・ステアリング"
+    },
+    {
+        "abbreviation": "パワ・ハラ",
+        "word": "パワー・ハラスメント"
+    },
+    {
+        "abbreviation": "バラ・ドル",
+        "word": "バラエティ・アイドル"
+    },
+    {
+        "abbreviation": "ハング",
+        "word": "ハング・アップ"
+    },
+    {
+        "abbreviation": "パンジー",
+        "word": "パンジー・ジャンプ"
+    },
+    {
+        "abbreviation": "パンチャー",
+        "word": "キー・パンチャー"
+    },
+    {
+        "abbreviation": "ハンドル",
+        "word": "ハンドル・ネーム"
+    },
+    {
+        "abbreviation": "パンフ",
+        "word": "パンフレット"
+    },
+    {
+        "abbreviation": "ハン・マス",
+        "word": "ハンド・マスター"
+    },
+    {
+        "abbreviation": "ビーコン",
+        "word": "ラジオ・ビーコン"
+    },
+    {
+        "abbreviation": "ピコ",
+        "word": "ピコット"
+    },
+    {
+        "abbreviation": "ビデオ",
+        "word": "ビデオ・レコーダー"
+    },
+    {
+        "abbreviation": "ビデオ",
+        "word": "ビデオ・カセット"
+    },
+    {
+        "abbreviation": "ピット",
+        "word": "オーケストラ・ピット"
+    },
+    {
+        "abbreviation": "ピリ",
+        "word": "ピリオド"
+    },
+    {
+        "abbreviation": "ピル",
+        "word": "オーラル・ピル"
+    },
+    {
+        "abbreviation": "ピン・サロ",
+        "word": "ピンク・サロン"
+    },
+    {
+        "abbreviation": "ファーム",
+        "word": "ファーム・チーム"
+    },
+    {
+        "abbreviation": "ファウル",
+        "word": "ファウル・ライン"
+    },
+    {
+        "abbreviation": "ファシ・グラ",
+        "word": "ファシリテーション・グラフィック"
+    },
+    {
+        "abbreviation": "ファミ・レス",
+        "word": "ファミリー・レストラン"
+    },
+    {
+        "abbreviation": "ファンデ",
+        "word": "ファンデーション"
+    },
+    {
+        "abbreviation": "ファン・トラ",
+        "word": "ファンド・トラスト"
+    },
+    {
+        "abbreviation": "フィックス",
+        "word": "フィックス・ショット"
+    },
+    {
+        "abbreviation": "フィル",
+        "word": "フィルハーモニー"
+    },
+    {
+        "abbreviation": "ブー・サン",
+        "word": "ブーツ・サンダル"
+    },
+    {
+        "abbreviation": "フェス",
+        "word": "フェスティバル"
+    },
+    {
+        "abbreviation": "フェラ",
+        "word": "フェラチオ"
+    },
+    {
+        "abbreviation": "フォーミュラ",
+        "word": "フォーミュラ・カー"
+    },
+    {
+        "abbreviation": "フォロー",
+        "word": "フォロー・アップ"
+    },
+    {
+        "abbreviation": "ブギ",
+        "word": "ブギ・ウギ"
+    },
+    {
+        "abbreviation": "ブク・マ",
+        "word": "ブック・マーク"
+    },
+    {
+        "abbreviation": "プチ・プラ",
+        "word": "プチ・プライス"
+    },
+    {
+        "abbreviation": "フュージョン",
+        "word": "フュージョン・ミュージック"
+    },
+    {
+        "abbreviation": "ブラ",
+        "word": "ブラジャー"
+    },
+    {
+        "abbreviation": "プライム",
+        "word": "プライム・レート＝"
+    },
+    {
+        "abbreviation": "フライング",
+        "word": "フライング・スタート"
+    },
+    {
+        "abbreviation": "ブラ・クラ",
+        "word": "ブラウザ・クラッシャー"
+    },
+    {
+        "abbreviation": "ブラ・ゲー",
+        "word": "ブラウザ・ゲーム"
+    },
+    {
+        "abbreviation": "ブラ・コン",
+        "word": "ブラザー・コンプレックス"
+    },
+    {
+        "abbreviation": "ブラ・バン",
+        "word": "ブラス・バンド"
+    },
+    {
+        "abbreviation": "フリー",
+        "word": "フリー・ランサー"
+    },
+    {
+        "abbreviation": "フリ・ター",
+        "word": "フリー・アルバイター"
+    },
+    {
+        "abbreviation": "フリップ",
+        "word": "フリップ・ジャンプ"
+    },
+    {
+        "abbreviation": "フリ・マ",
+        "word": "フリー・マーケット"
+    },
+    {
+        "abbreviation": "フリ・マガ",
+        "word": "フリー・マガジン"
+    },
+    {
+        "abbreviation": "ブリリアント",
+        "word": "ブリリアント・カット"
+    },
+    {
+        "abbreviation": "ブルセラ",
+        "word": "ブルセラ・ショップ"
+    },
+    {
+        "abbreviation": "ブル・トレ",
+        "word": "ブルー・トレイン"
+    },
+    {
+        "abbreviation": "ブル・マン",
+        "word": "ブルー・マウンテン"
+    },
+    {
+        "abbreviation": "プレーヤー",
+        "word": "シングル・プレーヤー"
+    },
+    {
+        "abbreviation": "ブレス",
+        "word": "ブレスレット"
+    },
+    {
+        "abbreviation": "プレゼン",
+        "word": "プレゼンテーション"
+    },
+    {
+        "abbreviation": "プレ・ステ",
+        "word": "プレイ・ステーション"
+    },
+    {
+        "abbreviation": "ブレ・スト",
+        "word": "ブレーン・ストミング"
+    },
+    {
+        "abbreviation": "プレミア",
+        "word": "プレミアム"
+    },
+    {
+        "abbreviation": "プログレ",
+        "word": "プログレッシブ"
+    },
+    {
+        "abbreviation": "プロフ",
+        "word": "プロフィール"
+    },
+    {
+        "abbreviation": "ペア",
+        "word": "ペア・スケーティング"
+    },
+    {
+        "abbreviation": "ヘアピン",
+        "word": "ヘアピン・カーブ"
+    },
+    {
+        "abbreviation": "ペーブ",
+        "word": "ペーブメント"
+    },
+    {
+        "abbreviation": "ペット",
+        "word": "トランペット"
+    },
+    {
+        "abbreviation": "ヘド・バン",
+        "word": "ヘッド・バンキング"
+    },
+    {
+        "abbreviation": "ペニ・オク",
+        "word": "ペニー・オークション"
+    },
+    {
+        "abbreviation": "ヘビ・メタ",
+        "word": "ヘビー・メタル"
+    },
+    {
+        "abbreviation": "ヘリ",
+        "word": "ヘリコプター"
+    },
+    {
+        "abbreviation": "ベル",
+        "word": "ポケ・ベル"
+    },
+    {
+        "abbreviation": "ヘルス",
+        "word": "ファッション・ヘルス"
+    },
+    {
+        "abbreviation": "ベルパー",
+        "word": "ホーム・ベルパー"
+    },
+    {
+        "abbreviation": "ベンチャー",
+        "word": "ベンチャー・ビジネス"
+    },
+    {
+        "abbreviation": "ペン・ポ",
+        "word": "ペン・ポーチ"
+    },
+    {
+        "abbreviation": "ポケ・バイ",
+        "word": "ポケット・バイク"
+    },
+    {
+        "abbreviation": "ホスト",
+        "word": "ホスト・コンピューター"
+    },
+    {
+        "abbreviation": "ボックス",
+        "word": "ボックス・シート"
+    },
+    {
+        "abbreviation": "ホット",
+        "word": "ホット・ジャズ"
+    },
+    {
+        "abbreviation": "ボディー",
+        "word": "ボディー・ブロー"
+    },
+    {
+        "abbreviation": "ポテ・サラ",
+        "word": "ポテト・サラダ"
+    },
+    {
+        "abbreviation": "ポテ・チ",
+        "word": "ポテト・チップ"
+    },
+    {
+        "abbreviation": "ポケ・モン",
+        "word": "ポケット・モンスター"
+    },
+    {
+        "abbreviation": "ポピュラー",
+        "word": "ポピュラー・ミュージック"
+    },
+    {
+        "abbreviation": "ホリ",
+        "word": "ホリエチレン"
+    },
+    {
+        "abbreviation": "マイ・ミク",
+        "word": "マイ・ミクシィ"
+    },
+    {
+        "abbreviation": "マウン・パ",
+        "word": "マウンテン・パーカー"
+    },
+    {
+        "abbreviation": "マキシ",
+        "word": "マキシマム"
+    },
+    {
+        "abbreviation": "マジ・コン",
+        "word": "マジック・コンピューター"
+    },
+    {
+        "abbreviation": "マジック",
+        "word": "マジック・ナンバー"
+    },
+    {
+        "abbreviation": "マタニティー",
+        "word": "マタニティー・ドレス"
+    },
+    {
+        "abbreviation": "マタ・ハラ",
+        "word": "マタニティー・ハラスメント"
+    },
+    {
+        "abbreviation": "ミス・コン",
+        "word": "ミス・コンテスト"
+    },
+    {
+        "abbreviation": "ミドル",
+        "word": "ミドル・エイジ"
+    },
+    {
+        "abbreviation": "ミニ・コン",
+        "word": "ミニ・コンピューター"
+    },
+    {
+        "abbreviation": "メ・アド",
+        "word": "メール・アドレス"
+    },
+    {
+        "abbreviation": "メガ",
+        "word": "メガニズム"
+    },
+    {
+        "abbreviation": "メジャー",
+        "word": "メジャー・リーグ"
+    },
+    {
+        "abbreviation": "メゾ",
+        "word": "メゾ・ソプラノ"
+    },
+    {
+        "abbreviation": "メリ・クリ",
+        "word": "メリー・クリスマス"
+    },
+    {
+        "abbreviation": "メル・アド",
+        "word": "メール・アドレス"
+    },
+    {
+        "abbreviation": "メル・マガ",
+        "word": "メール・マガジン"
+    },
+    {
+        "abbreviation": "メン・タフ",
+        "word": "メンタル・タフネス"
+    },
+    {
+        "abbreviation": "メンタム",
+        "word": "メンソレータム"
+    },
+    {
+        "abbreviation": "メンテ",
+        "word": "メンテナンス"
+    },
+    {
+        "abbreviation": "モニター",
+        "word": "モニター・プログラム"
+    },
+    {
+        "abbreviation": "モバイル",
+        "word": "モバイル・コンピューター"
+    },
+    {
+        "abbreviation": "モラ・ハラ",
+        "word": "モラル・ハラスメント"
+    },
+    {
+        "abbreviation": "モンキー",
+        "word": "モンキー・スパナ"
+    },
+    {
+        "abbreviation": "モン・ペ",
+        "word": "モンスター・ペアレント"
+    },
+    {
+        "abbreviation": "ヤフ・オク",
+        "word": "ヤフー・オークション"
+    },
+    {
+        "abbreviation": "ユーティリティー",
+        "word": "ユーティリティー・プログラム"
+    },
+    {
+        "abbreviation": "ライ・ジャケ",
+        "word": "ライフ・ジャケット"
+    },
+    {
+        "abbreviation": "ライ・ジャケ",
+        "word": "ライダーズ・ジャケット"
+    },
+    {
+        "abbreviation": "ライブ",
+        "word": "ライブ・ショー"
+    },
+    {
+        "abbreviation": "ラウンジ",
+        "word": "ラウンジ・ミュージック"
+    },
+    {
+        "abbreviation": "ラジアル",
+        "word": "ラジアル・タイヤ"
+    },
+    {
+        "abbreviation": "ラス・ボス",
+        "word": "ラスト・ボス"
+    },
+    {
+        "abbreviation": "ラス・ワン",
+        "word": "ラスト・ワン"
+    },
+    {
+        "abbreviation": "ラッシュ",
+        "word": "ラッシュ・フィルム"
+    },
+    {
+        "abbreviation": "ラップトップ",
+        "word": "ラップトップ・コンピューター"
+    },
+    {
+        "abbreviation": "ラ・ノベ",
+        "word": "ライト・ノベル"
+    },
+    {
+        "abbreviation": "ラブ・コメ",
+        "word": "ラブ・コメディ"
+    },
+    {
+        "abbreviation": "ラブ・ホ",
+        "word": "ラブ・ホテル"
+    },
+    {
+        "abbreviation": "リア・フレ",
+        "word": "リアル・フレンド"
+    },
+    {
+        "abbreviation": "リアプロ",
+        "word": "リアプロジェクション・テレビ"
+    },
+    {
+        "abbreviation": "リス・カ",
+        "word": "リスト・カット"
+    },
+    {
+        "abbreviation": "リキッド",
+        "word": "ヘア・リキッド"
+    },
+    {
+        "abbreviation": "リスケ",
+        "word": "リスケジュール"
+    },
+    {
+        "abbreviation": "リストラ",
+        "word": "リストラクチャリング"
+    },
+    {
+        "abbreviation": "リップル",
+        "word": "リップル・クロス"
+    },
+    {
+        "abbreviation": "リト",
+        "word": "リトグラフ"
+    },
+    {
+        "abbreviation": "ルー・ソ",
+        "word": "ルーズ・ソックス"
+    },
+    {
+        "abbreviation": "ルーチン",
+        "word": "ルーチン・ワーク"
+    },
+    {
+        "abbreviation": "ループ",
+        "word": "ループ・ジャンプ"
+    },
+    {
+        "abbreviation": "ループ",
+        "word": "ループ・シュート"
+    },
+    {
+        "abbreviation": "レイアップ",
+        "word": "レイアップ・シュート"
+    },
+    {
+        "abbreviation": "レイヤード",
+        "word": "レイヤード・カット"
+    },
+    {
+        "abbreviation": "レーション",
+        "word": "コンバット・レーション"
+    },
+    {
+        "abbreviation": "レギ・パン",
+        "word": "レギンス・パンツ"
+    },
+    {
+        "abbreviation": "レス",
+        "word": "レスポンス"
+    },
+    {
+        "abbreviation": "レ・スカ",
+        "word": "レモン・スカッシュ"
+    },
+    {
+        "abbreviation": "レディ・コミ",
+        "word": "レディース・コミック"
+    },
+    {
+        "abbreviation": "ロー・プラ",
+        "word": "ロー・プライス"
+    },
+    {
+        "abbreviation": "ログ",
+        "word": "ログ・ブック"
+    },
+    {
+        "abbreviation": "ロコ・トレ",
+        "word": "ロコモーション・トレーニング"
+    },
+    {
+        "abbreviation": "ロコモ",
+        "word": "ロコモティブ・シンドローム"
+    },
+    {
+        "abbreviation": "ロス・ジェネ",
+        "word": "ロスト・ジェネレーション"
+    },
+    {
+        "abbreviation": "ロボ・コン",
+        "word": "ロボット・コンテスト"
+    },
+    {
+        "abbreviation": "ロン・バケ",
+        "word": "ロング・バケーション"
+    },
+    {
+        "abbreviation": "ワーク",
+        "word": "ワーク・ブック"
+    },
+    {
+        "abbreviation": "ワイド",
+        "word": "ワイド・レンズ"
+    },
+    {
+        "abbreviation": "ワン・オペ",
+        "word": "ワン・オペレーション"
+    },
+    {
+        "abbreviation": "ワン・チャン",
+        "word": "ワン・チャンス"
+    },
+    {
+        "abbreviation": "ワンツー",
+        "word": "ワンツー・パンチ"
+    },
+    {
+        "abbreviation": "ワン・ピ",
+        "word": "ワン・ピース"
+    },
+    {
+        "abbreviation": "ワン・レン",
+        "word": "ワン・レングス"
+    }
+]
