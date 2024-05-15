@@ -7,6 +7,8 @@ import pykakasi
 
 from type import Abbreviation, AbbreviationBase, Element, Mora
 
+VOWELS = {"a", "e", "i", "o", "u"}
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 kakasi = pykakasi.kakasi()
@@ -19,13 +21,21 @@ data: list[AbbreviationBase] = list(map(AbbreviationBase.model_validate, base_js
 
 def roman_to_mora_list(roman: str) -> list[Mora]:
     mora_list: list[Mora] = []
-    # TODO: ロジックを去年のものから拝借してくる
-    for i in range(0, len(roman), 2):
-        if i + 1 < len(roman):
-            mora = Mora(vowel=roman[i], consonant=roman[i + 1])
+    consonant = ""
+    for char in roman:
+        if char in VOWELS:
+            mora_list.append(Mora(vowel=char, consonant=consonant))
+            consonant = ""
+        elif consonant == "n" and char != "y":
+            mora_list.append(Mora(vowel="", consonant="N"))
+            consonant = "" if char == "'" else char
+        elif consonant == char:
+            mora_list.append(Mora(vowel="", consonant="Q"))
+            consonant = char
         else:
-            mora = Mora(vowel=roman[i], consonant="")
-        mora_list.append(mora)
+            consonant += char
+    if consonant == "n":
+        mora_list.append(Mora(vowel="", consonant="N"))
     return mora_list
 
 
@@ -42,7 +52,12 @@ def word_to_element_list(word: str) -> list[Element]:
 def processing(base_data: AbbreviationBase) -> Abbreviation:
     word_elem_list = word_to_element_list(base_data.word)
     abbr_elem_list = word_to_element_list(base_data.abbreviation)
-    abbr = Abbreviation(**base_data.model_dump(), word_element_list=word_elem_list, abbreviation_element_list=abbr_elem_list)
+    abbr = Abbreviation(
+        word=base_data.word,
+        abbreviation=base_data.abbreviation,
+        word_element_list=word_elem_list,
+        abbreviation_element_list=abbr_elem_list,
+    )
     return abbr
 
 
