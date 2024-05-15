@@ -5,7 +5,7 @@ import os
 
 import pykakasi
 
-from type import SOKUON, SYLLABIC_NASAL, Abbreviation, AbbreviationBase, Element, Mora
+from type import SOKUON, SYLLABIC_NASAL, Abbreviation, AbbreviationBase, Element, Mora, Syllable
 
 VOWELS = {"a", "e", "i", "o", "u"}
 
@@ -39,12 +39,25 @@ def roman_to_mora_list(roman: str) -> list[Mora]:
     return mora_list
 
 
+def mora_list_to_syllable_list(mora_list: list[Mora]) -> list[Syllable]:  # TODO: 頑張る
+    syllable_list: list[Syllable] = [Syllable()]
+    for mora in mora_list:
+        if mora.vowel == "":
+            syllable_list[-1].coda.append(mora.consonant)
+            syllable_list.append(Syllable())
+        else:
+            syllable_list[-1].onset.append(mora.consonant)
+            syllable_list[-1].syllabic.append(mora.vowel)
+    return syllable_list
+
+
 def word_to_element_list(word: str) -> list[Element]:
     element_list: list[Element] = []
     for elem_str in word.split("・"):
         roman = kakasi.convert(elem_str)[0]["hepburn"]
         mora_list = roman_to_mora_list(roman)
-        element = Element(text=elem_str, mora_list=mora_list)
+        syllable_list = mora_list_to_syllable_list(mora_list)
+        element = Element(text=elem_str, mora_list=mora_list, syllable_list=syllable_list)
         element_list.append(element)
     return element_list
 
