@@ -8,3 +8,6 @@ conflict-files-obsidian-git.md
 .obsidian/plugins/recent-files-obsidian/data.json
 
 .DS_Store
+
+__pycache__/
+.mypy_cache/
