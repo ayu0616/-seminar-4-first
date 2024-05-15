@@ -5,7 +5,7 @@ import os
 
 import pykakasi
 
-from type import Abbreviation, AbbreviationBase, Element, Mora
+from type import SOKUON, SYLLABIC_NASAL, Abbreviation, AbbreviationBase, Element, Mora
 
 VOWELS = {"a", "e", "i", "o", "u"}
 
@@ -27,15 +27,15 @@ def roman_to_mora_list(roman: str) -> list[Mora]:
             mora_list.append(Mora(vowel=char, consonant=consonant))
             consonant = ""
         elif consonant == "n" and char != "y":
-            mora_list.append(Mora(vowel="", consonant="N"))
+            mora_list.append(SYLLABIC_NASAL)
             consonant = "" if char == "'" else char
         elif consonant == char:
-            mora_list.append(Mora(vowel="", consonant="Q"))
+            mora_list.append(SOKUON)
             consonant = char
         else:
             consonant += char
     if consonant == "n":
-        mora_list.append(Mora(vowel="", consonant="N"))
+        mora_list.append(SYLLABIC_NASAL)
     return mora_list
 
 
