@@ -24,7 +24,11 @@ def roman_to_mora_list(roman: str) -> list[Mora]:
     consonant = ""
     for char in roman:
         if char in VOWELS:
-            mora_list.append(Mora(vowel=char, consonant=consonant))
+            if consonant == "tch":
+                mora_list.append(SOKUON)
+                mora_list.append(Mora(vowel=char, consonant="ch"))
+            else:
+                mora_list.append(Mora(vowel=char, consonant=consonant))
             consonant = ""
         elif consonant == "n" and char != "y":
             mora_list.append(SYLLABIC_NASAL)
