@@ -39,15 +39,15 @@ def roman_to_mora_list(roman: str) -> list[Mora]:
     return mora_list
 
 
-def mora_list_to_syllable_list(mora_list: list[Mora]) -> list[Syllable]:  # TODO: 頑張る
-    syllable_list: list[Syllable] = [Syllable()]
+def mora_list_to_syllable_list(mora_list: list[Mora]) -> list[Syllable]:
+    syllable_list: list[Syllable] = []
     for mora in mora_list:
-        if mora.vowel == "":
+        if mora.is_special():
             syllable_list[-1].coda.append(mora.consonant)
-            syllable_list.append(Syllable())
-        else:
-            syllable_list[-1].onset.append(mora.consonant)
+        elif mora.consonant == "" and len(syllable_list) > 0 and syllable_list[-1].syllabic[-1] == mora.vowel:
             syllable_list[-1].syllabic.append(mora.vowel)
+        else:
+            syllable_list.append(Syllable(onset=[mora.consonant], syllabic=[mora.vowel], coda=[]))
     return syllable_list
 
 

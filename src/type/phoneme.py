@@ -4,8 +4,15 @@ from pydantic import BaseModel
 class Mora(BaseModel):
     """モーラ"""
 
-    vowel: str  # 母音
     consonant: str  # 子音
+    vowel: str  # 母音
+
+    def is_special(self) -> bool:
+        """特殊なモーラかどうか"""
+        return self in {SYLLABIC_NASAL, SOKUON}
+
+    def __hash__(self) -> int:
+        return hash((self.vowel, self.consonant))
 
 
 SYLLABIC_NASAL = Mora(vowel="", consonant="N")  # 撥音
