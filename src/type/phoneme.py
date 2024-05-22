@@ -14,6 +14,9 @@ class Mora(BaseModel):
     def __hash__(self) -> int:
         return hash((self.vowel, self.consonant))
 
+    def __repr__(self) -> str:
+        return f"('{self.consonant}', '{self.vowel}')"
+
 
 SYLLABIC_NASAL = Mora(vowel="", consonant="N")  # 撥音
 SOKUON = Mora(vowel="", consonant="Q")  # 促音
@@ -25,3 +28,6 @@ class Syllable(BaseModel):
     onset: list[str] = []  # 音節頭
     syllabic: list[str] = []  # 音節主音
     coda: list[str] = []  # 末尾子音
+
+    def __hash__(self) -> int:
+        return hash((tuple(self.onset), tuple(self.syllabic), tuple(self.coda)))
