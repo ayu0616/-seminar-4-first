@@ -11,7 +11,57 @@ VOWELS = {"a", "e", "i", "o", "u"}
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-kakasi = pykakasi.kakasi()
+
+class Converter:
+    def __init__(self):
+        self.kakasi = pykakasi.kakasi()
+        self.kakasi.setMode("H", "a")
+        self.kakasi.setMode("K", "a")
+        self.converter = self.kakasi.getConverter()
+        pre_conv_dict = {
+            "ティ": "thi",
+            "ディ": "dhi",
+            "トゥ": "twu",
+            "ドゥ": "dwu",
+            "チェ": "che",
+            "ジェ": "je",
+            "シェ": "she",
+            "ツァ": "tsa",
+            "ツィ": "tsi",
+            "ツェ": "tse",
+            "ツォ": "tso",
+            "ファ": "fa",
+            "フィ": "fi",
+            "フェ": "fe",
+            "フォ": "fo",
+            "ウィ": "wi",
+            "ウェ": "we",
+            "ウォ": "wo",
+            "ヴァ": "va",
+            "ヴィ": "vi",
+            "ヴェ": "ve",
+            "ヴォ": "vo",
+            "グァ": "gwa",
+            "グィ": "gwi",
+            "グェ": "gwe",
+            "グォ": "gwo",
+        }
+        self.pre_conv_dict = pre_conv_dict
+
+    def do(self, text: str) -> str:
+        text = self._pre_convert(text)
+        return self.converter.do(text)
+
+    def _pre_convert(self, text: str) -> str:
+        for k, v in self.pre_conv_dict.items():
+            k1 = f"{k}ー"
+            v1 = f"{v}{v[-1]}"
+            text = text.replace(k1, v1)
+            text = text.replace(k, v)
+        return text
+
+
+conv = Converter()
 
 base_json_data = json.load(open("./data/abbreviation-base.json", "r"))
 if not isinstance(base_json_data, list):
@@ -58,7 +108,7 @@ def mora_list_to_syllable_list(mora_list: list[Mora]) -> list[Syllable]:
 def word_to_element_list(word: str) -> list[Element]:
     element_list: list[Element] = []
     for elem_str in word.split("・"):
-        roman = kakasi.convert(elem_str)[0]["hepburn"]
+        roman = conv.do(elem_str)
         mora_list = roman_to_mora_list(roman)
         syllable_list = mora_list_to_syllable_list(mora_list)
         element = Element(text=elem_str, mora_list=mora_list, syllable_list=syllable_list)

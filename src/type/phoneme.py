@@ -17,6 +17,9 @@ class Mora(BaseModel):
     def __repr__(self) -> str:
         return f"('{self.consonant}', '{self.vowel}')"
 
+    def __str__(self) -> str:
+        return self.__repr__()
+
 
 SYLLABIC_NASAL = Mora(vowel="", consonant="N")  # 撥音
 SOKUON = Mora(vowel="", consonant="Q")  # 促音
