@@ -2159,6 +2159,65 @@ files = [
 diagrams = ["jinja2", "railroad-diagrams"]
 
 [[package]]
+name = "python-crfsuite"
+version = "0.9.10"
+description = "Python binding for CRFsuite"
+optional = false
+python-versions = "*"
+files = [
+    {file = "python-crfsuite-0.9.10.tar.gz", hash = "sha256:f38524631e2b533341f10f2c77689270dc6ecd5985495dccf7aa37b1045bc2e5"},
+    {file = "python_crfsuite-0.9.10-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:f55c66f3a1a41632626ae47640454db14a8c33d03ee176884dd1f62624484a9c"},
+    {file = "python_crfsuite-0.9.10-cp310-cp310-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:cfc842374e1fab953e17ea4f653344388b97832d00cac5f8904a190277b6e42f"},
+    {file = "python_crfsuite-0.9.10-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c3c97c118fec2ea527e442f0bd2c21cd169aa8d16f12b52bad6ce9bb161e811f"},
+    {file = "python_crfsuite-0.9.10-cp310-cp310-musllinux_1_1_i686.whl", hash = "sha256:0955a83a52fdfdb0a72c503d35be5a8e7ed58a6ce1bea90c563881d32828b854"},
+    {file = "python_crfsuite-0.9.10-cp310-cp310-musllinux_1_1_x86_64.whl", hash = "sha256:0be5f5d491aabf229fd5a835cbc5f73e3a80840f57697c5b1a6d5b7630f1e19d"},
+    {file = "python_crfsuite-0.9.10-cp310-cp310-win32.whl", hash = "sha256:bd31e0172ffb33ea17247492b7d9358f6816324e28674ba04800038d55ea7217"},
+    {file = "python_crfsuite-0.9.10-cp310-cp310-win_amd64.whl", hash = "sha256:dd4d9e46d8b52f1eedae6ff285338eeec6f26a8c898062570c09891254ecc1b2"},
+    {file = "python_crfsuite-0.9.10-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:f1adf3468b8376c4876b2a8c45c427e75f601a39024aa96c5256da116694c0e5"},
+    {file = "python_crfsuite-0.9.10-cp311-cp311-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:3265dd47fbe8ddafc75c8eccb8c27c74eb491335b857c248a2907dac7e2b0822"},
+    {file = "python_crfsuite-0.9.10-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:d02d94c6338c8a9228cf56817c90f83011fbf442213b3eb1a0dbfddacb2a5878"},
+    {file = "python_crfsuite-0.9.10-cp311-cp311-musllinux_1_1_i686.whl", hash = "sha256:35e3c5ba02e77dfc0bf3f4bbaabc26bf3fd1e086632de1445b7e54fc70de5028"},
+    {file = "python_crfsuite-0.9.10-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:363ae4ba5fd4e4291514b879ae6de6799df9938077b4b3e8270d6bd5b2b14499"},
+    {file = "python_crfsuite-0.9.10-cp311-cp311-win32.whl", hash = "sha256:ba57f4ee2cecb729f9052af10df51736192d4df89c0cb935c2b46b786a64b9d6"},
+    {file = "python_crfsuite-0.9.10-cp311-cp311-win_amd64.whl", hash = "sha256:c96605a8a81007d3677e743fd963112ff112fbf6268ed72d6400351327ad5a0a"},
+    {file = "python_crfsuite-0.9.10-cp312-cp312-macosx_10_9_x86_64.whl", hash = "sha256:cc04bfdf677e7dfa5c26f244ad6b3a2647f2672c9a7a2a2e6de2b7d676027afe"},
+    {file = "python_crfsuite-0.9.10-cp312-cp312-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:113956f6a8a6e8070cf33e81ddcbee1cb2dd41360826f6a3deb699f667d1f466"},
+    {file = "python_crfsuite-0.9.10-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:409cd377b5e58200de89b41ec2281730507e167255d95dcedeb5cc150946125d"},
+    {file = "python_crfsuite-0.9.10-cp312-cp312-musllinux_1_1_i686.whl", hash = "sha256:540a6605ab78b02c83ff0baebe5cd911921a38326c8a55916762387b2596a509"},
+    {file = "python_crfsuite-0.9.10-cp312-cp312-musllinux_1_1_x86_64.whl", hash = "sha256:b5644dcae52c9e38c16352ac62a67909404644f3c3f01462e6d5988eac19327c"},
+    {file = "python_crfsuite-0.9.10-cp312-cp312-win32.whl", hash = "sha256:537210789eae84fe921c37f904fcbf3f3b910c778335b78a9a63de9ca0c75d1e"},
+    {file = "python_crfsuite-0.9.10-cp312-cp312-win_amd64.whl", hash = "sha256:3cd09e6062dbb3407d553ba42a959bf1177d61ea1624562936c412b60a7aa18b"},
+    {file = "python_crfsuite-0.9.10-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:5d143c4365068aa7537bbb773543f5f6d7edcc1ec862876fb604e28cba19e652"},
+    {file = "python_crfsuite-0.9.10-cp36-cp36m-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:71cf1f4bcbe785a56590ff96f94eaa0fb0a71e0322dd04268b3e3307020b92f7"},
+    {file = "python_crfsuite-0.9.10-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:009bca994e748de2b117e382978270a725b376eb18eb4c7fe24277ab157e7d48"},
+    {file = "python_crfsuite-0.9.10-cp36-cp36m-musllinux_1_1_i686.whl", hash = "sha256:26373150f10116ab6dec89bce0ed90f74d42955da68d54149213acdead0a20f1"},
+    {file = "python_crfsuite-0.9.10-cp36-cp36m-musllinux_1_1_x86_64.whl", hash = "sha256:bdec5d70a3f038054cc6ae16f4f766672ab1386cf62181de623ca2388a8d040d"},
+    {file = "python_crfsuite-0.9.10-cp36-cp36m-win32.whl", hash = "sha256:39ce7aea19246c3e598982f1bbe575fe61d76ffc1d2befba972d2eb9f251ee9d"},
+    {file = "python_crfsuite-0.9.10-cp36-cp36m-win_amd64.whl", hash = "sha256:694bdb813dfc3985bba7da6937608f57dd684148025b6337d259675401773e73"},
+    {file = "python_crfsuite-0.9.10-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:e964d80cd55971774e5141fc79358beed3d32d9db6a2ca8f4c4d178bb97ed18b"},
+    {file = "python_crfsuite-0.9.10-cp37-cp37m-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:d97303e2719b8afbb3f51e0931cfda2a1d231017159dc9bd6a2d7658b36c13ca"},
+    {file = "python_crfsuite-0.9.10-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b40378b6f4ac10b209d6613769397f66c2d6ce2ba09e49c1e63d61548010a9aa"},
+    {file = "python_crfsuite-0.9.10-cp37-cp37m-musllinux_1_1_i686.whl", hash = "sha256:b559823cee190b4693fa72d51a286ceb51c54540676fc8a9a66e5800ed34b385"},
+    {file = "python_crfsuite-0.9.10-cp37-cp37m-musllinux_1_1_x86_64.whl", hash = "sha256:c1d2e905aa5ae7c4143ba5f61b6634cf49f88d422f37aab6748649d009bc7735"},
+    {file = "python_crfsuite-0.9.10-cp37-cp37m-win32.whl", hash = "sha256:8b86beeb6ec058acd66541bcbe221bd74ceb235b2fa6b1cdd6b4b4a47b7b4708"},
+    {file = "python_crfsuite-0.9.10-cp37-cp37m-win_amd64.whl", hash = "sha256:4e5c21201ee00344638b04d880d3790efbbae220bf73d03ddb250917ce9662a5"},
+    {file = "python_crfsuite-0.9.10-cp38-cp38-macosx_10_9_x86_64.whl", hash = "sha256:6a3f78b0f0c162b1745f3da65771bde5558f2b4afdc9498dd4f61c172689f6f3"},
+    {file = "python_crfsuite-0.9.10-cp38-cp38-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:8e5df54c81d9891a3b4e23d34e7a89db1fb0f5d44916908ceccf551431ca7ba7"},
+    {file = "python_crfsuite-0.9.10-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:1183a6e6a48d0d634ba151585b935816cca9841b6edb143188a8427186ef7e8f"},
+    {file = "python_crfsuite-0.9.10-cp38-cp38-musllinux_1_1_i686.whl", hash = "sha256:3f92cd5310a5f1acf1a69d9603e4b55135e9b41a6c51ed85fb82866ee6e8c855"},
+    {file = "python_crfsuite-0.9.10-cp38-cp38-musllinux_1_1_x86_64.whl", hash = "sha256:c9de37b0315183a7c7f5316a9517d5251faee54d78c905f43b09301dd5665af0"},
+    {file = "python_crfsuite-0.9.10-cp38-cp38-win32.whl", hash = "sha256:860debc92cb7940f7472fb89adc0d356a5ef123171fd115f5aea9ffe5e7cfb3e"},
+    {file = "python_crfsuite-0.9.10-cp38-cp38-win_amd64.whl", hash = "sha256:e455418f2f70656ebf0729b039fe8f1258a7244abd2c4199af02eebf03903586"},
+    {file = "python_crfsuite-0.9.10-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:67454ced41b8457ba49ee72588ee8e166aa8094d5c065e52362f2494f19849ec"},
+    {file = "python_crfsuite-0.9.10-cp39-cp39-manylinux_2_12_i686.manylinux2010_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:a9e29ad0f02e4ca9901613ae38b7998efc9543b592b18ce387aa3acefbdfdeb7"},
+    {file = "python_crfsuite-0.9.10-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:bb45068f40a6d9f9a2bd28000131056a299a96ed26ed004207c60a949e6f1650"},
+    {file = "python_crfsuite-0.9.10-cp39-cp39-musllinux_1_1_i686.whl", hash = "sha256:da4f2472d951100a4f837308b1ef57eda69494b4acf9e18003b56cef86eee11e"},
+    {file = "python_crfsuite-0.9.10-cp39-cp39-musllinux_1_1_x86_64.whl", hash = "sha256:69ed2928a3e3d3d6cc65cf46a98fcdd107f8b9a1d9b5c0aa3f7c842602c19929"},
+    {file = "python_crfsuite-0.9.10-cp39-cp39-win32.whl", hash = "sha256:51d626d332ab135fe2ed12e73e764f6fe8a1e4db89f4b9fa5549369a4be86c3f"},
+    {file = "python_crfsuite-0.9.10-cp39-cp39-win_amd64.whl", hash = "sha256:da8065383e41efe65d87de6fa83f1682a8ef65f26370300042ef88891971450c"},
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 description = "Extensions to the standard Python datetime module"
@@ -2631,6 +2690,23 @@ files = [
 ]
 
 [[package]]
+name = "sklearn-crfsuite"
+version = "0.3.6"
+description = "CRFsuite (python-crfsuite) wrapper which provides interface simlar to scikit-learn"
+optional = false
+python-versions = "*"
+files = [
+    {file = "sklearn-crfsuite-0.3.6.tar.gz", hash = "sha256:2f59aad3055e01a778a79a6352891cac04788e8b52688aa5bc8b11be7717861e"},
+    {file = "sklearn_crfsuite-0.3.6-py2.py3-none-any.whl", hash = "sha256:6e9a42bc3de96941d5f7262335130955b8c380b1356147622368f385075705d9"},
+]
+
+[package.dependencies]
+python-crfsuite = ">=0.8.3"
+six = "*"
+tabulate = "*"
+tqdm = ">=2.0"
+
+[[package]]
 name = "sniffio"
 version = "1.3.1"
 description = "Sniff out which async library your code is running under"
@@ -2670,6 +2746,20 @@ pure-eval = "*"
 
 [package.extras]
 tests = ["cython", "littleutils", "pygments", "pytest", "typeguard"]
+
+[[package]]
+name = "tabulate"
+version = "0.9.0"
+description = "Pretty-print tabular data"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tabulate-0.9.0-py3-none-any.whl", hash = "sha256:024ca478df22e9340661486f85298cff5f6dcdba14f3813e8830015b9ed1948f"},
+    {file = "tabulate-0.9.0.tar.gz", hash = "sha256:0095b12bf5966de529c0feb1fa08671671b3368eec77d7ef7ab114be2c068b3c"},
+]
+
+[package.extras]
+widechars = ["wcwidth"]
 
 [[package]]
 name = "terminado"
@@ -2740,6 +2830,26 @@ files = [
     {file = "tornado-6.4-cp38-abi3-win_amd64.whl", hash = "sha256:10aeaa8006333433da48dec9fe417877f8bcc21f48dda8d661ae79da357b2a63"},
     {file = "tornado-6.4.tar.gz", hash = "sha256:72291fa6e6bc84e626589f1c29d90a5a6d593ef5ae68052ee2ef000dfd273dee"},
 ]
+
+[[package]]
+name = "tqdm"
+version = "4.66.4"
+description = "Fast, Extensible Progress Meter"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "tqdm-4.66.4-py3-none-any.whl", hash = "sha256:b75ca56b413b030bc3f00af51fd2c1a1a5eac6a0c1cca83cbb37a5c52abce644"},
+    {file = "tqdm-4.66.4.tar.gz", hash = "sha256:e4d936c9de8727928f3be6079590e97d9abfe8d39a590be678eb5919ffc186bb"},
+]
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[package.extras]
+dev = ["pytest (>=6)", "pytest-cov", "pytest-timeout", "pytest-xdist"]
+notebook = ["ipywidgets (>=6)"]
+slack = ["slack-sdk"]
+telegram = ["requests"]
 
 [[package]]
 name = "traitlets"
@@ -2991,4 +3101,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "1042cdc83db29aeb89de5b260dc2024e831ae5b9b11e7aeb3f5cb41f3fc0f55d"
+content-hash = "d0c8aac7e0a1cbc7b0287e8243f194b52c2b097c9015faae6478985cb302e1e4"

@@ -2,4 +2,5 @@
 
 from .abbreviation import *
 from .element import *
+from .features import *
 from .phoneme import *
