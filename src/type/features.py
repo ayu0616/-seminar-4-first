@@ -58,8 +58,9 @@ class CrfFeatures(BaseModel):
 
 
 class CrfLabel(list[str]):
-    OK = "OK"
     NG = "NG"
+    B_ABBR = "B-Abbr"
+    I_ABBR = "I-Abbr"
 
     @classmethod
     def from_abbreviation(cls, abbr: Abbreviation) -> "CrfLabel":
@@ -69,10 +70,14 @@ class CrfLabel(list[str]):
         abbr_n = len(abbr_mora_list)
         abbr_i = 0
         res = [cls.NG] * n
+        in_abbr = False
         for i in range(n):
             if abbr_i >= abbr_n:
                 break
             if word_mora_list[i] == abbr_mora_list[abbr_i]:
-                res[i] = cls.OK
+                res[i] = cls.I_ABBR if in_abbr else cls.B_ABBR
                 abbr_i += 1
+                in_abbr = True
+            else:
+                in_abbr = False
         return cls(res)
