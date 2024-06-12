@@ -15,8 +15,12 @@ pydantic = "^2.7.1"
 pykakasi = "^2.2.1"
 types-beautifulsoup4 = "^4.12.0.20240511"
 matplotlib = "^3.9.0"
-sklearn-crfsuite = "^0.3.6"
+scikit-learn = "^1.5.0"
+sklearn-crfsuite = {git = "https://github.com/MeMartijn/updated-sklearn-crfsuite.git"}
 
+
+[tool.poetry.group.dev.dependencies]
+setuptools = "69.0.2"
 
 [build-system]
 requires = ["poetry-core"]

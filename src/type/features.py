@@ -1,9 +1,13 @@
+from typing import ClassVar
+
 from pydantic import BaseModel
 
 from type import Abbreviation
 
 
 class CrfFeatures(BaseModel):
+    EOS: ClassVar[str] = "EOS"
+
     # モーラ
     vowel: str
     consonant: str
@@ -25,9 +29,46 @@ class CrfFeatures(BaseModel):
         """略語から特徴量のリストを生成する"""
         res: list["CrfFeatures"] = []
         elem_len = len(abbr.word_element_list)
+        for i, elem in enumerate(abbr.word_element_list):
+            mora_len_in_elem = len(elem.mora_list)
+            for j, mora in enumerate(elem.mora_list):
+                if j == mora_len_in_elem - 1:
+                    next_vowel = cls.EOS
+                    next_consonant = cls.EOS
+                else:
+                    next_vowel = elem.mora_list[j + 1].vowel
+                    next_consonant = elem.mora_list[j + 1].consonant
+                res.append(
+                    cls(
+                        vowel=mora.vowel,
+                        consonant=mora.consonant,
+                        next_vowel=next_vowel,
+                        next_consonant=next_consonant,
+                        elem_num=i,
+                        mora_num=j,
+                        elem_len=elem_len,
+                        mora_len_in_elem=mora_len_in_elem,
+                    )
+                )
         return res
 
 
 class CrfLabel(list[str]):
-    def __init__(self, abbr: Abbreviation):
-        super().__init__(abbr.word_element_list)
+    OK = "OK"
+    NG = "NG"
+
+    @classmethod
+    def from_abbreviation(cls, abbr: Abbreviation) -> "CrfLabel":
+        word_mora_list = [mora for elem in abbr.word_element_list for mora in elem.mora_list]
+        abbr_mora_list = [mora for elem in abbr.abbreviation_element_list for mora in elem.mora_list]
+        n = len(word_mora_list)
+        abbr_n = len(abbr_mora_list)
+        abbr_i = 0
+        res = [cls.NG] * n
+        for i in range(n):
+            if abbr_i >= abbr_n:
+                break
+            if word_mora_list[i] == abbr_mora_list[abbr_i]:
+                res[i] = cls.OK
+                abbr_i += 1
+        return cls(res)
