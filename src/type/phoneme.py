@@ -7,6 +7,12 @@ class Mora(BaseModel):
     consonant: str  # 子音
     vowel: str  # 母音
 
+    def is_syllabic_nasal(self):
+        return self == SYLLABIC_NASAL
+
+    def is_sokuon(self):
+        return self == SOKUON
+
     def is_special(self) -> bool:
         """特殊なモーラかどうか"""
         return self in {SYLLABIC_NASAL, SOKUON}

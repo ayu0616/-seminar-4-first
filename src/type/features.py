@@ -13,6 +13,8 @@ class CrfFeatures(BaseModel):
     consonant: str
     next_vowel: str
     next_consonant: str
+    is_syllabic_nasal: bool  # 撥音かどうか
+    is_sokuon: bool  # 促音かどうか
 
     # 要素
     elem_num: int  # 何番目の要素か
@@ -48,6 +50,8 @@ class CrfFeatures(BaseModel):
                         mora_num=j,
                         elem_len=elem_len,
                         mora_len_in_elem=mora_len_in_elem,
+                        is_syllabic_nasal=mora.is_syllabic_nasal(),
+                        is_sokuon=mora.is_sokuon(),
                     )
                 )
         return res
