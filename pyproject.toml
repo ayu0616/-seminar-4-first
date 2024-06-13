@@ -17,6 +17,7 @@ types-beautifulsoup4 = "^4.12.0.20240511"
 matplotlib = "^3.9.0"
 scikit-learn = "^1.5.0"
 sklearn-crfsuite = {git = "https://github.com/MeMartijn/updated-sklearn-crfsuite.git"}
+fastapi = "^0.111.0"
 
 
 [tool.poetry.group.dev.dependencies]
