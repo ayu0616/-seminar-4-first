@@ -19,6 +19,7 @@ scikit-learn = "^1.5.0"
 sklearn-crfsuite = {git = "https://github.com/MeMartijn/updated-sklearn-crfsuite.git"}
 fastapi = "^0.111.0"
 lightgbm = "^4.4.0"
+pandas-stubs = "^2.2.2.240603"
 
 
 [tool.poetry.group.dev.dependencies]

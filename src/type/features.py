@@ -23,10 +23,21 @@ class CrfFeatures(BaseModel):
     # モーラ
     vowel: str
     consonant: str
-    prev_vowel: str
-    prev_consonant: str
-    next_vowel: str
-    next_consonant: str
+
+    # 1つ前
+    prev1_vowel: str
+    prev1_consonant: str
+    # 2つ前
+    prev2_vowel: str
+    prev2_consonant: str
+
+    # 1つ後
+    next1_vowel: str
+    next1_consonant: str
+    # 2つ後
+    next2_vowel: str
+    next2_consonant: str
+
     is_syllabic_nasal: bool  # 撥音かどうか
     is_sokuon: bool  # 促音かどうか
 
@@ -49,25 +60,47 @@ class CrfFeatures(BaseModel):
             mora_len_in_elem = len(elem.mora_list)
             for j, feat_list in enumerate(elem.mora_list):
                 if j == mora_len_in_elem - 1:
-                    next_vowel = cls.EOS
-                    next_consonant = cls.EOS
+                    next1_vowel = cls.EOS
+                    next1_consonant = cls.EOS
+                    next2_vowel = cls.EOS
+                    next2_consonant = cls.EOS
+                elif j == mora_len_in_elem - 2:
+                    next1_vowel = elem.mora_list[j + 1].vowel
+                    next1_consonant = elem.mora_list[j + 1].consonant
+                    next2_vowel = cls.EOS
+                    next2_consonant = cls.EOS
                 else:
-                    next_vowel = elem.mora_list[j + 1].vowel
-                    next_consonant = elem.mora_list[j + 1].consonant
+                    next1_vowel = elem.mora_list[j + 1].vowel
+                    next1_consonant = elem.mora_list[j + 1].consonant
+                    next2_vowel = elem.mora_list[j + 2].vowel
+                    next2_consonant = elem.mora_list[j + 2].consonant
                 if j == 0:
-                    prev_vowel = cls.BOS
-                    prev_consonant = cls.BOS
+                    prev1_vowel = cls.BOS
+                    prev1_consonant = cls.BOS
+                    prev2_vowel = cls.BOS
+                    prev2_consonant = cls.BOS
+                elif j == 1:
+                    prev1_vowel = elem.mora_list[j - 1].vowel
+                    prev1_consonant = elem.mora_list[j - 1].consonant
+                    prev2_vowel = cls.BOS
+                    prev2_consonant = cls.BOS
                 else:
-                    prev_vowel = elem.mora_list[j - 1].vowel
-                    prev_consonant = elem.mora_list[j - 1].consonant
+                    prev1_vowel = elem.mora_list[j - 1].vowel
+                    prev1_consonant = elem.mora_list[j - 1].consonant
+                    prev2_vowel = elem.mora_list[j - 2].vowel
+                    prev2_consonant = elem.mora_list[j - 2].consonant
                 res.append(
                     cls(
                         vowel=feat_list.vowel,
                         consonant=feat_list.consonant,
-                        prev_vowel=prev_vowel,
-                        prev_consonant=prev_consonant,
-                        next_vowel=next_vowel,
-                        next_consonant=next_consonant,
+                        prev1_vowel=prev1_vowel,
+                        prev1_consonant=prev1_consonant,
+                        next1_vowel=next1_vowel,
+                        next1_consonant=next1_consonant,
+                        prev2_vowel=prev2_vowel,
+                        prev2_consonant=prev2_consonant,
+                        next2_vowel=next2_vowel,
+                        next2_consonant=next2_consonant,
                         elem_num=i,
                         mora_num=j,
                         elem_len=elem_len,
