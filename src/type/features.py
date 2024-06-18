@@ -9,6 +9,7 @@ class CrfLabel(BaseModel):
     NG: str = "NG"
     B_ABBR: str = "B-Abbr"
     I_ABBR: str = "I-Abbr"
+    E_ABBR: str = "E-Abbr"
 
 
 crf_label = CrfLabel()
@@ -132,4 +133,8 @@ class CrfLabelSequence(list[str]):
                 in_abbr = True
             else:
                 in_abbr = False
+        for i in range(n - 1):
+            if res[i] == crf_label.I_ABBR and res[i + 1] == crf_label.NG:
+                res[i] = crf_label.E_ABBR
+                # res[i + 1] = crf_label.E_ABBR
         return cls(res)
