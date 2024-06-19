@@ -9,6 +9,7 @@ from concurrent.futures import ThreadPoolExecutor
 import pandas as pd
 from lightgbm import LGBMClassifier
 from pydantic import BaseModel
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from sklearn_crfsuite import CRF
@@ -102,6 +103,7 @@ def sklearn_model(
 crf_score_list: list[CaseScore] = []
 svm_score_list: list[CaseScore] = []
 lgbm_score_list: list[CaseScore] = []
+rf_score_list: list[CaseScore] = []
 
 for i in range(10):
     data_train, data_test = train_test_split(data, test_size=0.2)
@@ -115,19 +117,25 @@ for i in range(10):
         sklearn_model(SequentialClassifier(SVC(kernel="rbf", C=1, class_weight="balanced", gamma="auto", probability=True)), X_train, y_train, X_test, y_test)
     )
     f3 = lambda: lgbm_score_list.extend(sklearn_model(SequentialClassifier(LGBMClassifier()), X_train, y_train, X_test, y_test))
+    f4 = lambda: rf_score_list.extend(sklearn_model(SequentialClassifier(RandomForestClassifier()), X_train, y_train, X_test, y_test))
     with ThreadPoolExecutor(max_workers=4) as executor:
-        executor.submit(f1)
-        executor.submit(f2)
-        executor.submit(f3)
+        executor.map(lambda f: f(), [f1, f2, f3, f4])
 
 df = pd.DataFrame({"f1": score.f1, "accuracy": score.accuracy, "recall": score.recall, "precision": score.precision} for score in crf_score_list)
 print("crf")
 print(df.describe())
+print()
 
 df = pd.DataFrame({"f1": score.f1, "accuracy": score.accuracy, "recall": score.recall, "precision": score.precision} for score in svm_score_list)
 print("svm")
 print(df.describe())
+print()
 
 df = pd.DataFrame({"f1": score.f1, "accuracy": score.accuracy, "recall": score.recall, "precision": score.precision} for score in lgbm_score_list)
 print("lgbm")
+print(df.describe())
+print()
+
+df = pd.DataFrame({"f1": score.f1, "accuracy": score.accuracy, "recall": score.recall, "precision": score.precision} for score in rf_score_list)
+print("rf")
 print(df.describe())
