@@ -4,6 +4,7 @@
 
 import json
 import os
+from concurrent.futures import ThreadPoolExecutor
 
 import pandas as pd
 from lightgbm import LGBMClassifier
@@ -109,11 +110,15 @@ for i in range(10):
     X_test = [*map(CrfFeatures.from_abbreviation, data_test)]
     y_test = list(map(CrfLabelSequence.from_abbreviation, data_test))
 
-    crf_score_list.extend(crf(X_train, y_train, X_test, y_test))
-    svm_score_list.extend(
+    f1 = lambda: crf_score_list.extend(crf(X_train, y_train, X_test, y_test))
+    f2 = lambda: svm_score_list.extend(
         sklearn_model(SequentialClassifier(SVC(kernel="rbf", C=1, class_weight="balanced", gamma="auto", probability=True)), X_train, y_train, X_test, y_test)
     )
-    lgbm_score_list.extend(sklearn_model(SequentialClassifier(LGBMClassifier()), X_train, y_train, X_test, y_test))
+    f3 = lambda: lgbm_score_list.extend(sklearn_model(SequentialClassifier(LGBMClassifier()), X_train, y_train, X_test, y_test))
+    with ThreadPoolExecutor(max_workers=4) as executor:
+        executor.submit(f1)
+        executor.submit(f2)
+        executor.submit(f3)
 
 df = pd.DataFrame({"f1": score.f1, "accuracy": score.accuracy, "recall": score.recall, "precision": score.precision} for score in crf_score_list)
 print("crf")
