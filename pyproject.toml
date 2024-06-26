@@ -20,6 +20,8 @@ sklearn-crfsuite = {git = "https://github.com/MeMartijn/updated-sklearn-crfsuite
 fastapi = "^0.111.0"
 lightgbm = "^4.4.0"
 pandas-stubs = "^2.2.2.240603"
+optuna = "^3.6.1"
+optuna-dashboard = "^0.15.1"
 
 
 [tool.poetry.group.dev.dependencies]

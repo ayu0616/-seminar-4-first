@@ -1,8 +1,11 @@
+from typing import Type
+
+from score import CaseScore
 from type import CrfFeatures, CrfLabelSequence
 
 
 class SequentialClassifier:
-    def __init__(self, model):
+    def __init__(self, model: Type):
         self.model = model
 
     def fit(self, X: list[list[CrfFeatures]], y: list[CrfLabelSequence]):
@@ -38,3 +41,8 @@ class SequentialClassifier:
                 y_pred.append(yj)
             res.append(y_pred)
         return res
+
+    def score(self, X: list[list[CrfFeatures]], y: list[CrfLabelSequence]):
+        """スコアを計算する"""
+        y_pred = self.predict(X)
+        return [CaseScore.from_test_pred(y_, y_pred_) for y_, y_pred_ in zip(y, y_pred)]

@@ -11,3 +11,5 @@ conflict-files-obsidian-git.md
 
 __pycache__/
 .mypy_cache/
+
+*.db
