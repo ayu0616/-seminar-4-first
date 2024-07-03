@@ -1,24 +1,15 @@
 import { useState } from "react";
 import { WordForm, WordFormValues } from "./components/WordForm/WordForm";
+import { api } from "./__generated__/api";
 
 function App() {
     const [words, setWords] = useState<string[]>([]);
     const [res, setRes] = useState<string[][]>([]);
 
     const handleSubmit = async (data: WordFormValues) => {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
+        const res = await api.api_api_post({...data, rank_n: 5});
+        setRes(() => res.abbrs);
         setWords(() => data.words.map((w) => w.join("")));
-        setRes(() => {
-            return data.words.map((w) => {
-                const word = w.join("");
-                return new Array(5).fill("").map(() =>
-                    word
-                        .split("")
-                        .map((c) => (Math.random() < 0.5 ? c : ""))
-                        .join("")
-                );
-            });
-        });
     };
 
     return (
@@ -39,7 +30,7 @@ function App() {
                     </ul>
                     <WordForm onSubmit={handleSubmit} />
                 </div>
-                {words.length > 0 && (
+                {words.length > 0 && res.length > 0 && (
                     <div className="bg-white border rounded-md overflow-hidden">
                         <table className="w-full">
                             <thead className="border-b bg-slate-200 text-slate-700">

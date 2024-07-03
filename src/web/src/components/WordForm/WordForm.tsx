@@ -44,7 +44,7 @@ export const WordForm = ({ onSubmit }: WordFormProps) => {
             <form className="space-y-4" onSubmit={form.handleSubmit(onSubmit)}>
                 {form.watch("words").map((elem, i) => (
                     <div className="flex w-full gap-1">
-                        {elem.map((word, j) => (
+                        {elem.map((_word, j) => (
                             <div className="flex-1" key={j}>
                                 <FormInput {...form.register(`words.${i}.${j}` as const)} disabled={disabled} />
                             </div>

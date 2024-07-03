@@ -11,12 +11,14 @@
         "format": "pnpm dlx prettier --write **/*.{ts,tsx,js,css,json}",
         "typecheck": "tsc --noEmit",
         "lint:fix": "eslint . --ext ts,tsx,js --report-unused-disable-directives --max-warnings 0 --fix",
-        "lint:format": "pnpm run format && pnpm run lint:fix"
+        "lint:format": "pnpm run format && pnpm run lint:fix",
+        "codegen": "pnpm dlx openapi-zod-client openapi.json --output src/__generated__/api.ts --with-alias"
     },
     "dependencies": {
         "@hookform/resolvers": "^3.7.0",
         "@radix-ui/react-label": "^2.1.0",
         "@radix-ui/react-slot": "^1.1.0",
+        "@zodios/core": "^10.9.6",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.1",
         "lucide-react": "^0.399.0",
