@@ -63,11 +63,6 @@ class Converter:
 
 conv = Converter()
 
-base_json_data = json.load(open("./data/abbreviation-base.json", "r"))
-if not isinstance(base_json_data, list):
-    raise ValueError("略語データがリストでない")
-data: list[AbbreviationBase] = list(map(AbbreviationBase.model_validate, base_json_data))
-
 
 def roman_to_mora_list(roman: str) -> list[Mora]:
     mora_list: list[Mora] = []
@@ -128,6 +123,12 @@ def processing(base_data: AbbreviationBase) -> Abbreviation:
     return abbr
 
 
-processed_data = list(map(processing, data))
+if __name__ == "__main__":
+    base_json_data = json.load(open("./data/abbreviation-base.json", "r"))
+    if not isinstance(base_json_data, list):
+        raise ValueError("略語データがリストでない")
+    data: list[AbbreviationBase] = list(map(AbbreviationBase.model_validate, base_json_data))
 
-json.dump([d.model_dump() for d in processed_data], open("./data/abbreviation.json", "w"), ensure_ascii=False, indent=4)
+    processed_data = list(map(processing, data))
+
+    json.dump([d.model_dump() for d in processed_data], open("./data/abbreviation.json", "w"), ensure_ascii=False, indent=4)
