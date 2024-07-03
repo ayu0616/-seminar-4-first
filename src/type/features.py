@@ -1,4 +1,4 @@
-from typing import ClassVar
+from typing import ClassVar, Iterable
 
 from pydantic import BaseModel
 
@@ -19,33 +19,56 @@ class CrfFeatures(BaseModel):
     BOS: ClassVar[str] = "BOS"
     EOS: ClassVar[str] = "EOS"
     to_int_idx: ClassVar[dict[str, int]] = {v: i for i, v in enumerate(crf_label.model_dump().values())}
+    no_use_keys: ClassVar[Iterable[str]] = []
 
     # モーラ
     vowel: str
     consonant: str
+    mora: str
 
     # 1つ前
     prev1_vowel: str
     prev1_consonant: str
+    prev1_mora: str
     # 2つ前
     prev2_vowel: str
     prev2_consonant: str
+    prev2_mora: str
+    # 3つ前
+    prev3_vowel: str
+    prev3_consonant: str
+    prev3_mora: str
 
     # 1つ後
     next1_vowel: str
     next1_consonant: str
+    next1_mora: str
     # 2つ後
     next2_vowel: str
     next2_consonant: str
+    next2_mora: str
+    # 3つ後
+    next3_vowel: str
+    next3_consonant: str
+    next3_mora: str
 
     is_syllabic_nasal: bool  # 撥音かどうか
     is_sokuon: bool  # 促音かどうか
+    is_long: bool  # 長音かどうか
+
+    next_is_syllabic_nasal: bool  # 次が撥音かどうか
+    next_is_sokuon: bool  # 次が促音かどうか
+    next_is_long: bool  # 次が長音かどうか
+    prev_is_syllabic_nasal: bool  # 前が撥音かどうか
+    prev_is_sokuon: bool  # 前が促音かどうか
+    prev_is_long: bool  # 前が長音かどうか
 
     # 要素
     elem_num: int  # 何番目の要素か
     mora_num: int  # 何番目のモーラか
     elem_len: int  # 単語全体の要素数
     mora_len_in_elem: int  # 要素全体のモーラ数
+    total_mora_len: int  # 単語全体のモーラ数
 
     def get_array(self):
         """特徴量配列を取得する"""
@@ -56,6 +79,7 @@ class CrfFeatures(BaseModel):
         """略語から特徴量のリストを生成する"""
         res: list["CrfFeatures"] = []
         elem_len = len(abbr.word_element_list)
+        total_mora_len = sum([len(e.mora_list) for e in abbr.word_element_list])
         for i, elem in enumerate(abbr.word_element_list):
             mora_len_in_elem = len(elem.mora_list)
             for j, feat_list in enumerate(elem.mora_list):
@@ -64,49 +88,94 @@ class CrfFeatures(BaseModel):
                     next1_consonant = cls.EOS
                     next2_vowel = cls.EOS
                     next2_consonant = cls.EOS
+                    next3_vowel = cls.EOS
+                    next3_consonant = cls.EOS
                 elif j == mora_len_in_elem - 2:
                     next1_vowel = elem.mora_list[j + 1].vowel
                     next1_consonant = elem.mora_list[j + 1].consonant
                     next2_vowel = cls.EOS
                     next2_consonant = cls.EOS
+                    next3_vowel = cls.EOS
+                    next3_consonant = cls.EOS
+                elif j == mora_len_in_elem - 3:
+                    next1_vowel = elem.mora_list[j + 1].vowel
+                    next1_consonant = elem.mora_list[j + 1].consonant
+                    next2_vowel = elem.mora_list[j + 2].vowel
+                    next2_consonant = elem.mora_list[j + 2].consonant
+                    next3_vowel = cls.EOS
+                    next3_consonant = cls.EOS
                 else:
                     next1_vowel = elem.mora_list[j + 1].vowel
                     next1_consonant = elem.mora_list[j + 1].consonant
                     next2_vowel = elem.mora_list[j + 2].vowel
                     next2_consonant = elem.mora_list[j + 2].consonant
+                    next3_vowel = elem.mora_list[j + 3].vowel
+                    next3_consonant = elem.mora_list[j + 3].consonant
                 if j == 0:
                     prev1_vowel = cls.BOS
                     prev1_consonant = cls.BOS
                     prev2_vowel = cls.BOS
                     prev2_consonant = cls.BOS
+                    prev3_vowel = cls.BOS
+                    prev3_consonant = cls.BOS
                 elif j == 1:
                     prev1_vowel = elem.mora_list[j - 1].vowel
                     prev1_consonant = elem.mora_list[j - 1].consonant
                     prev2_vowel = cls.BOS
                     prev2_consonant = cls.BOS
+                    prev3_vowel = cls.BOS
+                    prev3_consonant = cls.BOS
                 else:
                     prev1_vowel = elem.mora_list[j - 1].vowel
                     prev1_consonant = elem.mora_list[j - 1].consonant
                     prev2_vowel = elem.mora_list[j - 2].vowel
                     prev2_consonant = elem.mora_list[j - 2].consonant
+                    prev3_vowel = elem.mora_list[j - 3].vowel
+                    prev3_consonant = elem.mora_list[j - 3].consonant
+                next_is_syllabic_nasal = j < mora_len_in_elem - 1 and elem.mora_list[j + 1].is_syllabic_nasal()
+                prev_is_syllabic_nasal = j > 0 and elem.mora_list[j - 1].is_syllabic_nasal()
+                next_is_sokuon = j < mora_len_in_elem - 1 and elem.mora_list[j + 1].is_sokuon()
+                prev_is_sokuon = j > 0 and elem.mora_list[j - 1].is_sokuon()
+                is_long = prev1_vowel == feat_list.vowel and feat_list.consonant == ""
+                next_is_long = next1_vowel == feat_list.vowel and next1_consonant == ""
+                prev_is_long = prev1_vowel == prev2_vowel and prev1_consonant == ""
                 res.append(
                     cls(
                         vowel=feat_list.vowel,
                         consonant=feat_list.consonant,
+                        mora=feat_list.vowel + feat_list.consonant,
                         prev1_vowel=prev1_vowel,
                         prev1_consonant=prev1_consonant,
+                        prev1_mora=prev1_vowel + prev1_consonant,
                         next1_vowel=next1_vowel,
                         next1_consonant=next1_consonant,
+                        next1_mora=next1_vowel + next1_consonant,
                         prev2_vowel=prev2_vowel,
                         prev2_consonant=prev2_consonant,
+                        prev2_mora=prev2_vowel + prev2_consonant,
                         next2_vowel=next2_vowel,
                         next2_consonant=next2_consonant,
+                        next2_mora=next2_vowel + next2_consonant,
+                        prev3_vowel=prev3_vowel,
+                        prev3_consonant=prev3_consonant,
+                        prev3_mora=prev3_vowel + prev3_consonant,
+                        next3_vowel=next3_vowel,
+                        next3_consonant=next3_consonant,
+                        next3_mora=next3_vowel + next3_consonant,
                         elem_num=i,
                         mora_num=j,
                         elem_len=elem_len,
                         mora_len_in_elem=mora_len_in_elem,
                         is_syllabic_nasal=feat_list.is_syllabic_nasal(),
                         is_sokuon=feat_list.is_sokuon(),
+                        is_long=is_long,
+                        next_is_syllabic_nasal=next_is_syllabic_nasal,
+                        next_is_sokuon=next_is_sokuon,
+                        next_is_long=next_is_long,
+                        prev_is_syllabic_nasal=prev_is_syllabic_nasal,
+                        prev_is_sokuon=prev_is_sokuon,
+                        prev_is_long=prev_is_long,
+                        total_mora_len=total_mora_len,
                     )
                 )
         # 特徴量のインデックスを取得
@@ -123,12 +192,18 @@ class CrfFeatures(BaseModel):
     @staticmethod
     def get_numbered_features(X: list[list["CrfFeatures"]]) -> list[list[list[int]]]:
         """特徴量を数値化する"""
+        no_use_keys = set(CrfFeatures.no_use_keys)
+        for k in no_use_keys:
+            if k not in X[0][0].model_dump():
+                raise ValueError(f"key {k} is not in CrfFeatures")
         res: list[list[list[int]]] = []
         for word in X:
             res_word: list[list[int]] = []
             for mora in word:
                 res_mora: list[int] = [0] * len(CrfFeatures.to_int_idx)
                 for k, v in mora.model_dump().items():
+                    if k in no_use_keys:
+                        continue
                     if type(v) in {int, float}:
                         idx = CrfFeatures.to_int_idx[k]
                         res_mora[idx] = int(v)
@@ -168,6 +243,6 @@ class CrfLabelSequence(list[str]):
                 in_abbr = False
         for i in range(n - 1):
             if res[i] == crf_label.I_ABBR and res[i + 1] == crf_label.NG:
-                res[i] = crf_label.E_ABBR
-                # res[i + 1] = crf_label.E_ABBR
+                # res[i] = crf_label.E_ABBR
+                res[i + 1] = crf_label.E_ABBR
         return cls(res)
