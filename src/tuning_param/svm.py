@@ -36,7 +36,7 @@ def main():
             scores.append(score)
         return np.mean(scores)
 
-    study = optuna.create_study(direction="maximize", storage="sqlite:///./optuna.db", study_name=f"svm-{datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    study = optuna.load_study(study_name="svm", storage="sqlite:///./optuna.db")
     study.optimize(objective, n_trials=50)
 
     print("Number of finished trials:", len(study.trials))

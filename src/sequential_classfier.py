@@ -8,7 +8,7 @@ class SequentialClassifier:
     def __init__(self, model: Type):
         self.model = model
 
-    def fit(self, X: list[list[CrfFeatures]], y: list[CrfLabelSequence]):
+    def fit(self, X: list[list[CrfFeatures]], y: list[CrfLabelSequence], **kwargs):
         """学習を行う"""
         n = len(X)
         X_: list[list[list[int]]] = CrfFeatures.get_numbered_features(X)
@@ -21,7 +21,7 @@ class SequentialClassifier:
                     X_[i][j][idx] = 1
         flatten_X = sum(X_, [])
         flatten_y = sum(y, CrfLabelSequence())
-        self.model.fit(flatten_X, flatten_y)
+        self.model.fit(flatten_X, flatten_y, **kwargs)
 
     def predict(self, X: list[list[CrfFeatures]]) -> list[CrfLabelSequence]:
         """予測を行う"""

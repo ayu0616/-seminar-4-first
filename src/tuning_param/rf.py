@@ -1,10 +1,10 @@
 import json
+from datetime import datetime
 
 import numpy as np
 import optuna
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import KFold
-from datetime import datetime
 
 
 def main():
@@ -42,7 +42,7 @@ def main():
             scores.append(score)
         return np.mean(scores)
 
-    study = optuna.create_study(direction="maximize", storage="sqlite:///./optuna.db", study_name=f"rf-{datetime.now().strftime('%Y-%m-%d %H:%M')}")
+    study = optuna.load_study(study_name="rf", storage="sqlite:///./optuna.db")
     study.optimize(objective, n_trials=50)
 
     print("Number of finished trials:", len(study.trials))
