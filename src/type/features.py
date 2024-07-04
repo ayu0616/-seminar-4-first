@@ -1,8 +1,10 @@
 from typing import ClassVar, Iterable
 
+from matplotlib.pylab import f
 from pydantic import BaseModel
 
 from type import Abbreviation
+from type.phoneme import Mora
 
 
 class CrfLabel(BaseModel):
@@ -22,7 +24,7 @@ crf_label = CrfLabel()
 class CrfFeatures(BaseModel):
     BOS: ClassVar[str] = "BOS"
     EOS: ClassVar[str] = "EOS"
-    to_int_idx: ClassVar[dict[str, int]] = {CrfLabel.__dict__[v]: i for i, v in enumerate(CrfLabel.__class_vars__)}
+    to_int_idx: ClassVar[dict[str, int]] = {}
     no_use_keys: ClassVar[Iterable[str]] = []
 
     # モーラ
@@ -44,9 +46,9 @@ class CrfFeatures(BaseModel):
     prev3_mora: str
 
     # 略語の1つ前のモーラ
-    # prev_abbr_vowel: str
-    # prev_abbr_consonant: str
-    # prev_abbr_mora: str
+    prev_abbr_vowel: str = ""
+    prev_abbr_consonant: str = ""
+    prev_abbr_mora: str = ""
 
     # 1つ後
     next1_vowel: str
@@ -156,25 +158,25 @@ class CrfFeatures(BaseModel):
                     cls(
                         vowel=feat_list.vowel,
                         consonant=feat_list.consonant,
-                        mora=feat_list.vowel + feat_list.consonant,
+                        mora=feat_list.consonant + feat_list.vowel,
                         prev1_vowel=prev1_vowel,
                         prev1_consonant=prev1_consonant,
-                        prev1_mora=prev1_vowel + prev1_consonant,
+                        prev1_mora=prev1_consonant + prev1_vowel,
                         next1_vowel=next1_vowel,
                         next1_consonant=next1_consonant,
-                        next1_mora=next1_vowel + next1_consonant,
+                        next1_mora=next1_consonant + next1_vowel,
                         prev2_vowel=prev2_vowel,
                         prev2_consonant=prev2_consonant,
-                        prev2_mora=prev2_vowel + prev2_consonant,
+                        prev2_mora=prev2_consonant + prev2_vowel,
                         next2_vowel=next2_vowel,
                         next2_consonant=next2_consonant,
-                        next2_mora=next2_vowel + next2_consonant,
+                        next2_mora=next2_consonant + next2_vowel,
                         prev3_vowel=prev3_vowel,
                         prev3_consonant=prev3_consonant,
-                        prev3_mora=prev3_vowel + prev3_consonant,
+                        prev3_mora=prev3_consonant + prev3_vowel,
                         next3_vowel=next3_vowel,
                         next3_consonant=next3_consonant,
-                        next3_mora=next3_vowel + next3_consonant,
+                        next3_mora=next3_consonant + next3_vowel,
                         elem_num=i,
                         mora_num=j,
                         elem_len=elem_len,
@@ -193,50 +195,94 @@ class CrfFeatures(BaseModel):
                         end_of_elem=j == mora_len_in_elem - 1,
                     )
                 )
-        # 特徴量のインデックスを取得
-        for feat_list in res:
-            for k, v in feat_list.model_dump().items():
-                if type(v) in {int, float, bool}:
-                    feat = k
-                else:
-                    feat = f"{k}={v}"
-                if feat not in CrfFeatures.to_int_idx:
-                    CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
         return res
 
     @staticmethod
-    def get_numbered_features(X: list[list["CrfFeatures"]]) -> list[list[list[int]]]:
+    def assign_feature_idx(X: list[list["CrfFeatures"]]):
+        """特徴量のインデックスを割り当てる"""
+        if len(CrfFeatures.to_int_idx) > 0:
+            # to_int_idxが空でない場合はエラーを出す（割り当て済みなので）
+            raise Exception("CrfFeatures.to_int_idx is not empty")
+        CrfFeatures.to_int_idx = {CrfLabel.__dict__[v]: i for i, v in enumerate(CrfLabel.__class_vars__)}
+        vowels = {"a", "i", "u", "e", "o"}
+        consonants = {mora.consonant for word in X for mora in word} - {"N", "Q"}
+        feat_keys = {"prev1", "prev2", "prev3", "next1", "next2", "next3", "prev_abbr"}
+
+        # ダミーデータのインデックス
+        for v in vowels:
+            for c in consonants:
+                for k in feat_keys:
+                    feats = [f"{k}_vowel={v}", f"{k}_consonant={c}", f"{k}_mora={c}{v}"]
+                    for feat in feats:
+                        if feat not in CrfFeatures.to_int_idx:
+                            CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
+                feats = [f"vowel={v}", f"consonant={c}", f"mora={c}{v}"]
+                for feat in feats:
+                    if feat not in CrfFeatures.to_int_idx:
+                        CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
+        for k in feat_keys:
+            bos_feats = [f"{k}_vowel={CrfFeatures.BOS}", f"{k}_consonant={CrfFeatures.BOS}", f"{k}_mora={CrfFeatures.BOS}{CrfFeatures.BOS}"]
+            eos_feats = [f"{k}_vowel={CrfFeatures.EOS}", f"{k}_consonant={CrfFeatures.EOS}", f"{k}_mora={CrfFeatures.EOS}{CrfFeatures.EOS}"]
+            nasal_feats = [f"{k}_vowel=", f"{k}_consonant=N", f"{k}_mora=N"]
+            sokuon_feats = [f"{k}_vowel=", f"{k}_consonant=Q", f"{k}_mora=Q"]
+            empty_feats = [f"{k}_mora="]
+            feats = bos_feats + eos_feats + nasal_feats + sokuon_feats + empty_feats
+            for feat in feats:
+                if feat not in CrfFeatures.to_int_idx:
+                    CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
+        bos_feats = [f"vowel={CrfFeatures.BOS}", f"consonant={CrfFeatures.BOS}", f"mora={CrfFeatures.BOS}{CrfFeatures.BOS}"]
+        eos_feats = [f"vowel={CrfFeatures.EOS}", f"consonant={CrfFeatures.EOS}", f"mora={CrfFeatures.EOS}{CrfFeatures.EOS}"]
+        nasal_feats = ["vowel=", "consonant=N", "mora=N"]
+        sokuon_feats = ["vowel=", "consonant=Q", "mora=Q"]
+        feats = bos_feats + eos_feats + nasal_feats + sokuon_feats
+        for feat in feats:
+            if feat not in CrfFeatures.to_int_idx:
+                CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
+
+        # 数値データのインデックス
+        for word in X:
+            for mora in word:
+                for k, v in mora.model_dump().items():
+                    if type(v) in {int, float, bool}:
+                        feat = k
+                    if feat not in CrfFeatures.to_int_idx:
+                        CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
+
+    @staticmethod
+    def get_numbered_features(X: list[list["CrfFeatures"]]) -> list[list[list[float]]]:
         """特徴量を数値化する"""
         no_use_keys = set(CrfFeatures.no_use_keys)
         for k in no_use_keys:
             if k not in X[0][0].model_dump():
                 raise ValueError(f"key {k} is not in CrfFeatures")
-        res: list[list[list[int]]] = []
+        res: list[list[list[float]]] = []
         for word in X:
-            res_word: list[list[int]] = []
+            res_word: list[list[float]] = []
             for mora in word:
-                res_mora: list[int] = [0] * len(CrfFeatures.to_int_idx)
+                res_mora: list[float] = [0.0] * len(CrfFeatures.to_int_idx)
                 for k, v in mora.model_dump().items():
                     if k in no_use_keys:
                         continue
-                    if type(v) in {int, float}:
-                        idx = CrfFeatures.to_int_idx[k]
-                        res_mora[idx] = int(v)
-                    elif type(v) is bool:
-                        idx = CrfFeatures.to_int_idx[k]
-                        res_mora[idx] = 1 if v else 0
-                    else:
-                        feat = f"{k}={v}"
-                        idx = CrfFeatures.to_int_idx[feat]
-                        res_mora[idx] = 1
+                    match v:
+                        case int() | float():
+                            idx = CrfFeatures.to_int_idx[k]
+                            res_mora[idx] = v
+                        case bool():
+                            idx = CrfFeatures.to_int_idx[k]
+                            res_mora[idx] = 1 if v else 0
+                        case _:
+                            feat = f"{k}={v}"
+                            idx = CrfFeatures.to_int_idx[feat]
+                            res_mora[idx] = 1
                 res_word.append(res_mora)
             res.append(res_word)
         return res
 
 
 class CrfLabelSequence(list[str]):
-    def __init__(self, data: list[str] = []):
+    def __init__(self, data: list[str] = [], abbr_mora_list: list[Mora] = []):
         super().__init__(data)
+        self.abbr_mora_list = abbr_mora_list
 
     @classmethod
     def from_abbreviation(cls, abbr: Abbreviation) -> "CrfLabelSequence":
@@ -260,4 +306,4 @@ class CrfLabelSequence(list[str]):
             if res[i] == crf_label.I_ABBR and res[i + 1] == crf_label.NG:
                 # res[i] = crf_label.E_ABBR
                 res[i + 1] = crf_label.E_ABBR
-        return cls(res)
+        return cls(res, abbr_mora_list)

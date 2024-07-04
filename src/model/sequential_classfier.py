@@ -14,7 +14,7 @@ class SequentialClassifier:
     def fit(self, X: list[list[CrfFeatures]], y: list[CrfLabelSequence], **kwargs):
         """学習を行う"""
         n = len(X)
-        X_: list[list[list[int]]] = CrfFeatures.get_numbered_features(X)
+        X_: list[list[list[float]]] = CrfFeatures.get_numbered_features(X)
         for i in range(n):
             m = len(X_[i])
             total_mora_len = 0
@@ -25,6 +25,13 @@ class SequentialClassifier:
                     X_[i][j][idx] = 1
                 tml_idx = CrfFeatures.to_int_idx["total_mora_len"]
                 X_[i][j][tml_idx] = total_mora_len
+                if total_mora_len > 0:
+                    prev_abbr_mora = y[i].abbr_mora_list[total_mora_len - 1]
+                    prev_abbr_consonant = prev_abbr_mora.consonant
+                    prev_abbr_vowel = prev_abbr_mora.vowel
+                    X_[i][j][CrfFeatures.to_int_idx[f"prev_abbr_consonant={prev_abbr_consonant}"]] = 1
+                    X_[i][j][CrfFeatures.to_int_idx[f"prev_abbr_vowel={prev_abbr_vowel}"]] = 1
+                    X_[i][j][CrfFeatures.to_int_idx[f"prev_abbr_mora={prev_abbr_consonant+prev_abbr_vowel}"]] = 1
                 if CrfLabel.is_abbr(y[i][j]):
                     total_mora_len += 1
         flatten_X = sum(X_, [])
@@ -35,7 +42,7 @@ class SequentialClassifier:
         """予測を行う"""
         n = len(X)
         res: list[CrfLabelSequence] = []
-        X_: list[list[list[int]]] = CrfFeatures.get_numbered_features(X)
+        X_: list[list[list[float]]] = CrfFeatures.get_numbered_features(X)
         for i in range(n):
             x = X_[i]
             m = len(x)
@@ -57,14 +64,14 @@ class SequentialClassifier:
 
     def score(self, X: list[list[CrfFeatures]], y: list[CrfLabelSequence]):
         """スコアを計算する"""
-        y_pred = self.predict(X)
+        y_pred = [y[0] for y in self.predict_rank(X, 1)]
         return [CaseScore.from_test_pred(y_, y_pred_) for y_, y_pred_ in zip(y, y_pred)]
 
     def predict_proba(self, X: list[list[CrfFeatures]]):
         """確率を予測する"""
         n = len(X)
         class_list: list[str] = self.model.classes_
-        X_: list[list[list[int]]] = CrfFeatures.get_numbered_features(X)
+        X_: list[list[list[float]]] = CrfFeatures.get_numbered_features(X)
         for i in range(n):
             x = X_[i]
             m = len(x)
@@ -88,7 +95,7 @@ class SequentialClassifier:
         """予測確率の上位n位のラベルを返す"""
         n = len(X)
         class_list: list[str] = self.model.classes_
-        X_: list[list[list[int]]] = CrfFeatures.get_numbered_features(X)
+        X_: list[list[list[float]]] = CrfFeatures.get_numbered_features(X)
         for i in range(n):
             x = X_[i]
             m = len(x)
@@ -107,6 +114,17 @@ class SequentialClassifier:
                         x[j][idx] = 1
                     tml = sum([1 for y_ in y if CrfLabel.is_abbr(y_)])
                     x[j][tml_idx] = tml
+                    if tml > 0:
+                        prev_abbr_idx = -1
+                        for m_idx, lb in enumerate(y):
+                            if CrfLabel.is_abbr(lb):
+                                prev_abbr_idx = m_idx
+                        assert prev_abbr_idx >= 0
+                        prev_abbr_consonant = X[i][prev_abbr_idx].consonant
+                        prev_abbr_vowel = X[i][prev_abbr_idx].vowel
+                        x[j][CrfFeatures.to_int_idx[f"prev_abbr_consonant={prev_abbr_consonant}"]] = 1
+                        x[j][CrfFeatures.to_int_idx[f"prev_abbr_vowel={prev_abbr_vowel}"]] = 1
+                        x[j][CrfFeatures.to_int_idx[f"prev_abbr_mora={prev_abbr_consonant+prev_abbr_vowel}"]] = 1
                     # if label not in proba_memo:
                     #     y_proba = self.model.predict_proba([x[j]])[0]
                     #     proba_memo[label] = y_proba
@@ -120,5 +138,4 @@ class SequentialClassifier:
                 index_list = np.argsort(y_pred_proba_next)[::-1][:rank_n]
                 y_pred = [y_pred_next[i] for i in index_list]
                 y_pred_proba = [y_pred_proba_next[i] for i in index_list]
-            print(y_pred_proba)
             yield y_pred
