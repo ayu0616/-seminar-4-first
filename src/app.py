@@ -10,7 +10,7 @@ from pydantic import BaseModel
 from model.sequential_classfier import SequentialClassifier
 from process_data import processing
 from type.abbreviation import Abbreviation, AbbreviationBase
-from type.features import CrfFeatures
+from type.features import CrfFeatures, CrfLabel
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
@@ -41,7 +41,7 @@ async def api(input_data: Input):
     for i, abbr in enumerate(model.predict_rank(X, rank_n)):
         word = data[i].word.replace("・", "")
         print(i, word, abbr)
-        abbrs.append(["".join([c for lb, c in zip(labels, word) if lb in {"B-Abbr", "I-Abbr"}]) for labels in abbr])
+        abbrs.append(["".join([c for lb, c in zip(labels, word) if CrfLabel.is_abbr(lb)]) for labels in abbr])
 
     return Abbrs(abbrs=abbrs)
 

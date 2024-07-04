@@ -6,10 +6,14 @@ from type import Abbreviation
 
 
 class CrfLabel(BaseModel):
-    NG: str = "NG"
-    B_ABBR: str = "B-Abbr"
-    I_ABBR: str = "I-Abbr"
-    E_ABBR: str = "E-Abbr"
+    NG: ClassVar[str] = "NG"
+    B_ABBR: ClassVar[str] = "B-Abbr"
+    I_ABBR: ClassVar[str] = "I-Abbr"
+    E_ABBR: ClassVar[str] = "E-Abbr"
+
+    @staticmethod
+    def is_abbr(label: str) -> bool:
+        return label in {CrfLabel.B_ABBR, CrfLabel.I_ABBR}
 
 
 crf_label = CrfLabel()
@@ -18,7 +22,7 @@ crf_label = CrfLabel()
 class CrfFeatures(BaseModel):
     BOS: ClassVar[str] = "BOS"
     EOS: ClassVar[str] = "EOS"
-    to_int_idx: ClassVar[dict[str, int]] = {v: i for i, v in enumerate(crf_label.model_dump().values())}
+    to_int_idx: ClassVar[dict[str, int]] = {CrfLabel.__dict__[v]: i for i, v in enumerate(CrfLabel.__class_vars__)}
     no_use_keys: ClassVar[Iterable[str]] = []
 
     # モーラ
@@ -38,6 +42,11 @@ class CrfFeatures(BaseModel):
     prev3_vowel: str
     prev3_consonant: str
     prev3_mora: str
+
+    # 略語の1つ前のモーラ
+    # prev_abbr_vowel: str
+    # prev_abbr_consonant: str
+    # prev_abbr_mora: str
 
     # 1つ後
     next1_vowel: str
@@ -69,6 +78,10 @@ class CrfFeatures(BaseModel):
     elem_len: int  # 単語全体の要素数
     mora_len_in_elem: int  # 要素全体のモーラ数
     total_mora_len: int  # 単語全体のモーラ数
+    begin_of_elem: bool  # 要素の先頭かどうか
+    end_of_elem: bool  # 要素の末尾かどうか
+
+    current_mora_len: int = 0  # 現在までに採用されたモーラ数（学習の過程で求める）
 
     def get_array(self):
         """特徴量配列を取得する"""
@@ -176,6 +189,8 @@ class CrfFeatures(BaseModel):
                         prev_is_sokuon=prev_is_sokuon,
                         prev_is_long=prev_is_long,
                         total_mora_len=total_mora_len,
+                        begin_of_elem=j == 0,
+                        end_of_elem=j == mora_len_in_elem - 1,
                     )
                 )
         # 特徴量のインデックスを取得
