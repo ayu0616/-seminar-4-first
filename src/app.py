@@ -35,10 +35,13 @@ CrfFeatures.assign_feature_idx(X)
 model = SequentialClassifier(
     RandomForestClassifier(
         random_state=616,
-        n_estimators=393,
-        max_depth=19,
-        max_features="sqrt",
-        criterion="entropy",
+        n_jobs=-1,
+        criterion="gini",
+        n_estimators=893,
+        max_depth=92,
+        max_features=0.08707415761760165,
+        max_leaf_nodes=795,
+        min_samples_split=5,
     )
 )
 model.fit(X, y)

@@ -64,8 +64,14 @@ class SequentialClassifier:
 
     def score(self, X: list[list[CrfFeatures]], y: list[CrfLabelSequence]):
         """スコアを計算する"""
-        y_pred = [y[0] for y in self.predict_rank(X, 1)]
-        return [CaseScore.from_test_pred(y_, y_pred_) for y_, y_pred_ in zip(y, y_pred)]
+        score_list: list[int] = []
+        for y_pred, yi in zip(self.predict_rank(X, 5), y):
+            for j, yp in enumerate(y_pred):
+                if yp == yi:
+                    score_list.append((5 - j) + 5)
+                    break
+            score_list.append(0)
+        return score_list
 
     def predict_proba(self, X: list[list[CrfFeatures]]):
         """確率を予測する"""
@@ -105,7 +111,7 @@ class SequentialClassifier:
             for j in range(m):
                 y_pred_proba_next: list[float] = []
                 y_pred_next: list[CrfLabelSequence] = []
-                proba_memo: dict[str, np.ndarray[float]] = {}
+                proba_memo: dict[tuple, np.ndarray[float]] = {}
                 for y, p in zip(y_pred, y_pred_proba):
                     label = ""
                     if j > 0:
@@ -125,12 +131,12 @@ class SequentialClassifier:
                         x[j][CrfFeatures.to_int_idx[f"prev_abbr_consonant={prev_abbr_consonant}"]] = 1
                         x[j][CrfFeatures.to_int_idx[f"prev_abbr_vowel={prev_abbr_vowel}"]] = 1
                         x[j][CrfFeatures.to_int_idx[f"prev_abbr_mora={prev_abbr_consonant+prev_abbr_vowel}"]] = 1
-                    # if label not in proba_memo:
-                    #     y_proba = self.model.predict_proba([x[j]])[0]
-                    #     proba_memo[label] = y_proba
-                    # else:
-                    #     y_proba = proba_memo[label]
-                    y_proba = self.model.predict_proba([x[j]])[0]
+                    tx = tuple(x[j])
+                    if tx not in proba_memo:
+                        y_proba = self.model.predict_proba([x[j]])[0]
+                        proba_memo[tx] = y_proba
+                    else:
+                        y_proba = proba_memo[tx]
                     for k, next_p in enumerate(y_proba):
                         class_name = class_list[k]
                         y_pred_next.append(y + [class_name])
