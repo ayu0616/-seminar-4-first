@@ -1,0 +1,13 @@
+.git
+.github
+.obsidian
+.venv
+.mypy_cache
+memo
+docs
+paper-abbreviation
+templates
+node_modules
+
+Dockerfile*
+docker-compose*.yml

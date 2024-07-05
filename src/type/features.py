@@ -1,6 +1,5 @@
 from typing import ClassVar, Iterable
 
-from matplotlib.pylab import f
 from pydantic import BaseModel
 
 from type import Abbreviation
