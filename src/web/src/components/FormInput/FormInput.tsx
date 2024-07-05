@@ -24,7 +24,7 @@ export const FormInput = <TFieldValues extends FieldValues = FieldValues, TName 
                     <div className="flex items-center gap-2">
                         {label && <FormLabel>{label}</FormLabel>}
                         <FormControl className="flex-1">
-                            <Input {...field} placeholder={placeholder} />
+                            <Input {...field} autoComplete="off" placeholder={placeholder} />
                         </FormControl>
                     </div>
                     {description && <FormDescription>{description}</FormDescription>}
