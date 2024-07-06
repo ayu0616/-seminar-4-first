@@ -1,0 +1,85 @@
+/* @theme marpit-theme */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 29px;
+}
+
+div#\:\$p > svg > foreignObject > section {
+    @apply bg-slate-50 justify-start text-gray-800 p-6;
+    font-family: "BIZ UDPGothic", sans-serif;
+
+    &.lead {
+        border: 1rem solid;
+        border-image: linear-gradient(135deg, #581c87, #e9d5ff) 1;
+        @apply justify-center p-12;
+    }
+
+    &.lead h1 {
+        @apply text-center;
+    }
+    &.narrow {
+        @apply p-0;
+    }
+
+    & p {
+        @apply p-0;
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        @apply font-bold text-purple-800;
+    }
+
+    & h2 {
+        @apply border-l-[0.25rem] border-purple-800 pl-4 py-2 mb-4;
+    }
+    & h3 {
+        @apply first:mt-0;
+    }
+
+    & div.mermaid {
+        all: unset;
+    }
+
+    & ul {
+        @apply m-0 list-disc list-inside;
+
+        & ul {
+            @apply list-[circle];
+
+            & ul {
+                @apply list-[square];
+            }
+        }
+    }
+}
+
+.area {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e8f0;
+}
+
+code {
+    font-family: monaco, monospace, "BIZ UDPGothic";
+}
+marp-pre {
+    background-color: white;
+}
+
+strong {
+    @apply text-red-700;
+}
+
+.text-desc {
+    @apply text-gray-600 text-xs;
+}

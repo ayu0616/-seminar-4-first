@@ -2,52 +2,12 @@
 marp: true
 size: 16:9
 lang: ja
-style: |
-    section {
-        background-color: rgb(248, 250, 252);
-        font-family: "BIZ UDPGothic", sans-serif;
-        justify-content: start;
-        color: #333;
-    }
-    .area {
-        background-color: white;
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border: 1px solid #e2e8f0;
-
-    }
-    h3:first-child, h3:first-child {
-        margin-top: 0;
-    }
-    div.mermaid { all: unset; }
-    h1, h2, h3, h4, h5, h6 {
-        color: #691f80;
-        font-weight: bold;
-    }
-    section.lead {
-        justify-content: center;
-    }
-    section.lead h1 {
-        text-align: center;
-    }
-    section.narrow {
-       padding: 0;
-    }
-    code {
-      font-family: monaco, monospace, "BIZ UDPGothic";
-    }
-    marp-pre {
-      background-color: white;
-    }
-    ul {
-        margin: 0;
-    }
-    strong {
-        color: #691f80;
-    }
-math: mathjax
+math: katex
 title: 機械学習による外来語略語の推定
+transition: fade
 ---
+
+<!-- transition: fade 300ms -->
 
 <!-- $width: 1920 -->
 <!-- $height: 1080 -->
@@ -79,31 +39,46 @@ title: 機械学習による外来語略語の推定
 - コンピューターで扱いやすい定義にしたい
     - 表記が変わると面倒（カタカナ→Alphabet）
 
-<div class="mt-12"></div>
+<br>
 
 略語とは、
-<div class="mx-auto my-1 text-[2.5rem]">
+<div class="mx-auto my-1 text-xl">
 
 **元の単語の部分列**
 
 </div>
+
 とここでは定義する。
 
-<div class="mt-12"></div>
+<br />
 
-単語$W$の部分列は、$2^{|W|}$通り
+単語$W$の部分列は、$2^{|W|}$通り<span class="text-desc mx-2">（厳密には、全部削ったものと1つも削らなかったものを除く$2^{|W|}-2$通り）</span>
 その中で**人間にとって自然な略語**を推定する
 
 ## 自然な略語
 
-自然な略語は何らかの共通点を持つ、と仮定
+自然な略語は何らかの規則を持つ、と仮定
 
-### 共通点
+規則は、**音韻**的なものと**意味**的なものが考えられるがここでは
 
-#### 音韻
+<div class="mx-auto my-1 text-xl">
 
-#### 意味
+**音韻**的なものを用いる
 
+</div>
+
+### 音韻的な規則
+
+- 音の並びの自然さ
+    - 言語学で言うところの音素配列論
+- どの位置の音を取るか
+    - 先頭か末尾か中間か
+
+## モデルの概要
+
+
+
+<link rel="stylesheet" href="./dist/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">

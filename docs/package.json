@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "dev:css": "postcss --watch style.css -o dist/style.css",
+    "dev:marp": "marp --watch index.md --html",
+    "serve:marp": "marp -s . --html",
+    "build": "postcss style.css -o dist/style.css && marp index.md --html"
+  },
+  "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^3.4.0",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.4"
+  }
+}

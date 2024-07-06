@@ -1,1 +1,8 @@
-tailwind.config = { corePlugins: { preflight: false } };
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ["**/*.{html,md}"],
+    theme: {
+        extend: {},
+    },
+    plugins: [],
+};
