@@ -793,6 +793,10 @@ video {
 .border-hidden {
   border-style: hidden;
 }
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
 .bg-none {
   background-image: none;
 }
@@ -1030,6 +1034,19 @@ div#\:\$p > svg > foreignObject > section {
     & div.mermaid {
         all: unset;
     }
+
+    & div.mermaid {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+    & div.mermaid {
+    display: flex;
+  }
+
+    & div.mermaid {
+    justify-content: center;
+  }
 
     & ul {
     margin: 0px;

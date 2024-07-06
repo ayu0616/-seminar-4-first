@@ -47,6 +47,7 @@ div#\:\$p > svg > foreignObject > section {
 
     & div.mermaid {
         all: unset;
+        @apply my-4 flex justify-center;
     }
 
     & ul {
