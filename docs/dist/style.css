@@ -606,12 +606,27 @@ video {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 .mb-auto {
   margin-bottom: auto;
+}
+.ml-1 {
+  margin-left: 0.25rem;
 }
 .mt-auto {
   margin-top: auto;
@@ -792,10 +807,6 @@ video {
 }
 .border-hidden {
   border-style: hidden;
-}
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-none {
   background-image: none;
@@ -984,6 +995,10 @@ div#\:\$p > svg > foreignObject > section {
   }
 
     & p {
+    margin: 0px;
+  }
+
+    & p {
     padding: 0px;
   }
 
@@ -1032,7 +1047,7 @@ div#\:\$p > svg > foreignObject > section {
   }
 
     & div.mermaid {
-        all: unset;
+        all: unset
     }
 
     & div.mermaid {
@@ -1047,6 +1062,12 @@ div#\:\$p > svg > foreignObject > section {
     & div.mermaid {
     justify-content: center;
   }
+
+    & div.mermaid {
+        & * {
+            font-family: "BIZ UDPGothic", sans-serif;
+        }
+    }
 
     & ul {
     margin: 0px;

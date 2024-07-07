@@ -36,13 +36,8 @@ transition: fade
 
 ## 略語とは
 
-- コンピューターで扱いやすい定義にしたい
-    - 表記が変わると面倒（カタカナ→Alphabet）
-
-<br>
-
 略語とは、
-<div class="mx-auto my-1 text-xl">
+<div class="mx-auto my-6 text-xl">
 
 **元の単語の部分列**
 
@@ -52,8 +47,9 @@ transition: fade
 
 <br />
 
-単語$W$の部分列は、$2^{|W|}$通り<span class="text-desc mx-2">（厳密には、全部削ったものと1つも削らなかったものを除く$2^{|W|}-2$通り）</span>
+単語$W$の部分列は、$2^{|W|}$通り
 その中で**人間にとって自然な略語**を推定する
+<span class="text-desc mx-2">（厳密には、全部削ったものと1つも削らなかったものを除く$2^{|W|}-2$通りが略語としてあり得る）</span>
 
 ## 自然な略語
 
@@ -61,7 +57,7 @@ transition: fade
 
 規則は、**音韻**的なものと**意味**的なものが考えられるがここでは
 
-<div class="mx-auto my-1 text-xl">
+<div class="mx-auto my-6 text-xl">
 
 **音韻**的なものを用いる
 
@@ -74,7 +70,25 @@ transition: fade
 - どの位置の音を取るか
     - 先頭か末尾か中間か
 
-## モデルの概要
+## 系列ラベリング
+
+- 系列の要素にラベルづけする問題
+- 品詞分解や固有表現抽出<span class="text-desc">（人名、日付など）</span>に使われる
+
+<div class="mx-auto my-6 text-xl"
+
+単語を**モーラの系列**として考える→**系列ラベリング**
+
+</div>
+
+- ラベル<span class="text-desc ml-1">（厳密にはもうちょっと複雑）</span>
+    - **残る**
+    - 残らない
+- 例
+    - **パ**ー**ソ**ナル**コン**ピューター
+    - **スーパー**マーケット
+
+## 単語について
 
 - 単語は、**要素**に分解される
 - 要素は、**モーラ**に分解される
@@ -93,26 +107,33 @@ flowchart TD
 
 - モーラごとに、略語に使用するかどうかを判定
 - 判定には前回の出力も使用
+    - $x_2$と$y_1$を使って$y_2$を推定
 
 <div class="mermaid">
 flowchart LR
-    subgraph g1[" "]
-        direction TB
-        x1((x1)) --> model1(model) --> y1((y1))
-    end
-    subgraph g2[" "]
-        direction TB
-        x2((x2)) --> model2(model) --> y2((y2))
-    end
-    subgraph g3[" "]
-        direction TB
-        x3((x3)) --> model3(model) --> y3((y3))
+    subgraph g["Sequential Model"]
+        direction LR
+        subgraph g1[" "]
+            direction TB
+            x1((x1)) --> model1(RF) --> y1((y1))
+        end
+        subgraph g2[" "]
+            direction TB
+            x2((x2)) --> model2(RF) --> y2((y2))
+        end
+        subgraph g3[" "]
+            direction TB
+            x3((x3)) --> model3(RF) --> y3((y3))
+        end
     end
     g1 --> g2 --> g3
+    style g fill:#ecfdf5
     style g1 fill:#FFF
     style g2 fill:#FFF
     style g3 fill:#FFF
 </div>
+
+##
 
 <link rel="stylesheet" href="./dist/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
