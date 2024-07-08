@@ -92,6 +92,7 @@ transition: fade
 
 - 単語は、**要素**に分解される
 - 要素は、**モーラ**に分解される
+- モーラは**特徴量**を持つ
 
 <div class="mermaid">
 flowchart TD
@@ -101,11 +102,11 @@ flowchart TD
 
 <br>
 
-- ポテトチップス → ポテト・チップス → ポ / テ / ト ・ チ / ッ / プ / ス
+- ポテトチップス → ポテト・チップス → <span class="p-1 border bg-white rounded">ポ / テ / ト</span>  <span class="px-1 py-0.5 border bg-white rounded">チ / ッ / プ / ス</span>
 
 ## モデルの概要
 
-- モーラごとに、略語に使用するかどうかを判定
+- モーラ($x_i$)ごとに、略語に使用するかどうか($y_i$)を判定
 - 判定には前回の出力も使用
     - $x_2$と$y_1$を使って$y_2$を推定
 
@@ -133,7 +134,29 @@ flowchart LR
     style g3 fill:#FFF
 </div>
 
-##
+## 複数の候補を推定
+
+分類タスクを複数回連続で行うため精度が出にくい
+→複数の候補を推定する
+
+### 推定方法
+
+`sklearn`の`predict_proba`を用いる
+クラスが4つあるとすると、`[0.1, 0.25, 0.35, 0.3]`のように出力される
+<br>
+$R$個の候補を確率が高い順に取得したい
+$i$個目のモーラまで見たとき、候補$C_{ir}$の出現確率を$p_{ir}$とすると、
+$p_{i+1,r}$は$\{p_{ir} \cdot \text{pred}_k \mid 0 \le k \le K, \quad 0 \le r \le R\}$の$r$番目に大きな値
+$p_{i+1,r}$は$KR$個作ることができるが、$R$個だけ保持しておけば良い
+
+## 遊んでみよう
+
+<div class="flex-1 flex justify-center items-center text-center text-xl">
+
+例のごとく、Webアプリをつくりました
+遊んでみましょう！
+
+</div>
 
 <link rel="stylesheet" href="./dist/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">

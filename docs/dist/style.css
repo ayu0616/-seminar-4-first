@@ -590,6 +590,9 @@ video {
 .clear-none {
   clear: none;
 }
+.m-0 {
+  margin: 0px;
+}
 .-mx-6 {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
@@ -602,25 +605,13 @@ video {
   margin-left: auto;
   margin-right: auto;
 }
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 .mb-auto {
   margin-bottom: auto;
@@ -631,11 +622,20 @@ video {
 .mt-auto {
   margin-top: auto;
 }
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
 .block {
   display: block;
 }
 .inline {
   display: inline;
+}
+.flex {
+  display: flex;
 }
 .table {
   display: table;
@@ -666,6 +666,9 @@ video {
 }
 .max-w-prose {
   max-width: 65ch;
+}
+.flex-1 {
+  flex: 1 1 0%;
 }
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -721,8 +724,14 @@ video {
 .content-stretch {
   align-content: stretch;
 }
+.items-center {
+  align-items: center;
+}
 .justify-normal {
   justify-content: normal;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-evenly {
   justify-content: space-evenly;
@@ -791,6 +800,9 @@ video {
 .rounded-md {
   border-radius: 0.375rem;
 }
+.rounded {
+  border-radius: 0.25rem;
+}
 .border {
   border-width: 1px;
 }
@@ -807,6 +819,10 @@ video {
 }
 .border-hidden {
   border-style: hidden;
+}
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 .bg-none {
   background-image: none;
@@ -834,6 +850,30 @@ video {
 .stroke-none {
   stroke: none;
 }
+.p-0 {
+  padding: 0px;
+}
+.p-0\.5 {
+  padding: 0.125rem;
+}
+.p-1 {
+  padding: 0.25rem;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+.text-center {
+  text-align: center;
+}
 .text-right {
   text-align: right;
 }
@@ -858,6 +898,10 @@ video {
 }
 .text-xl {
   font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.text-lg {
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 .font-extralight {
