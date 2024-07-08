@@ -722,14 +722,8 @@ video {
 .content-stretch {
   align-content: stretch;
 }
-.items-center {
-  align-items: center;
-}
 .justify-normal {
   justify-content: normal;
-}
-.justify-center {
-  justify-content: center;
 }
 .justify-evenly {
   justify-content: space-evenly;
@@ -854,9 +848,6 @@ video {
 .p-1 {
   padding: 0.25rem;
 }
-.p-0 {
-  padding: 0px;
-}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -868,9 +859,6 @@ video {
 .py-0\.5 {
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
-}
-.text-center {
-  text-align: center;
 }
 .text-right {
   text-align: right;
@@ -894,13 +882,13 @@ video {
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .font-extralight {
   font-weight: 200;
