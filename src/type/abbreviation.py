@@ -12,12 +12,6 @@ class AbbreviationBase(BaseModel):
     abbreviation: str  # 略語
     word: str  # 原語
 
-    def __repr__(self) -> str:
-        return f"Abbreviation({self.word} -> {self.abbreviation})"
-
-    def __str__(self) -> str:
-        return self.__repr__()
-
 
 class Abbreviation(AbbreviationBase):
     """略語データ"""

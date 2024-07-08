@@ -133,7 +133,15 @@ flowchart LR
     style g3 fill:#FFF
 </div>
 
-##
+## 複数の候補を推定
+
+分類タスクを複数回連続で行うため精度が出にくい
+→複数の候補を推定する
+
+### 推定方法
+
+`sklearn`の`predict_proba`を用いる
+$p_{ir}$を$i$個目のモーラまで見たときの$r$番目に大きい推定値となる確率とすると
 
 <link rel="stylesheet" href="./dist/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
