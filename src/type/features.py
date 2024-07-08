@@ -48,6 +48,9 @@ class CrfFeatures(BaseModel):
     prev_abbr_vowel: str = ""
     prev_abbr_consonant: str = ""
     prev_abbr_mora: str = ""
+    abbr_mora_len: int = 0
+    prev_abbr_is_syllabic_nasal: bool = False
+    prev_abbr_is_sokuon: bool = False
 
     # 1つ後
     next1_vowel: str
@@ -75,12 +78,14 @@ class CrfFeatures(BaseModel):
 
     # 要素
     elem_num: int  # 何番目の要素か
-    mora_num: int  # 何番目のモーラか
+    mora_num: int  # 要素の中で何番目のモーラか
+    total_mora_num: int  # 単語全体の中で何番面のモーラか
     elem_len: int  # 単語全体の要素数
     mora_len_in_elem: int  # 要素全体のモーラ数
     total_mora_len: int  # 単語全体のモーラ数
     begin_of_elem: bool  # 要素の先頭かどうか
     end_of_elem: bool  # 要素の末尾かどうか
+    current_pos: float  # 単語全体における現在の位置
 
     current_mora_len: int = 0  # 現在までに採用されたモーラ数（学習の過程で求める）
 
@@ -94,9 +99,11 @@ class CrfFeatures(BaseModel):
         res: list["CrfFeatures"] = []
         elem_len = len(abbr.word_element_list)
         total_mora_len = sum([len(e.mora_list) for e in abbr.word_element_list])
+        total_mora_num = 0
         for i, elem in enumerate(abbr.word_element_list):
             mora_len_in_elem = len(elem.mora_list)
             for j, feat_list in enumerate(elem.mora_list):
+                total_mora_num += 1
                 if j == mora_len_in_elem - 1:
                     next1_vowel = cls.EOS
                     next1_consonant = cls.EOS
@@ -178,8 +185,10 @@ class CrfFeatures(BaseModel):
                         next3_mora=next3_consonant + next3_vowel,
                         elem_num=i,
                         mora_num=j,
+                        total_mora_num=total_mora_num,
                         elem_len=elem_len,
                         mora_len_in_elem=mora_len_in_elem,
+                        current_pos=total_mora_num / total_mora_len,
                         is_syllabic_nasal=feat_list.is_syllabic_nasal(),
                         is_sokuon=feat_list.is_sokuon(),
                         is_long=is_long,
@@ -215,7 +224,7 @@ class CrfFeatures(BaseModel):
                     for feat in feats:
                         if feat not in CrfFeatures.to_int_idx:
                             CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
-                feats = [f"vowel={v}", f"consonant={c}", f"mora={c}{v}"]
+                feats = [f"vowel={v}", f"consonant={c}", f"mora={c}{v}", f"bom_{c}{v}"]  # bomはbag-of-mora
                 for feat in feats:
                     if feat not in CrfFeatures.to_int_idx:
                         CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
@@ -231,8 +240,8 @@ class CrfFeatures(BaseModel):
                     CrfFeatures.to_int_idx[feat] = len(CrfFeatures.to_int_idx)
         bos_feats = [f"vowel={CrfFeatures.BOS}", f"consonant={CrfFeatures.BOS}", f"mora={CrfFeatures.BOS}{CrfFeatures.BOS}"]
         eos_feats = [f"vowel={CrfFeatures.EOS}", f"consonant={CrfFeatures.EOS}", f"mora={CrfFeatures.EOS}{CrfFeatures.EOS}"]
-        nasal_feats = ["vowel=", "consonant=N", "mora=N"]
-        sokuon_feats = ["vowel=", "consonant=Q", "mora=Q"]
+        nasal_feats = ["vowel=", "consonant=N", "mora=N", "bom_N"]
+        sokuon_feats = ["vowel=", "consonant=Q", "mora=Q", "bom_Q"]
         feats = bos_feats + eos_feats + nasal_feats + sokuon_feats
         for feat in feats:
             if feat not in CrfFeatures.to_int_idx:
@@ -257,8 +266,11 @@ class CrfFeatures(BaseModel):
         res: list[list[list[float]]] = []
         for word in X:
             res_word: list[list[float]] = []
+            bom = [CrfFeatures.to_int_idx[f"bom_{mora.mora}"] for mora in word]
             for mora in word:
                 res_mora: list[float] = [0.0] * len(CrfFeatures.to_int_idx)
+                for i in bom:
+                    res_mora[i] += 1
                 for k, v in mora.model_dump().items():
                     if k in no_use_keys:
                         continue

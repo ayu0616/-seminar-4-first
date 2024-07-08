@@ -15,25 +15,31 @@ class SequentialClassifier:
         """学習を行う"""
         n = len(X)
         X_: list[list[list[float]]] = CrfFeatures.get_numbered_features(X)
+        print("case size: ", len(X_))
+        print("feature size: ", len(X_[0][0]))
         for i in range(n):
             m = len(X_[i])
-            total_mora_len = 0
+            abbr_mora_len = 0
             for j in range(m):
                 if j > 0:
                     label = y[i][j - 1]
                     idx = CrfFeatures.to_int_idx[label]
                     X_[i][j][idx] = 1
-                tml_idx = CrfFeatures.to_int_idx["total_mora_len"]
-                X_[i][j][tml_idx] = total_mora_len
-                if total_mora_len > 0:
-                    prev_abbr_mora = y[i].abbr_mora_list[total_mora_len - 1]
+                aml_idx = CrfFeatures.to_int_idx["abbr_mora_len"]
+                X_[i][j][aml_idx] = abbr_mora_len
+                if abbr_mora_len > 0:
+                    prev_abbr_mora = y[i].abbr_mora_list[abbr_mora_len - 1]
                     prev_abbr_consonant = prev_abbr_mora.consonant
                     prev_abbr_vowel = prev_abbr_mora.vowel
+                    prev_abbr_is_syllabic_nasal = prev_abbr_mora.is_syllabic_nasal()
+                    prev_abbr_is_sokuon = prev_abbr_mora.is_sokuon()
                     X_[i][j][CrfFeatures.to_int_idx[f"prev_abbr_consonant={prev_abbr_consonant}"]] = 1
                     X_[i][j][CrfFeatures.to_int_idx[f"prev_abbr_vowel={prev_abbr_vowel}"]] = 1
                     X_[i][j][CrfFeatures.to_int_idx[f"prev_abbr_mora={prev_abbr_consonant+prev_abbr_vowel}"]] = 1
+                    X_[i][j][CrfFeatures.to_int_idx["prev_abbr_is_syllabic_nasal"]] = int(prev_abbr_is_syllabic_nasal)
+                    X_[i][j][CrfFeatures.to_int_idx["prev_abbr_is_sokuon"]] = int(prev_abbr_is_sokuon)
                 if CrfLabel.is_abbr(y[i][j]):
-                    total_mora_len += 1
+                    abbr_mora_len += 1
         flatten_X = sum(X_, [])
         flatten_y = sum(y, CrfLabelSequence())
         self.model.fit(flatten_X, flatten_y, **kwargs)
@@ -47,18 +53,18 @@ class SequentialClassifier:
             x = X_[i]
             m = len(x)
             y_pred: CrfLabelSequence = CrfLabelSequence([])
-            total_mora_len = 0
+            abbr_mora_len = 0
             for j in range(m):
                 if j > 0:
                     label = y_pred[j - 1]
                     idx = CrfFeatures.to_int_idx[label]
                     x[j][idx] = 1
-                tml_idx = CrfFeatures.to_int_idx["total_mora_len"]
-                x[j][tml_idx] = total_mora_len
+                tml_idx = CrfFeatures.to_int_idx["abbr_mora_len"]
+                x[j][tml_idx] = abbr_mora_len
                 yj = self.model.predict([x[j]])[0]
                 y_pred.append(yj)
                 if CrfLabel.is_abbr(yj):
-                    total_mora_len += 1
+                    abbr_mora_len += 1
             res.append(y_pred)
         return res
 
@@ -83,19 +89,19 @@ class SequentialClassifier:
             x = X_[i]
             m = len(x)
             y_proba: list[np.ndarray[float]] = []
-            total_mora_len = 0
+            abbr_mora_len = 0
             for j in range(m):
                 if j > 0:
                     l_idx = y_proba[j - 1].argmax()
                     label = class_list[l_idx]
                     idx = CrfFeatures.to_int_idx[label]
                     x[j][idx] = 1
-                tml_idx = CrfFeatures.to_int_idx["total_mora_len"]
-                x[j][tml_idx] = total_mora_len
+                tml_idx = CrfFeatures.to_int_idx["abbr_mora_len"]
+                x[j][tml_idx] = abbr_mora_len
                 yj = self.model.predict_proba([x[j]])[0]
                 y_proba.append(yj)
                 if CrfLabel.is_abbr(class_list[yj.argmax()]):
-                    total_mora_len += 1
+                    abbr_mora_len += 1
             yield y_proba
 
     def predict_rank(self, X: list[list[CrfFeatures]], rank_n: int):
@@ -108,7 +114,7 @@ class SequentialClassifier:
             m = len(x)
             y_pred_proba: list[float] = [1.0]
             y_pred: list[CrfLabelSequence] = [CrfLabelSequence([])]
-            tml_idx = CrfFeatures.to_int_idx["total_mora_len"]
+            aml_idx = CrfFeatures.to_int_idx["abbr_mora_len"]
             for j in range(m):
                 y_pred_proba_next: list[float] = []
                 y_pred_next: list[CrfLabelSequence] = []
@@ -119,9 +125,9 @@ class SequentialClassifier:
                         label = y_pred[0][j - 1]
                         idx = CrfFeatures.to_int_idx[label]
                         x[j][idx] = 1
-                    tml = sum([1 for y_ in y if CrfLabel.is_abbr(y_)])
-                    x[j][tml_idx] = tml
-                    if tml > 0:
+                    aml = sum([1 for y_ in y if CrfLabel.is_abbr(y_)])
+                    x[j][aml_idx] = aml
+                    if aml > 0:
                         prev_abbr_idx = -1
                         for m_idx, lb in enumerate(y):
                             if CrfLabel.is_abbr(lb):
@@ -129,9 +135,13 @@ class SequentialClassifier:
                         assert prev_abbr_idx >= 0
                         prev_abbr_consonant = X[i][prev_abbr_idx].consonant
                         prev_abbr_vowel = X[i][prev_abbr_idx].vowel
+                        prev_abbr_is_syllabic_nasal = X[i][prev_abbr_idx].is_syllabic_nasal
+                        prev_abbr_is_sokuon = X[i][prev_abbr_idx].is_sokuon
                         x[j][CrfFeatures.to_int_idx[f"prev_abbr_consonant={prev_abbr_consonant}"]] = 1
                         x[j][CrfFeatures.to_int_idx[f"prev_abbr_vowel={prev_abbr_vowel}"]] = 1
                         x[j][CrfFeatures.to_int_idx[f"prev_abbr_mora={prev_abbr_consonant+prev_abbr_vowel}"]] = 1
+                        x[j][CrfFeatures.to_int_idx["prev_abbr_is_syllabic_nasal"]] = int(prev_abbr_is_syllabic_nasal)
+                        x[j][CrfFeatures.to_int_idx["prev_abbr_is_sokuon"]] = int(prev_abbr_is_sokuon)
                     tx = tuple(x[j])
                     if tx not in proba_memo:
                         y_proba = self.model.predict_proba([x[j]])[0]
