@@ -590,9 +590,6 @@ video {
 .clear-none {
   clear: none;
 }
-.m-0 {
-  margin: 0px;
-}
 .-mx-6 {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
@@ -621,12 +618,6 @@ video {
 }
 .mt-auto {
   margin-top: auto;
-}
-.line-clamp-1 {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
 }
 .block {
   display: block;
@@ -660,6 +651,13 @@ video {
 }
 .hidden {
   display: none;
+}
+.size-full {
+  width: 100%;
+  height: 100%;
+}
+.h-full {
+  height: 100%;
 }
 .max-w-none {
   max-width: none;
@@ -756,6 +754,9 @@ video {
 .overflow-clip {
   overflow: clip;
 }
+.overflow-y-auto {
+  overflow-y: auto;
+}
 .overflow-x-clip {
   overflow-x: clip;
 }
@@ -797,11 +798,11 @@ video {
 .break-keep {
   word-break: keep-all;
 }
-.rounded-md {
-  border-radius: 0.375rem;
-}
 .rounded {
   border-radius: 0.25rem;
+}
+.rounded-md {
+  border-radius: 0.375rem;
 }
 .border {
   border-width: 1px;
@@ -850,14 +851,11 @@ video {
 .stroke-none {
   stroke: none;
 }
-.p-0 {
-  padding: 0px;
-}
-.p-0\.5 {
-  padding: 0.125rem;
-}
 .p-1 {
   padding: 0.25rem;
+}
+.p-0 {
+  padding: 0px;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -900,9 +898,9 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 .font-extralight {
   font-weight: 200;
@@ -1034,7 +1032,8 @@ div#\:\$p > svg > foreignObject > section {
     &.lead h1 {
     text-align: center;
   }
-    &.narrow {
+
+    &.plain {
     padding: 0px;
   }
 

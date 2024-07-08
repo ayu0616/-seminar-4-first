@@ -151,10 +151,19 @@ $p_{i+1,r}$は$KR$個作ることができるが、$R$個だけ保持してお�
 
 ## 遊んでみよう
 
-<div class="flex-1 flex justify-center items-center text-center text-xl">
+<div class="flex-1 flex">
+
+<div class="text-sm">
 
 例のごとく、Webアプリをつくりました
 遊んでみましょう！
+
+</div>
+
+<div class="h-full flex-1 overflow-y-auto">
+    <iframe src="https://abbreviation-zhqzb2nbkq-an.a.run.app/" class="size-full">
+    </iframe>
+</div>
 
 </div>
 
