@@ -67,7 +67,8 @@ class SequentialClassifier:
         score_list: list[int] = []
         for y_pred, yi in zip(self.predict_rank(X, 5), y):
             for j, yp in enumerate(y_pred):
-                if yp == yi:
+                ok = np.all([CrfLabel.is_abbr(yp[k]) == CrfLabel.is_abbr(yi[k]) for k in range(len(yp))])
+                if ok:
                     score_list.append((5 - j) + 5)
                     break
             score_list.append(0)

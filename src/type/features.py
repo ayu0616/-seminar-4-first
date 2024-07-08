@@ -14,7 +14,7 @@ class CrfLabel(BaseModel):
 
     @staticmethod
     def is_abbr(label: str) -> bool:
-        return label in {CrfLabel.B_ABBR, CrfLabel.I_ABBR}
+        return label in {CrfLabel.B_ABBR, CrfLabel.I_ABBR, CrfLabel.E_ABBR}
 
 
 crf_label = CrfLabel()
@@ -303,6 +303,6 @@ class CrfLabelSequence(list[str]):
                 in_abbr = False
         for i in range(n - 1):
             if res[i] == crf_label.I_ABBR and res[i + 1] == crf_label.NG:
-                # res[i] = crf_label.E_ABBR
-                res[i + 1] = crf_label.E_ABBR
+                res[i] = crf_label.E_ABBR
+                # res[i + 1] = crf_label.E_ABBR
         return cls(res, abbr_mora_list)

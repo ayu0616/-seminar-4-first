@@ -59,8 +59,10 @@ async def api(input_data: Input):
         word = data[i].word.replace("・", "")
         word_moras = mora_wakati(word)
         assert len(word_moras) == len(abbr[0])
-        print(abbr[0])
+        print(word)
         abbrs.append(["".join([m for lb, m in zip(labels, word_moras) if CrfLabel.is_abbr(lb)]) for labels in abbr])
+        print(*map(lambda x: f"- {x}", abbrs[-1]), sep="\n")
+        print()
 
     return Abbrs(abbrs=abbrs)
 
