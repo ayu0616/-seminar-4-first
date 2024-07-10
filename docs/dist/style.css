@@ -610,11 +610,20 @@ video {
   margin-top: auto;
   margin-bottom: auto;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .mb-auto {
   margin-bottom: auto;
 }
 .ml-1 {
   margin-left: 0.25rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
 }
 .mt-auto {
   margin-top: auto;
@@ -847,6 +856,9 @@ video {
 }
 .p-1 {
   padding: 0.25rem;
+}
+.p-4 {
+  padding: 1rem;
 }
 .px-1 {
   padding-left: 0.25rem;
@@ -1113,15 +1125,27 @@ div#\:\$p > svg > foreignObject > section {
   }
 
     & ul {
+    padding-left: 0.5rem;
+  }
+
+    & ul {
 
         & ul {
       list-style-type: circle;
     }
 
         & ul {
+      padding-left: 1.5rem;
+    }
+
+        & ul {
 
             & ul {
         list-style-type: square;
+      }
+
+            & ul {
+        padding-left: 1.5rem;
       }
         }
     }

@@ -55,13 +55,13 @@ div#\:\$p > svg > foreignObject > section {
     }
 
     & ul {
-        @apply m-0 list-disc list-inside;
+        @apply m-0 pl-2 list-disc list-inside;
 
         & ul {
-            @apply list-[circle];
+            @apply pl-6 list-[circle];
 
             & ul {
-                @apply list-[square];
+                @apply pl-6 list-[square];
             }
         }
     }
