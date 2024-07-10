@@ -97,7 +97,7 @@ flowchart TD
 
 <br>
 
-- ポテトチップス → ポテト・チップス → <span class="p-1 border bg-white rounded">ポ / テ / ト</span>  <span class="px-1 py-0.5 border bg-white rounded">チ / ッ / プ / ス</span>
+- ポテトチップス → ポテト・チップス → <span class="p-1 border bg-white rounded">ポ / テ / ト</span>  <span class="p-1 border bg-white rounded">チ / ッ / プ / ス</span>
 
 ## 系列ラベリング
 
@@ -155,11 +155,13 @@ flowchart LR
 ### 推定方法
 
 `sklearn`の`predict_proba`を用いる
-クラスが4つあるとすると、`[0.1, 0.25, 0.35, 0.3]`のように出力される
+`[0.1, 0.25, 0.35, 0.3]`のように各クラスの確率？が出力される
+
 <br>
+
 $R$個の候補を確率が高い順に取得したい
-$i$個目のモーラまで見たとき、候補$C_{ir}$の出現確率を$p_{ir}$とすると、
-$p_{i+1,r}$は$\{p_{ir} \cdot \text{pred}_k \mid 0 \le k \le K, \quad 0 \le r \le R\}$の$r$番目に大きな値
+$i$個目のモーラまで見たとき、候補$C_{ir}=(y_{i1}, \cdots, y_{ir})$の出現確率を$p_{ir}$とすると、
+$p_{i+1,r}$は$\{p_{ir} \cdot \text{pred}(y_{ir})_k \mid 1 \le k \le K, \quad 1 \le r \le R\}$の$r$番目に大きな値
 $p_{i+1,r}$は$KR$個作ることができるが、$R$個だけ保持しておけば良い
 
 ## 遊んでみよう

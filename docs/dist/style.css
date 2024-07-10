@@ -594,10 +594,6 @@ video {
   margin-left: -1.5rem;
   margin-right: -1.5rem;
 }
-.mx-2 {
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -859,18 +855,6 @@ video {
 }
 .p-4 {
   padding: 1rem;
-}
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-.py-0 {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
-.py-0\.5 {
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
 }
 .text-right {
   text-align: right;
@@ -1149,6 +1133,11 @@ div#\:\$p > svg > foreignObject > section {
       }
         }
     }
+
+    & .katex {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
 }
 
 .area {

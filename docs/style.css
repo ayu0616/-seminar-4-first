@@ -65,6 +65,10 @@ div#\:\$p > svg > foreignObject > section {
             }
         }
     }
+
+    & .katex {
+        @apply mx-1;
+    }
 }
 
 .area {
