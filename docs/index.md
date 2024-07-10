@@ -179,9 +179,10 @@ $p_{i+1,r}$は$KR$個作ることができるが、$R$個だけ保持してお�
 →事前に試した中で成功／失敗例を紹介
 
 - 成功例
-    - <code class="select-all">マクドナルド</code>
+    - <code class="select-all">コロナ</code>・<code class="select-all">ウイルス</code>
     - <code class="select-all">ガクセイジダイ</code>・<code class="select-all">チカラヲイレタコト</code>
 - 失敗例
+    - <code class="select-all">インターネット</code>
     - <code class="select-all">ユニバーサル</code>・<code class="select-all">スタジオ</code>・<code class="select-all">ジャパン</code>
 
 </div>
