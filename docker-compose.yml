@@ -3,6 +3,7 @@ services:
         build:
             context: .
             dockerfile: Dockerfile
+        image: "asia-northeast1-docker.pkg.dev/dajare-evaluate/abbreviation/app:latest"
         tty: true
         ports:
             - "8000:8000"

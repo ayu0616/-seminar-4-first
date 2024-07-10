@@ -21,7 +21,8 @@ div#\:\$p > svg > foreignObject > section {
     &.lead h1 {
         @apply text-center;
     }
-    &.narrow {
+
+    &.plain {
         @apply p-0;
     }
 
