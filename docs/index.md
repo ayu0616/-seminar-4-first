@@ -18,8 +18,6 @@ transition: fade
 
 # 機械学習による外来語略語の推定
 
-<p class="text-right">経済学部3年 小川歩夢</p>
-
 ## もくじ
 
 <div class="flex-1 overflow-y-auto bg-white border p-4 text-sm">
